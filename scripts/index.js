@@ -1,4 +1,4 @@
-
+// NOTE: I want to implement a contact form made in elm
 window.onload = ()=>{
 
   /*handling clicks on circles*/
@@ -7,7 +7,7 @@ window.onload = ()=>{
   }
 
   document.onmousemove = (event)=>{
-    opacityChange("header", "x", event)    
+    opacityChange("header", "x", event)
   }
 
 }

@@ -2,7 +2,7 @@
 let click = (evt)=>{
   /*click on circles*/
   if (evt.target.className === "circles") {
-    // IDEA: circles "drop down" and bounce up again 
-    evt.target.style.
+    // IDEA: circles "drop down" and bounce up again
+    //evt.target.style.
   }
 }
