@@ -3,22 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>@olaven</title>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <!--local stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--external scripts-->
+    <script type="text/javascript" src="https://rawgit.com/olaven/jsbiblio/master/jsBiblio.js"></script>
+    <!--local scripts-->
+    <script type="text/javascript" src="scripts/mousemove.js"></script>
+    <script type="text/javascript" src="scripts/click.js"></script>
+    <!--index script -> main sript-->
+    <script type="text/javascript" src="scripts/index.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Olav Sundfør</h1>
-      <h2>@olaven</h2>
-    </header>
-    <main>
-      <p>
-        <u> <b> Site under construction </b> </u>
-
-        <h3>find me:</h3>
-        <ul>
-          <li> <a href="https://github.com/olaven">Github</a> </li>
-          <li> <a href="https://twitter.com/olavsundfoer"> Twitter </a> </li>
-        </ul>
-      </p>
-    </main>
+    <div id="all-container">
+      <header id="header">
+        <div id="headers-container">
+          <h1>Olav Sundfør</h1>
+          <h2>@olaven</h2>
+        </div>
+        <a id="githubLink" href="https://github.com/olaven"> <img src="img/github.png" alt="Github"> </a>
+        <a id="twitterLink" href="https://twitter.com/olavsundfoer"> <img src="img/twitter.png" alt="Twitter"> </a>
+      </header>
+      <main id="main">
+        <div id="backdrop">
+          <!-- IDEA: backgrond -changing color based on mousey -->
+          <div id="stripe0" class="stripes stripe-a"></div>
+          <div id="stripe0" class="stripes stripe-b"></div>
+          <div id="stripe0" class="stripes stripe-a"></div>
+          <div id="stripe0" class="stripes stripe-b"></div>
+          <div id="stripe0" class="stripes stripe-a"></div>
+          <div id="stripe0" class="stripes stripe-b"></div>
+          <div id="stripe0" class="stripes stripe-a"></div>
+          <div id="stripe0" class="stripes stripe-b"></div>
+        </div>
+        <div id="main-circle" class="circles">
+          <div class="circles">
+            <div class="circles"></div>
+          </div>
+        </div>
+        <div id="slides-container">
+          <div class="slides">
+            <span id="who">Who?</span>
+            <div id="who-content" class="slide-content">
+              <li>Frontend programmer</li>
+              <li>User oriented</li>
+              <li>Always eager to learn</li>
+            </div>
+          </div>
+          <div class="slides">
+            <span id="what">What?</span>
+            <div id="what-content" class="slide-content">
+              <li>Javascript</li>
+              <li>HTML5/CSS3</li>
+              <li>Java</li>
+              <li>MySQL</li>
+              <li>Elm</li>
+              <li>And more..</li>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

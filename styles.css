@@ -2,6 +2,7 @@ body{
   margin: 0;
   background-color: rgba(162, 189, 200, 0.8);
   overflow:hidden;
+  font-family: 'Lora', serif;
 }
 header{
   position: relative;
@@ -26,6 +27,20 @@ header h1{
   text-decoration: underline;
 }
 
+#githubLink img, #twitterLink img{
+  position: absolute;
+}
+#githubLink img{
+  left: 40vw;
+  top: 5vh;
+  height: 6vh;
+}
+#twitterLink img{
+  left: 45vw;
+  height: 4vw;
+  top: 4.25vh;
+}
+
 main{
   position: relative;
   margin: auto;
@@ -36,6 +51,7 @@ main{
   border-top-style: none;
   border-color: rgb(78, 3, 29);
   top: 0vw;
+  font-family: 'Roboto Mono', monospace;
 }
 main div{
   position: absolute;
@@ -97,19 +113,78 @@ main div{
 
 /*slides*/
 #slides-container{
-  border-style: solid;
-  width: 60vw;
-  height: 50vw;
+  height: 65vh;
+  width: 55vw;
 }
-#where-button{
-  background-color: red;
-  margin-left: 20%; 
+
+.slides span{
+  font-size: 4em;
+  padding: 1vw;
+
+  transition-duration: 0.2s;
+
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
-#slide-content-container div ul li a img{
-  height: 10vh;
-  transition-duration: 0.5s;
+@keyframes pulse {
+  from{transform: scale(1);}
+  to{transform: scale(1.01);}
 }
-#slide-content-container div ul li a img:hover{
-  transform: scale(1.05);
+.slides span:hover{
+  background-color: rgba(48, 181, 185, 0.1);
+  z-index: 1;
+  border-radius: 30%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
-/*END, slides*/
+.slides span + .slide-content{
+  animation-name: slide-out;
+  animation-duration: 1s;
+}
+
+#who, #what{
+  position: absolute;
+}
+#who{
+  left: 10vw;
+}
+#what{
+  left: 25vw;
+}
+
+#who-content, #what-content{
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  left: -100vw;
+}
+
+.slides span:hover ~ #who-content{
+  animation-name: who-slide-in;
+}
+.slides span:hover ~ #what-content{
+  animation-name: what-slide-in;
+}
+@keyframes who-slide-in {
+  from{left: -20vw;}
+  to{left: 10vw;}
+}
+@keyframes what-slide-in {
+  from{left: -20vw;}
+  to{left: 25vw;}
+}
+
+.slide-content{
+  left: -20vw;
+  top: 5vw;
+  list-style: none;
+  font-size: 3em;
+  width: 20vw;
+  margin-top: 5vh;
+}
+.slide-content li a img{
+  height: 5vw;
+}
+ /*END, slides*/
