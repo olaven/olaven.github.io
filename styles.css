@@ -1,7 +1,6 @@
 body{
   margin: 0;
   background-color: rgba(162, 189, 200, 0.8);
-  overflow:hidden;
   font-family: 'Lora', serif;
 }
 header{
@@ -17,6 +16,10 @@ header{
   padding-left: 20vw;
   top: 0;
 }
+header div, header a{
+  position: absolute;
+}
+
 header:hover{
   border-bottom-width: 0.3em;
 }
@@ -160,6 +163,10 @@ main div{
   animation-fill-mode: forwards;
   left: -100vw;
 }
+#who-content li, #what-content li{
+  padding: 1vh;
+  border-top-style: solid;
+}
 
 .slides span:hover ~ #who-content{
   animation-name: who-slide-in;
@@ -168,12 +175,32 @@ main div{
   animation-name: what-slide-in;
 }
 @keyframes who-slide-in {
-  from{left: -20vw;}
-  to{left: 10vw;}
+  0%{
+    left: -20vw;
+    opacity: 0;
+  }
+  80%{
+    left: 9.5vw;
+    opacity: 0.25;
+  }
+  100%{
+    left: 10vw;
+    opacity: 1;
+  }
 }
 @keyframes what-slide-in {
-  from{left: -20vw;}
-  to{left: 25vw;}
+  0%{
+    left: -20vw;
+    opacity: 0;
+  }
+  80%{
+    left: 24vw;
+    opacity: 0.25;
+  }
+  100%{
+    left: 25vw;
+    opacity: 1;
+  }
 }
 
 .slide-content{
