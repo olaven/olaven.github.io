@@ -41,7 +41,7 @@ main{
   border-color: rgb(78, 3, 29);
   top: 0vw;
   font-family: 'Roboto Mono', monospace;
-  overflow: hidden;
+  overflow: scroll;
 }
 main div{
   position: absolute;
@@ -59,7 +59,6 @@ main div{
 
 /*lists*/
 .lists{
-  position: absolute;
   width: 20vw;
   opacity: 0.5;
   text-align: center;
@@ -81,16 +80,27 @@ main div{
 .lists li{
   margin-bottom: 2vh;
 }
+.lists:hover li{
+  border-bottom-style: solid;
+  border-bottom-right-radius: 7.5%;
+}
 
-#who{
-  margin-left: 5vw;
+@media screen and (min-device-width: 480px){
+  .lists{
+    display: inline;
+    position: absolute;
+  }
+  #who{
+    margin-left: 5vw;
+  }
+  #what{
+    margin-left: 35vw;
+  }
+  #where{
+    margin-left: 65vw;
+  }
 }
-#what{
-  margin-left: 35vw;
-}
-#where{
-  margin-left: 65vw;
-}
+
 
 
 /*END, aboutMe*/
