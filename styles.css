@@ -4,6 +4,10 @@ body {
   font-size: 1.5em;
   font-family: 'Comfortaa', cursive; 
 }
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
 header h1, header h2{
   margin-left: 4vw; 
   margin-top: 2vh; 
@@ -28,6 +32,9 @@ header h1, header h2{
   transition-duration: 0.5s; 
 }
 #grid-container section:hover {
+
+}
+#grid-container section:hover {
   transform-origin: center; 
   transform: scale(1.1); 
 }
@@ -38,6 +45,10 @@ header h1, header h2{
   margin-right: 50%; 
 }
 #grid-container section ul li {
+  transition-duration: 0.25s; 
+}
+#grid-container section ul li:hover {
+  transform: scale(1.05); 
   text-decoration: underline; 
 }
 #grid-container section ul, #grid-container section h3{
