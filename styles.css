@@ -1,6 +1,6 @@
 body {
   margin: 0; 
-  background-color: rgb(140, 149, 201);  
+  background-color: rgb(98, 80, 126);  
   font-size: 1.5em;
   font-family: 'Comfortaa', cursive; 
 }
@@ -8,22 +8,28 @@ a {
   text-decoration: none; 
   color: inherit; 
 }
+header h1 {
+  text-decoration: underline; 
+}
 header h1, header h2{
   margin-left: 4vw; 
   margin-top: 2vh; 
+  color: rgb(212, 198, 235);
+  text-shadow: 0 0.08em rgb(75, 63, 94);
 }
+
 #grid-container {
   display: grid;
   width: 100%;  
   border-style: solid; 
   border-width: 0.15em; 
-  background-color: rgb(155, 175, 191);
+  background-color: rgba(69, 100, 101, 0.5); 
   overflow: scroll; 
 }
 #grid-container section {
   text-align: center;
   padding-left: 20px; 
-  background-color: rgb(196, 201, 230); 
+  background-color: rgb(212, 198, 235); 
   margin: auto; 
   width: 85%; 
   height: 75%; 
@@ -31,9 +37,7 @@ header h1, header h2{
   border-style: solid; 
   transition-duration: 0.5s; 
 }
-#grid-container section:hover {
 
-}
 #grid-container section:hover {
   transform-origin: center; 
   transform: scale(1.1); 
