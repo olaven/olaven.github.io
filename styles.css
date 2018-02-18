@@ -61,6 +61,37 @@ header h1, header h2{
   text-align: left; 
 }
 
+/*"back to top"-link*/
+#toTop{
+  position: fixed;
+  
+  width: 10vw;
+
+  top: 85vh; 
+  left: 85vw; 
+
+  border-radius: 30%; 
+  border-style: solid; 
+  border-width: 0.2vw; 
+
+  text-align: center; 
+  margin-top: auto; 
+
+  background-color: rgb(98, 80, 126);
+
+  animation-name: pulse; 
+  animation-duration: 1s; 
+  animation-direction: alternate-reverse; 
+  animation-iteration-count: infinite; 
+
+  font-size: 2em; 
+}
+
+@keyframes pulse {
+  from{transform: scale(1)}
+  to{transform: scale(1.05)}
+}
+
 /*Media Queries*/
 @media (min-width: 1025px) {
   #grid-container {

@@ -3,9 +3,34 @@
 <head>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+  <!--my DON-abstraction-->
+  <script src="https://rawgit.com/olaven/jsbiblio/master/jsBiblio.js"></script>
 </head>
 
-<body>
+<script>
+  //if this script gets any bigger, it should be separated into another file 
+
+  //showing "back to top"-link when user not at top 
+  document.onscroll = () => {
+    let y = window.scrollY; 
+
+    if(y > 100){
+      show("toTop"); 
+    } else {
+      hide("toTop"); 
+    }
+  }
+
+  let show = (id) => {
+    get.id(id).style.visibility = "visible";  
+  }
+  let hide = (id) => {
+    get.id(id).style.visibility = "hidden";  
+  }
+</script>
+
+<body id="body">
   <header>
     <h1>Olav Sundfør</h1>
     <h2>@olaven</h2>
@@ -57,6 +82,8 @@
         </ul>
       </section>
     </div>
+
+    <a href="#body" id="toTop">&#8593;</a>
   </main>
 </body>
 
