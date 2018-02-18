@@ -6,29 +6,20 @@
 
   <!--my DON-abstraction-->
   <script src="https://rawgit.com/olaven/jsbiblio/master/jsBiblio.js"></script>
+  <script type="text/javascript">
+    document.onscroll = () => {
+      let y = window.scrollY;
+
+      if(y > 50){
+        show("toTop");
+      } else {
+        hide("toTop");
+      }
+    }
+  </script>
 </head>
 
-<script>
-  //if this script gets any bigger, it should be separated into another file 
 
-  //showing "back to top"-link when user not at top 
-  document.onscroll = () => {
-    let y = window.scrollY; 
-
-    if(y > 100){
-      show("toTop"); 
-    } else {
-      hide("toTop"); 
-    }
-  }
-
-  let show = (id) => {
-    get.id(id).style.visibility = "visible";  
-  }
-  let hide = (id) => {
-    get.id(id).style.visibility = "hidden";  
-  }
-</script>
 
 <body id="body">
   <header>
@@ -86,5 +77,17 @@
     <a href="#body" id="toTop">&#8593;</a>
   </main>
 </body>
+
+<script>
+  //if this script gets any bigger, it should be separated into another file
+  let show = (id) => {
+    get.id(id).style.visibility = "visible";
+  }
+  let hide = (id) => {
+    get.id(id).style.visibility = "hidden";
+  }
+  //showing "back to top"-link when user not at top
+  hide("toTop");
+</script>
 
 </html>
