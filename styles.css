@@ -24,7 +24,6 @@ header h1, header h2{
   border-style: solid;
   border-width: 0.15em;
   background-color: rgba(69, 100, 101, 0.5);
-  overflow: scroll;
 }
 #grid-container section {
   text-align: center;
@@ -32,10 +31,9 @@ header h1, header h2{
   background-color: rgb(212, 198, 235);
   margin: auto;
   width: 85%;
-  height: 75%;
-  overflow-y: scroll;
   border-style: solid;
   transition-duration: 0.5s;
+  margin-top: 5vh;
 }
 
 #grid-container section:hover {
@@ -99,5 +97,9 @@ header h1, header h2{
     height: 70vh;
     grid-template-columns: 50vw 50vw;
     align-content: center;
+  }
+  #grid-container section {
+    overflow-y: scroll;
+    height: 25vh; 
   }
 }
