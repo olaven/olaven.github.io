@@ -1,12 +1,37 @@
+/*Color palette: http://www.colourlovers.com/palette/919313/Papua_New_Guinea*/
+
+
+
+:root {
+  --main-color: #78C0A8; 
+  --complementary-color: #F07818; 
+  --bright-color: #FCEBB6; 
+  --dark-color: #5E412F; 
+
+  --border-width-standard: 2.5px; 
+}
+
 body {
   margin: 0;
-  background-color: rgb(98, 80, 126);
+  /*background-color: rgb(98, 80, 126);*/
+  background-color: var(--main-color);
   font-size: 1.5em;
   font-family: 'Comfortaa', cursive;
+  color: var(--dark-color); 
 }
 a {
   text-decoration: none;
   color: inherit;
+}
+header {
+  width: 60vw; 
+  margin: auto; 
+  margin-top: 2vh; 
+  margin-bottom: 2vh; 
+  background-color: var(--complementary-color);
+  border-style: solid; 
+  border-color: var(--dark-color); 
+  border-width: var(--border-width-standard); 
 }
 header h1 {
   text-decoration: underline;
@@ -14,7 +39,6 @@ header h1 {
 header h1, header h2{
   margin-left: 4vw;
   margin-top: 2vh;
-  color: rgb(212, 198, 235);
   text-shadow: 0 0.08em rgb(75, 63, 94);
 }
 
@@ -22,16 +46,18 @@ header h1, header h2{
   display: grid;
   width: 100%;
   border-style: solid;
-  border-width: 0.15em;
-  background-color: rgba(69, 100, 101, 0.5);
+  border-width: var(--border-width-standard);
+  background-color: var(--complementary-color); 
 }
 #grid-container section {
   text-align: center;
   padding-left: 20px;
-  background-color: rgb(212, 198, 235);
+  background-color: var(--main-color); 
   margin: auto;
-  width: 85%;
+  width: 90%;
   border-style: solid;
+  border-color: var(--dark-color); 
+  border-width: var(--border-width-standard); 
   transition-duration: 0.5s;
   margin-top: 5vh;
 }
@@ -51,7 +77,10 @@ header h1, header h2{
 }
 #grid-container section ul li:hover {
   transform: scale(1.05);
+  border-style: solid; 
+  border-width: var(--border-width-standard); 
   text-decoration: underline;
+  background-color: var(--bright-color); 
 }
 #grid-container section ul, #grid-container section h3{
   padding: 0;
@@ -70,12 +99,14 @@ header h1, header h2{
 
   border-radius: 30%;
   border-style: solid;
-  border-width: 0.2vw;
+  border-width: var(--border-width-standard); 
 
   text-align: center;
   margin-top: auto;
 
-  background-color: rgb(98, 80, 126);
+  background-color: var(--bright-color); 
+  color: var(--main-color); 
+  border-color: var(--dark-color); 
 
   animation-name: pulse;
   animation-duration: 1s;
@@ -92,6 +123,12 @@ header h1, header h2{
 
 /*Media Queries*/
 @media (min-width: 1025px) {
+  header {
+    margin-right: 65vw;
+    margin-bottom: 2vh; 
+    margin-top: 2vh; 
+    margin-left: 1vw; 
+  }
   #grid-container {
     display: grid;
     height: 70vh;
@@ -100,6 +137,6 @@ header h1, header h2{
   }
   #grid-container section {
     overflow-y: scroll;
-    height: 25vh; 
+    height: 25vh;
   }
 }
