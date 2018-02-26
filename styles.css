@@ -32,7 +32,16 @@ header {
   border-style: solid; 
   border-color: var(--dark-color); 
   border-width: var(--border-width-standard); 
+
+  transition-duration: 1s; 
 }
+header:hover {
+  background-color: var(--bright-color); 
+}
+header * {
+  transition-duration: 1s;
+}
+
 header h1 {
   text-decoration: underline;
 }
@@ -81,6 +90,7 @@ header h1, header h2{
   border-width: var(--border-width-standard); 
   text-decoration: underline;
   background-color: var(--bright-color); 
+  box-shadow: 0px 10px 20px; 
 }
 #grid-container section ul, #grid-container section h3{
   padding: 0;
