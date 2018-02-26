@@ -124,10 +124,10 @@ header h1, header h2{
 /*Media Queries*/
 @media (min-width: 1025px) {
   header {
-    margin-right: 65vw;
-    margin-bottom: 2vh; 
-    margin-top: 2vh; 
-    margin-left: 1vw; 
+    width: 40vw; 
+    margin-bottom: 4vh; 
+    margin-top: 3vh; 
+    margin-left: 5.5vw; 
   }
   #grid-container {
     display: grid;
