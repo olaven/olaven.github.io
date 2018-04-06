@@ -3,10 +3,10 @@
 
 
 :root {
-  --main-color: #78C0A8; 
-  --complementary-color: #F07818; 
-  --bright-color: #FCEBB6; 
-  --dark-color: #5E412F; 
+  --main-color: LightSeaGreen;  
+  --complementary-color: MediumSeaGreen; 
+  --bright-color: SeaShell; 
+  --text-color: DarkSlateGray;  
 
   --border-width-standard: 2.5px; 
 }
@@ -17,7 +17,7 @@ body {
   background-color: var(--main-color);
   font-size: 1.5em;
   font-family: 'Comfortaa', cursive;
-  color: var(--dark-color); 
+  color: var(--text-color); 
 }
 a {
   text-decoration: none;
@@ -30,18 +30,9 @@ header {
   margin-bottom: 2vh; 
   background-color: var(--complementary-color);
   border-style: solid; 
-  border-color: var(--dark-color); 
+  border-color: var(--text-color); 
   border-width: var(--border-width-standard); 
-
-  transition-duration: 1s; 
 }
-header:hover {
-  background-color: var(--bright-color); 
-}
-header * {
-  transition-duration: 1s;
-}
-
 header h1 {
   text-decoration: underline;
 }
@@ -65,7 +56,7 @@ header h1, header h2{
   margin: auto;
   width: 90%;
   border-style: solid;
-  border-color: var(--dark-color); 
+  border-color: var(--text-color); 
   border-width: var(--border-width-standard); 
   transition-duration: 0.5s;
   margin-top: 5vh;
@@ -90,7 +81,6 @@ header h1, header h2{
   border-width: var(--border-width-standard); 
   text-decoration: underline;
   background-color: var(--bright-color); 
-  box-shadow: 0px 10px 20px; 
 }
 #grid-container section ul, #grid-container section h3{
   padding: 0;
@@ -116,7 +106,7 @@ header h1, header h2{
 
   background-color: var(--bright-color); 
   color: var(--main-color); 
-  border-color: var(--dark-color); 
+  border-color: var(--text-color); 
 
   animation-name: pulse;
   animation-duration: 1s;
