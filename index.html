@@ -1,22 +1,12 @@
 <html>
 
 <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
   <!--my DOM-abstraction-->
   <script src="https://rawgit.com/olaven/jsbiblio/master/jsBiblio.js"></script>
-  <script type="text/javascript">
-    document.onscroll = () => {
-      let y = window.scrollY;
-
-      if(y > 50){
-        show("toTop");
-      } else {
-        hide("toTop");
-      }
-    }
-  </script>
 </head>
 
 
@@ -28,73 +18,30 @@
     <h2>@olaven</h2>
   </header>
   <main>
-    <div id="grid-container">
-      <section>
-        <h3>Who?</h3>
-        <ul>
-          <li>Frontend Programmer</li>
-          <li>User Oriented</li>
-          <li>Always Eager To Learn</li>
-        </ul>
-      </section>
-      <section>
-        <h3>What?</h3>
-        <ul>
-          <li>Javascript</li>
-          <li>HTML5/CSS3</li>
-          <li>React JS/Native</li>
-          <li>Java</li>
-          <li>MySQL</li>
-          <li>And more..</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Contact</h3>
-        <ul>
-          <li>
-            <a href="mailto:olavsundfoer@gmail.com">olavsundfoer@gmail.com</a>
-          </li>
-          <li>
-            <a href="https://github.com/olaven">Github</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/olavsundfoer/">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/olavsundfoer">Twitter</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h3>Some Of My Projects:</h3>
-        <ul>
-          <li>
-            <a href="https://github.com/olaven/clean-youtube">Minimalistic Youtube-client</a>
-          </li>
-          <li>
-            <a href="https://github.com/olaven/sunday-funday">Fun Evening-Projects</a>
-          </li>
-          <li>
-            <a href="https://github.com/olaven/jsbiblio">JS library</a>
-          </li>
-        </ul>
-      </section>
+    <a href="https://www.github.com/olaven">
+      <img id="contributions" src="https://repository-hunter.herokuapp.com/contribution/olaven.svg" alt="Github contribution"/>
+    </a>
+    <div id="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>
+          <a href="mailto:olavsundfoer@gmail.com">
+            olavsundfoer@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQHFmaNmOylrHwAAAWMawqVQpcT-N0OGXCsfiBr_-B_57HCtHs1s-f5HsUtPsT6RkxANHXbteRS27wWAltN_NBnfpD2i08-NEw6v6pWzEJEkd2VlO9_k6q0U7u9UoQ2wlRxg64w=&originalReferer=http://sundfoer.consulting/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Folavsundfoer%2F">
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/olaven">
+            Github
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <a href="#body" id="toTop">&#8593;</a>
   </main>
 </body>
-
-<script>
-  //if this script gets any bigger, it should be separated into another file
-  let show = (id) => {
-    get.id(id).style.visibility = "visible";
-  }
-  let hide = (id) => {
-    get.id(id).style.visibility = "hidden";
-  }
-  //showing "back to top"-link when user not at top
-  hide("toTop");
-</script>
 
 </html>
