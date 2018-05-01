@@ -1,11 +1,10 @@
 :root{
     --main-color: whitesmoke; 
-    --secondary-color: rgb(39, 51, 47); 
+    --secondary-color: #222222;  
 }
 
 body{
-    background-color: var(--main-color); 
-    color: var(--secondary-color); 
+    background-color: var(--secondary-color); 
 }
 body, body *{
     margin: 0; 
@@ -29,23 +28,15 @@ header h1{
     }
 }
 main{
-    background-color: var(--main-color); 
-    color: var(--secondary-color); 
     height: 70vh; 
 }
 #contributions{
-    width: 90vw; 
-    margin-top: 10vh; 
-    margin-bottom: 10vh; 
-    padding: 5vh; 
+    width: 70vw; 
     background-color: var(--secondary-color); 
 }
 @media only screen and (max-width: 1000px) {
     #contributions {
         width: 100vw;
-        margin-top: 2.5vh; 
-        margin-bottom: 2.5vh;
-        padding: 0;   
     }
 }
 
@@ -57,18 +48,17 @@ main{
     text-align: left; 
     padding-left: 5vw; 
 }
-#contact h3{
-    text-decoration: underline;
-}
-
 
 
 li{
     display: block; 
 }
+li a {
+    color: slategrey;
+    text-decoration: none; 
+}
 li:hover a{
-    background-color: var(--main-color); 
-    color: var(--secondary-color); 
+    color: var(--main-color); 
 }
 a{
     color: var(--main-color); 
