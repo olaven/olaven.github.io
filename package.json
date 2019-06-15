@@ -6,7 +6,13 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+<<<<<<< HEAD
+    "export": "next export",
     "start": "next start"
+=======
+    "start": "next start", 
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to Githb pages\" && git subtree push --prefix out origin master"
+>>>>>>> 7e0080275d0088199c3ce3f222aef2a8ec631625
   },
   "repository": "https://github.com/olaven/olaven.github.io.git",
   "author": "olaven <olavsundfoer@gmail.com>",
