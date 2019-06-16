@@ -1,0 +1,18 @@
+$dark: #2a2a2a; 
+
+
+body {
+    
+    display: block;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.4;
+    width: 40vw;
+    position: relative;
+    color: $dark; 
+    font-family: sans-serif; 
+}
+
+a {
+    color: $dark; 
+}
