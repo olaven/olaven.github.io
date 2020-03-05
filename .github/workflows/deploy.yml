@@ -1,0 +1,19 @@
+name: deploy
+
+on:
+    push:                  #TODO: remove workflow branch
+        branches: [master, workflow]
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@master
+          - uses: denolib/setup-deno@v1.1.0
+          - name: Build
+            run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts build
+          - name: Deploy
+            uses: JamesIves/github-pages-deploy-action@releases/v3
+            with:
+                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                BRANCH: gh-pages # Makes a commit to this branch?
+                FOLDER: . # The folder the action should deploy.
