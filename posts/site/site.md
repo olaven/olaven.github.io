@@ -1,4 +1,5 @@
 # The site
+_NOTE_: This post is out of date, as the site is [updated](./how_this_site_works.md).
 
 This is my website. I have iterated on it many times. 
 Although I have made many attempts at making it look
