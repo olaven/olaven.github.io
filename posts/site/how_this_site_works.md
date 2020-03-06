@@ -17,16 +17,15 @@ could not quite get past the fact that there was so much setup needed for such a
 
 Markblog is my attempt at a solution. It is a small piece of software written in [Deno](deno.land). 
 It simply converts markdown to HTML, and packages it in a nice, tiny, non-bloated blog-like page. 
-As of writing, this file structure can be created:  
+As of writing, the default file structure is as follows:  
 * `index.md`
 * `style.css`
 * `posts/`
 
 (create this automatically with Markblog's `init`-command)
-(__A way to customize this is planned__)
+
 The index page shows the markdown-text in addition to links to posts, in addition to the content 
 written in `index.md`. Then, Markblog's `build`-command triggers conversion to html. In my setup, 
 this runs as part of a simple CI-pipeline, meaning that I never touch anything other than Markdown-files. 
-
 
 
