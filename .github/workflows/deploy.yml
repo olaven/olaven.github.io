@@ -1,8 +1,8 @@
 name: deploy
 
 on:
-    push:                  #TODO: remove workflow branch
-        branches: [master, workflow]
+    push:
+        branches: [writing]
 jobs:
     deploy:
         runs-on: ubuntu-latest
