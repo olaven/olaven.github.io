@@ -25,15 +25,14 @@ What I wanted was achieved: a homepage I could update by writing markdown. Howev
 could not quite get past the fact that there was so much setup needed for such a basic thing.</p>
 <p>Markblog is my attempt at a solution. It is a small piece of software written in <a href="deno.land">Deno</a>. 
 It simply converts markdown to HTML, and packages it in a nice, tiny, non-bloated blog-like page. 
-As of writing, this file structure can be created:  </p>
+As of writing, the default file structure is as follows:  </p>
 <ul>
 <li><code>index.md</code></li>
 <li><code>style.css</code></li>
 <li><code>posts/</code></li>
 </ul>
-<p>(create this automatically with Markblog&#39;s <code>init</code>-command)
-(<strong>A way to customize this is planned</strong>)
-The index page shows the markdown-text in addition to links to posts, in addition to the content 
+<p>(create this automatically with Markblog&#39;s <code>init</code>-command)</p>
+<p>The index page shows the markdown-text in addition to links to posts, in addition to the content 
 written in <code>index.md</code>. Then, Markblog&#39;s <code>build</code>-command triggers conversion to html. In my setup, 
 this runs as part of a simple CI-pipeline, meaning that I never touch anything other than Markdown-files. </p>
 
