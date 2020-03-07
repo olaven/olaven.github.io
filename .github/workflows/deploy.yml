@@ -2,7 +2,7 @@ name: deploy
 
 on:
     push:
-        branches: [writing]
+        branches: [publish]
 jobs:
     deploy:
         runs-on: ubuntu-latest
