@@ -2,15 +2,17 @@ name: deploy
 
 on:
     push:
-        branches: [publish]
+        branches: [writing]
 jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@master
           - uses: denolib/setup-deno@v1.1.0
+          - name: Install markblog
+            run: deno install --allow-read --allow-write markblog https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts
           - name: Build
-            run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts build
+            run: markblog build 
           - name: Deploy
             uses: JamesIves/github-pages-deploy-action@releases/v3
             with:
