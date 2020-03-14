@@ -12,7 +12,7 @@ jobs:
             with:
               deno-version: 0.36
           - name: Build
-            run: deno install --allow-read --allow-write run https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts --options options.json
+            run: deno --allow-read --allow-write run https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts --options options.json 
           - name: Deploy
             uses: JamesIves/github-pages-deploy-action@releases/v3
             with:
