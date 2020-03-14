@@ -28,4 +28,5 @@ The index page shows the markdown-text in addition to links to posts, in additio
 written in `index.md`. Then, Markblog's `build`-command triggers conversion to html. In my setup, 
 this runs as part of a simple CI-pipeline, meaning that I never touch anything other than Markdown-files. 
 
-
+If this interests you, please head over to [the project page](www.github.com/olaven/markblog) 
+to see more details!
