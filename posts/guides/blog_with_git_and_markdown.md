@@ -1,6 +1,6 @@
 # Blogging with Git and Markdown 
 
-_disclaimer_: parts of this guide covers a piece of software called Markblog, of which I am the author!
+_Disclaimer_: parts of this guide covers a piece of software called Markblog, of which I am the author.
 
 ## Who is this for? 
 This guide assumes that you are: 
@@ -57,8 +57,8 @@ Let's take a break from the setup, and write something!
 
 ### Automated Deployment
 After this step, we will have achieved the workflow outlined [at the beginning](#whats-this-guide-about)!
-This section is long and somewhat cumbersome. However, this is automation! Meaning that 
-we don't have to do this more than once!
+This section is long and somewhat cumbersome. However, this is automation! In other words,
+we only have to do this once!
 
 * On [Github](https://github.com)
   1. Go to your [profile settings](https://github.com/settings/profile)
@@ -102,13 +102,13 @@ we don't have to do this more than once!
 2. commit your changes, `git add . && git commit -m "initial blog setup"`
 3. `git push`
 
-Congratulations 👏 🎊 Within a few minutes, your blog go live. 
+Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
 Your next post is just an `.md`-file away! To publish it, just push it 
-onto the `writing`-branch, and our automation will do the rest 🍇 🍏
+onto the `writing`-branch, and your automation will do the rest 🍇 🍏
 
 (If you are unsure about the URL, have a look at the "Github Pages"-seciton of your Github-repository 😃)
 
 Check out [Markblog's documentation](https://github.com/olaven/markblog#documentation) for more information about how to customize your blog.
-See [my blog](olaven.org)([github repo](https://github.com/olaven/olaven.github.io)) for a live example.
+See [my blog](https://olaven.org)([github repo](https://github.com/olaven/olaven.github.io)) for a live example.
 
 Thanks for reading! 
