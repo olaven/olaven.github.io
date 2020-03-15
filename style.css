@@ -1,12 +1,12 @@
 body {
     display: block;
     margin: 0 auto;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.4;
     width: 40vw;
     position: relative;
     color: #2a2a2a;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace
 }
 @media screen and (max-width: 920px) {
     body {
