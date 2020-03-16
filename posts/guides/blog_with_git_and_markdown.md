@@ -73,6 +73,7 @@ we only have to do this once!
   1. create directory for Github Actions with `mkdir -p ./github/workflows`. 
   2. create a workflow-file for deploy with `touch ./github/workflows/deploy.yml`
   3. paste the following into `deploy.yml`: 
+
 ```yml
 name: deploy
 
