@@ -90,8 +90,8 @@ it is all relatively simple when it comes together 😅</p>
 </ol>
 <h3 id="git-setup">Git Setup</h3>
 <ol>
-<li>create a repository on Github </li>
-<li>head to settings and make sure &quot;Github pages&quot; is enabled, and that source is set to &quot;master branch&quot;</li>
+<li>create a repository on Github (check &quot;Initialize this repository with a README&quot;)</li>
+<li>Enable &quot;Github Pages&quot; in the repository settings by setting <code>master</code> as source. </li>
 <li>navigate to some fitting folder in your terminal, e.g. <code>cd $HOME/Documents</code></li>
 <li>clone your new repo with <code>git clone https://github.com/&lt;your-username&gt;/&lt;your-repository-name&gt;</code></li>
 </ol>
@@ -117,64 +117,61 @@ Anything you write in <code>index.md</code> will appear on the front-page of you
 This section is long and somewhat cumbersome. However, this is automation! In other words,
 we only have to do this once!</p>
 <ul>
-<li><p>On <a href="https://github.com">Github</a></p>
-<ol>
+<li>On <a href="https://github.com">Github</a><ol>
 <li>Go to your <a href="https://github.com/settings/profile">profile settings</a></li>
 <li>Navigate to &quot;Developer settings&quot; -&gt; &quot;Personal access tokens&quot; </li>
 <li>click &quot;Generate new access token&quot;. This will prompt for your password.</li>
 <li>Make sure to check &quot;repo&quot;-access, write a fitting note and click &quot;Generate token&quot;</li>
 <li>Keep the token until step 8. Never share it!</li>
-<li>head over to your repository (<a href="https://github.com/">https://github.com/</a><your-username>/<your-repository-name>)</li>
+<li>head over to the repository you created</li>
 <li>Navigate to &quot;Settings&quot; -&gt; &quot;Secrets&quot; and click &quot;Add a new secret&quot;</li>
 <li>Add a secret called <code>ACCESS_TOKEN</code>, with the key from step 4.</li>
 </ol>
 </li>
-<li><p>Locally, in your cloned repository</p>
-<ol>
-<li><p>create directory for Github Actions with <code>mkdir -p ./github/workflows</code>. </p>
-</li>
-<li><p>create a workflow-file for deploy with <code>touch ./github/workflows/deploy.yml</code></p>
-</li>
-<li><p>paste the following into <code>deploy.yml</code>: </p>
-<pre><code class="language-yml"> name: deploy
-
- on:
-     push:
-         branches: [writing]
- jobs:
-     deploy:
-         runs-on: ubuntu-latest
-         steps:
-         - uses: actions/checkout@master
-         - uses: denolib/setup-deno@master
-             with:
-             deno-version: 0.36
-         - name: Build
-             run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts build 
-         - name: Deploy
-             uses: JamesIves/github-pages-deploy-action@releases/v3
-             with:
-                 ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-                 BRANCH: master 
-                 FOLDER: . # The folder the action should deploy.</code></pre>
+<li>Locally, in your cloned repository<ol>
+<li>create directory for Github Actions with <code>mkdir -p ./github/workflows</code>. </li>
+<li>create a workflow-file for deploy with <code>touch ./github/workflows/deploy.yml</code></li>
+<li>paste the following into <code>deploy.yml</code>: <pre><code class="language-yml">name: deploy
+</code></pre>
 </li>
 </ol>
 </li>
 </ul>
-<h3 id="going-live-🗺-🌩">Going live 🗺 🌩</h3>
-<ol>
-<li>checkout to the branch for writing, <code>git checkout -b writing</code></li>
-<li>commit your changes, <code>git add . &amp;&amp; git commit -m &quot;initial blog setup&quot;</code></li>
-<li><code>git push</code></li>
-</ol>
-<p>Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
-Your next post is just an <code>.md</code>-file away! To publish it, just push it 
-onto the <code>writing</code>-branch, and your automation will do the rest 🍇 🍏</p>
-<p>(If you are unsure about the URL, have a look at the &quot;Github Pages&quot;-seciton of your Github-repository 😃)</p>
-<p>Check out <a href="https://github.com/olaven/markblog#documentation">Markblog&#39;s documentation</a> for more information about how to customize your blog.
-See <a href="https://olaven.org">my blog</a>(<a href="https://github.com/olaven/olaven.github.io">github repo</a>) for a live example.</p>
-<p>Thanks for reading! </p>
-</description></item><item><title>theme of 2020</title><link>https://olaven.org/out/reflections/theme_of_2020.html</link><guid>https://olaven.org/out/reflections/theme_of_2020.html</guid><description><h1 id="theme-of-2020---theme-of-creation">Theme of 2020 - Theme of creation.</h1>
+<p>on:
+    push:
+        branches: [writing]
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@master
+          - uses: denolib/setup-deno@master
+            with:
+              deno-version: 0.36
+          - name: Build
+            run: deno --allow-read --allow-write <a href="https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts">https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts</a> build 
+          - name: Deploy
+            uses: JamesIves/github-pages-deploy-action@releases/v3
+            with:
+                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                BRANCH: master 
+                FOLDER: . # The folder the action should deploy.</p>
+<pre><code>
+### Going live 🗺 🌩
+1. checkout to the branch for writing, `git checkout -b writing`
+2. commit your changes, `git add . &amp;&amp; git commit -m &quot;initial blog setup&quot;`
+3. `git push --set-upstream origin writing`
+
+Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
+Your next post is just an `.md`-file away! To publish it, just push it 
+onto the `writing`-branch, and your automation will do the rest 🍇 🍏
+
+(If you are unsure about the URL, have a look at the &quot;Github Pages&quot;-seciton of your Github-repository 😃)
+
+Check out [Markblog&#39;s documentation](https://github.com/olaven/markblog#documentation) for more information about how to customize your blog.
+See [my blog](https://olaven.org)([github repo](https://github.com/olaven/olaven.github.io)) for a live example.
+
+Thanks for reading! </code></pre></description></item><item><title>theme of 2020</title><link>https://olaven.org/out/reflections/theme_of_2020.html</link><guid>https://olaven.org/out/reflections/theme_of_2020.html</guid><description><h1 id="theme-of-2020---theme-of-creation">Theme of 2020 - Theme of creation.</h1>
 <p>I want to create a theme for myself. Some do this for a year. I am not sure if a year is the correct amount of time. 
 Years are so engrained in everything, and they are everywhere. I think coupling a theme with a year would create 
 unnecessary levels of stress when the year is coming to a close. 

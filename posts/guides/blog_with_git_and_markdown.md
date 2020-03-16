@@ -34,8 +34,8 @@ it is all relatively simple when it comes together 😅
 3. [install Markblog](https://github.com/olaven/markblog#installation)
 
 ### Git Setup 
-1. create a repository on Github 
-2. head to settings and make sure "Github pages" is enabled, and that source is set to "master branch"
+1. create a repository on Github (check "Initialize this repository with a README")
+2. Enable "Github Pages" in the repository settings by setting `master` as source. 
 3. navigate to some fitting folder in your terminal, e.g. `cd $HOME/Documents`
 4. clone your new repo with `git clone https://github.com/<your-username>/<your-repository-name>`
 
@@ -66,41 +66,41 @@ we only have to do this once!
   3. click "Generate new access token". This will prompt for your password.
   4. Make sure to check "repo"-access, write a fitting note and click "Generate token"
   5. Keep the token until step 8. Never share it!
-  6. head over to your repository (https://github.com/<your-username>/<your-repository-name>)
+  6. head over to the repository you created
   7. Navigate to "Settings" -> "Secrets" and click "Add a new secret"
   8. Add a secret called `ACCESS_TOKEN`, with the key from step 4.
 * Locally, in your cloned repository
   1. create directory for Github Actions with `mkdir -p ./github/workflows`. 
   2. create a workflow-file for deploy with `touch ./github/workflows/deploy.yml`
   3. paste the following into `deploy.yml`: 
-     ```yml
-      name: deploy
+```yml
+name: deploy
 
-      on:
-          push:
-              branches: [writing]
-      jobs:
-          deploy:
-              runs-on: ubuntu-latest
-              steps:
-              - uses: actions/checkout@master
-              - uses: denolib/setup-deno@master
-                  with:
-                  deno-version: 0.36
-              - name: Build
-                  run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts build 
-              - name: Deploy
-                  uses: JamesIves/github-pages-deploy-action@releases/v3
-                  with:
-                      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-                      BRANCH: master 
-                      FOLDER: . # The folder the action should deploy.
-     ```
+on:
+    push:
+        branches: [writing]
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@master
+          - uses: denolib/setup-deno@master
+            with:
+              deno-version: 0.36
+          - name: Build
+            run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts build 
+          - name: Deploy
+            uses: JamesIves/github-pages-deploy-action@releases/v3
+            with:
+                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                BRANCH: master 
+                FOLDER: . # The folder the action should deploy.
+```
 
 ### Going live 🗺 🌩
 1. checkout to the branch for writing, `git checkout -b writing`
 2. commit your changes, `git add . && git commit -m "initial blog setup"`
-3. `git push`
+3. `git push --set-upstream origin writing`
 
 Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
 Your next post is just an `.md`-file away! To publish it, just push it 
