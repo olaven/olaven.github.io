@@ -92,13 +92,13 @@ we only have to do this once!</p>
 <li>Locally, in your cloned repository<ol>
 <li>create directory for Github Actions with <code>mkdir -p ./github/workflows</code>. </li>
 <li>create a workflow-file for deploy with <code>touch ./github/workflows/deploy.yml</code></li>
-<li>paste the following into <code>deploy.yml</code>: <pre><code class="language-yml">name: deploy
-</code></pre>
-</li>
+<li>paste the following into <code>deploy.yml</code>: </li>
 </ol>
 </li>
 </ul>
-<p>on:
+<pre><code class="language-yml">name: deploy
+
+on:
     push:
         branches: [writing]
 jobs:
@@ -110,29 +110,27 @@ jobs:
             with:
               deno-version: 0.36
           - name: Build
-            run: deno --allow-read --allow-write <a href="https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts">https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts</a> build 
+            run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts build 
           - name: Deploy
             uses: JamesIves/github-pages-deploy-action@releases/v3
             with:
                 ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
                 BRANCH: master 
-                FOLDER: . # The folder the action should deploy.</p>
-<pre><code>
-### Going live 🗺 🌩
-1. checkout to the branch for writing, `git checkout -b writing`
-2. commit your changes, `git add . &amp;&amp; git commit -m &quot;initial blog setup&quot;`
-3. `git push --set-upstream origin writing`
+                FOLDER: . # The folder the action should deploy.</code></pre>
+<h3 id="going-live-🗺-🌩">Going live 🗺 🌩</h3>
+<ol>
+<li>checkout to the branch for writing, <code>git checkout -b writing</code></li>
+<li>commit your changes, <code>git add . &amp;&amp; git commit -m &quot;initial blog setup&quot;</code></li>
+<li><code>git push --set-upstream origin writing</code></li>
+</ol>
+<p>Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
+Your next post is just an <code>.md</code>-file away! To publish it, just push it 
+onto the <code>writing</code>-branch, and your automation will do the rest 🍇 🍏</p>
+<p>(If you are unsure about the URL, have a look at the &quot;Github Pages&quot;-seciton of your Github-repository 😃)</p>
+<p>Check out <a href="https://github.com/olaven/markblog#documentation">Markblog&#39;s documentation</a> for more information about how to customize your blog.
+See <a href="https://olaven.org">my blog</a>(<a href="https://github.com/olaven/olaven.github.io">github repo</a>) for a live example.</p>
+<p>Thanks for reading! </p>
 
-Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
-Your next post is just an `.md`-file away! To publish it, just push it 
-onto the `writing`-branch, and your automation will do the rest 🍇 🍏
-
-(If you are unsure about the URL, have a look at the &quot;Github Pages&quot;-seciton of your Github-repository 😃)
-
-Check out [Markblog&#39;s documentation](https://github.com/olaven/markblog#documentation) for more information about how to customize your blog.
-See [my blog](https://olaven.org)([github repo](https://github.com/olaven/olaven.github.io)) for a live example.
-
-Thanks for reading! </code></pre>
             </body>
         </html>
     
