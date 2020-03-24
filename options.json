@@ -1,5 +1,6 @@
 {
 	"blog_title": "Olaven's website",
+	"favicon": "./favicon.ico",
 	"rss_options": {	
 		"title": "Olaven's blog", 
 		"description": "General thoughts about software. And other stuff.",
