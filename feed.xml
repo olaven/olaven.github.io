@@ -1,4 +1,4 @@
-<rss version="2.0"><channel><title>Olaven's blog</title><link>https://olaven.org</link><description>General thoughts about software. And other stuff.</description><item><title>blog with_git_and_markdown</title><link>https://olaven.org/out/guides/blog_with_git_and_markdown.html</link><guid>https://olaven.org/out/guides/blog_with_git_and_markdown.html</guid><description><h1 id="blogging-with-git-and-markdown">Blogging with Git and Markdown</h1>
+<rss version="2.0"><channel><title>Olaven's blog</title><link>https://olaven.org</link><description>General thoughts about software. And other stuff.</description><item><title>blog with git and markdown</title><link>https://olaven.org/out/guides/blog_with_git_and_markdown.html</link><guid>https://olaven.org/out/guides/blog_with_git_and_markdown.html</guid><description><h1 id="blogging-with-git-and-markdown">Blogging with Git and Markdown</h1>
 <p><em>Disclaimer</em>: parts of this guide covers a piece of software called Markblog, of which I am the author.</p>
 <h2 id="who-is-this-for">Who is this for?</h2>
 <p>This guide assumes that you are: </p>
@@ -112,7 +112,7 @@ onto the <code>writing</code>-branch, and your automation will do the rest 🍇 
 <p>Check out <a href="https://github.com/olaven/markblog#documentation">Markblog&#39;s documentation</a> for more information about how to customize your blog.
 See <a href="https://olaven.org">my blog</a>(<a href="https://github.com/olaven/olaven.github.io">github repo</a>) for a live example.</p>
 <p>Thanks for reading! </p>
-</description></item><item><title>theme of_2020</title><link>https://olaven.org/out/reflections/theme_of_2020.html</link><guid>https://olaven.org/out/reflections/theme_of_2020.html</guid><description><h1 id="theme-of-2020---theme-of-creation">Theme of 2020 - Theme of creation.</h1>
+</description></item><item><title>theme of 2020</title><link>https://olaven.org/out/reflections/theme_of_2020.html</link><guid>https://olaven.org/out/reflections/theme_of_2020.html</guid><description><h1 id="theme-of-2020---theme-of-creation">Theme of 2020 - Theme of creation.</h1>
 <p>I want to create a theme for myself. Some do this for a year. I am not sure if a year is the correct amount of time. 
 Years are so engrained in everything, and they are everywhere. I think coupling a theme with a year would create 
 unnecessary levels of stress when the year is coming to a close. 
@@ -185,7 +185,7 @@ And seek opportunities for creation. </p>
 <li>Creations should be valued, regardless of career and academic value </li>
 </ul>
 <p>Reaching new goals is the purpose, and this is an attempt at an approach.   </p>
-</description></item><item><title>on original_setup</title><link>https://olaven.org/out/about_this_site/on_original_setup.html</link><guid>https://olaven.org/out/about_this_site/on_original_setup.html</guid><description><h1 id="the-site">The site</h1>
+</description></item><item><title>on original setup</title><link>https://olaven.org/out/about_this_site/on_original_setup.html</link><guid>https://olaven.org/out/about_this_site/on_original_setup.html</guid><description><h1 id="the-site">The site</h1>
 <p><em>NOTE</em>: This post is out of date, as the site is <a href="./how_this_site_works.md">updated</a>.
 <em>NOTE</em>: This post was renamed from &quot;site&quot; to &quot;initial site&quot;</p>
 <p>This is my website. I have iterated on it many times. 
@@ -215,7 +215,7 @@ The process has been surprisingly straightforward. Writing in
 markdown and automatically receving quite nice webpages on the other 
 end is a delight. The app is deployed with <a href="zeit.co">now</a>. I had 
 some domain-related issues, but that was mainly confusion on my part. </p>
-</description></item><item><title>how  this_site_works</title><link>https://olaven.org/out/about_this_site/how _this_site_works.html</link><guid>https://olaven.org/out/about_this_site/how _this_site_works.html</guid><description><h1 id="blogging-with-markblog">Blogging with <a href="www.github.com/olaven/markblog">Markblog</a></h1>
+</description></item><item><title>how  this site works</title><link>https://olaven.org/out/about_this_site/how _this_site_works.html</link><guid>https://olaven.org/out/about_this_site/how _this_site_works.html</guid><description><h1 id="blogging-with-markblog">Blogging with <a href="www.github.com/olaven/markblog">Markblog</a></h1>
 <p>Or rather: how I got rid of bloated setup and just wrote markdown. </p>
 <p>When I first built this site almost a year ago, <a href="olaven.org/out/site.html">I was pretty 
 happy</a> with my setup. It was built with 
