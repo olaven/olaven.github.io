@@ -12,7 +12,7 @@ jobs:
             with:
               deno-version: 1.0.0
           - name: Build
-            run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/mod.ts build 
+            run: deno run --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/mod.ts build 
           - name: Deploy
             uses: JamesIves/github-pages-deploy-action@releases/v3
             with:
