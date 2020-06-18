@@ -1,10 +1,10 @@
 # Olav Sundfør - _@olaven_
-Most days I am studying programming at [Kristiania University College](https://kristiania.no). 
+Currently working on frictionless feedback  [@Krets](https://krets.app)
 
 Other days, I spend time: 
 * doing freelance-work 
-* with the family dog
-* learning new stuff for hobby-projects
+* with my dog
+* learning new stuff
 
 ## Contact me
 * [olav@sundfoer.com](mailto:olav@sundfoer.com)
