@@ -1,5 +1,5 @@
 # Olav Sundfør - _@olaven_
-Currently working on frictionless feedback  [@Krets](https://krets.app)
+I spend most days working on frictionless feedback [@Krets](https://krets.app)
 
 Other days, I spend time: 
 * doing freelance-work 
