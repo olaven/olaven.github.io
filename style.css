@@ -1,4 +1,4 @@
-body {
+/*body {
     display: block;
     margin: 0 auto;
     font-size: 24px;
@@ -16,4 +16,34 @@ body {
 }
 a {
     color: #2a2a2a;
+}
+*/
+
+:root {
+    --dark: #1F2421;
+    --white: #F4F6F5;
+    --green: #216869;
+}
+body {
+    background-color: var(--white);
+    color: var(--dark);
+
+    width: 80vw;
+    margin: 0 auto;
+
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+h1, h2, h3, h4 {
+    color: var(--green);
+}
+
+@media screen and (max-width: 920px) {
+    body {
+        width: 100vw;
+        font-size: 1.4em;
+    }
 }
