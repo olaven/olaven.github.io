@@ -6,6 +6,8 @@ Other days, I spend time:
 * with my dog
 * learning new stuff
 
+<iframe src="https://github.com/sponsors/olaven/card" title="Sponsor my work" height="225" width="600" style="border: 0;"></iframe> 
+
 ## Contact me
 * [olav@sundfoer.com](mailto:olav@sundfoer.com)
 * [Github](https://github.com/olaven)
