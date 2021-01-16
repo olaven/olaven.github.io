@@ -1,2 +1,5 @@
 .DS_Store
 .vscode
+out 
+index.html
+feed.xml
