@@ -2,5 +2,5 @@
 My personal homepage 
 
 Writing occurs on `writing`-branch. 
-pushing to `publish`, will trigger a deploy.  
-`master` is the deployed, build code. 
+pushing to `master`, will trigger a deploy.  
+The deployed / static files are located on the `publish`-branch. 
