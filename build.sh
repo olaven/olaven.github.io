@@ -1,1 +1,0 @@
-deno run --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/mod.ts build
