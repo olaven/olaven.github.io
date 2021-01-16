@@ -1,13 +1,11 @@
-# Olav Sundfør - _@olaven_
-I spend most days working on frictionless feedback [@Krets](https://krets.app)
+# Olav Sundfør - @olaven
+I'm currently focusing on [Paperpod.fm](https://paperpod.mf). 
 
-Other days, I spend time: 
+Other times, I'm: 
+* working on frictionless feedback @[krets](https://krets.app)
 * doing freelance-work 
 * with my dog
 * learning new stuff
-
-<iframe src="https://github.com/sponsors/olaven/card" title="Sponsor my work" height="225" width="600" style="border: 0;"></iframe> 
-
 ## Contact me
 * [olav@sundfoer.com](mailto:olav@sundfoer.com)
 * [Github](https://github.com/olaven)

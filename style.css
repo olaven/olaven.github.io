@@ -1,49 +1,26 @@
-/*body {
-    display: block;
-    margin: 0 auto;
-    font-size: 24px;
-    line-height: 1.4;
-    width: 40vw;
-    position: relative;
-    color: #2a2a2a;
-    font-family: 'Courier New', Courier, monospace
-}
-@media screen and (max-width: 920px) {
-    body {
-        width: 90vw;
-        font-size: 16px;
-    }
-}
-a {
-    color: #2a2a2a;
-}
-*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
 
 :root {
-    --dark: #1F2421;
-    --white: #F4F6F5;
-    --green: #216869;
+  --dark: black;
+  --white: white;
 }
+
 body {
-    background-color: var(--white);
-    color: var(--dark);
-
-    width: 80vw;
-    margin: 0 auto;
-
-    font-size: 2em;
-    font-weight: lighter;
-    font-family: Palatino Linotype", "Book Antiqua", Palatino, serif;
-
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.4;
+  width: 80vw;
+  position: relative;
+  color: var(--dark);
+  font-family: "Rubik", sans-serif;
 }
-
-h1, h2, h3, h4 {
-    color: var(--green);
-}
-
 @media screen and (max-width: 920px) {
-    body {
-        width: 100vw;
-        font-size: 1.4em;
-    }
+  body {
+    width: 90vw;
+    font-size: 16px;
+  }
+}
+a {
+  color: #2a2a2a;
 }
