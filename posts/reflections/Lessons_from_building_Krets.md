@@ -58,8 +58,6 @@ than the times I didn't.
 
 
 * A cool product is not enough 
-* Being alone is hard, having friends is amazing 
-* Most people have lots of other stuff on their mind 
 * There's two ways to have progress 
   * Doing a lot of what you're good at 
   * Getting out of your comfort zone and doing new things
