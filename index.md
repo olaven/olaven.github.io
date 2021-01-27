@@ -1,5 +1,5 @@
 # Olav Sundfør - @olaven
-I'm currently focusing on [Paperpod.fm](https://paperpod.mf). 
+I'm currently focusing on [Paperpod.fm](https://paperpod.fm). 
 
 Other times, I'm: 
 * working on frictionless feedback @[krets](https://krets.app)
