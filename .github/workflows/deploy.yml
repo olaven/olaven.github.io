@@ -13,12 +13,12 @@ jobs:
           deno-version: 1.10.2
       - name: Build
         run: deno run --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/mod.ts build
-      # - name: merge master -> publish
-      #   uses: devmasx/merge-branch@v1.3.1
-      #   with:
-      #     type: now
-      #     target_branch: publish
-      #     github_token: ${{ github.token }}
+      - name: merge master -> publish
+        uses: devmasx/merge-branch@v1.3.1
+        with:
+          type: now
+          target_branch: publish
+          github_token: ${{ github.token }}
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
