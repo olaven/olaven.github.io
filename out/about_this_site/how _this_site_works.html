@@ -1,0 +1,52 @@
+
+        <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Olaven's website</title>
+                
+                <!-- Favicon -->
+                <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
+
+                <!--Code highlighting-->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+                
+                <!--Default stylesheet:-->
+                <link rel="stylesheet" type="text/css" href="../../style.css">
+            </head>
+            <body>
+                <h1 id="blogging-with-markblog">Blogging with <a href="www.github.com/olaven/markblog">Markblog</a></h1>
+<p>Or rather: how I got rid of bloated setup and just wrote markdown. </p>
+<p>When I first built this site almost a year ago, <a href="olaven.org/out/site.html">I was pretty 
+happy</a> with my setup. It was built with 
+<a href="https://nextjs.org/">NextJS</a>, hosted with <a href="https://zeit.co/home">Zeit now</a> and 
+the pages were written in <a href="https://mdxjs.com/">MDX</a> and styled with <a href="https://sass-lang.com/">Sass</a>.
+A pretty huge pipeline is needed in order to get this to stick together. </p>
+<p>However, the site itself was literally just as basic as the site you are looking 
+at right now (as of march, 2020). Why is such a complicated setup needed? Of 
+course, it is not. But I knew NextJS pretty well, had gotten familiar with Sass and 
+I really wanted to write using <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. 
+What I wanted was achieved: a homepage I could update by writing markdown. However, I 
+could not quite get past the fact that there was so much setup needed for such a basic thing.</p>
+<p>Markblog is my attempt at a solution. It is a small piece of software written in <a href="deno.land">Deno</a>. 
+It simply converts markdown to HTML, and packages it in a nice, tiny, non-bloated blog-like page. 
+As of writing, the default file structure is as follows:  </p>
+<ul>
+<li><code>index.md</code></li>
+<li><code>style.css</code></li>
+<li><code>posts/</code></li>
+</ul>
+<p>(create this automatically with Markblog&#39;s <code>init</code>-command)</p>
+<p>The index page shows the markdown-text in addition to links to posts, in addition to the content 
+written in <code>index.md</code>. Then, Markblog&#39;s <code>build</code>-command triggers conversion to html. In my setup, 
+this runs as part of a simple CI-pipeline, meaning that I never touch anything other than Markdown-files. </p>
+<p>If this interests you, please head over to <a href="www.github.com/olaven/markblog">the project page</a> 
+to see more details!</p>
+
+            </body>
+        </html>
+    
