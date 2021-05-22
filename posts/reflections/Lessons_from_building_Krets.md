@@ -1,6 +1,5 @@
 # Lessons from building Krets
 ## Trying to create a profitable project alone
-
 I've spent most of my time between summer and christmas 2020 working on [Krets](https://krets.app). The project was 
 my first real attempt at creating a commercially viable service on my own. While the project isn't dead, I've now started focusing on other projects for a while. 
 
