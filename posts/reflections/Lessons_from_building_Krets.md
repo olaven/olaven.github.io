@@ -16,7 +16,7 @@ the rewards for them materialize themselves quickly. This means: minimal setup a
 to their existing flow is essential. 
 
 I've experienced potential customers don't even want to spend the time to create an account, but would 
-rather have me do it. These were otherwize excited customers who showed initiative. This 
+rather have me do it. These were otherwise excited customers who showed initiative. 
 This happened on several occations. 
 
 So the lesson is: People are not going to spend time on you or your project. 
@@ -24,7 +24,7 @@ Even if they see value in what you're offering, they don't care until the value 
 They don't find the project in itself interesting, like you do. 
 
 This was (still is, if I'm being honest) hard to internalize because I am 
-the oposite. I am curious to learn about sotware and play around with every setting I can find. 
+the oposite. I am curious to learn about software and play around with every user-setting I can find. 
 I guess that's why I ended up writing software.
 
 Also, if something else has to be handled (like idk, [a pandemic](https://en.wikipedia.org/wiki/COVID-19_pandemic)) 
