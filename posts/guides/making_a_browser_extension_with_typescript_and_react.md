@@ -38,14 +38,11 @@ mkdir my_extension_project;
 cd my_extension_project; 
 yarn init -y; 
 yarn add react react-dom 
-yarn add --dev\
-    typescript\
-    parcel\
-    @types/react\
-    @types/react-dom\ 
-    @types/chrome\ 
-echo "Extension setup done 🧑‍🚀"
+yarn add --dev typescript parcel @types/react @types/react-dom  @types/chrome;
+echo "Extension setup done 🧑‍🚀";
 ```
+
+This script addds `"main": "index.js"` to our file. Remove this manually.
 
 ## Simple Workflow 
 This is the workflow we'll end up with: 
@@ -55,7 +52,7 @@ We'll add a `yarn build`  command as well, for building our extension for distri
 With parcel, these are very simple. Just add the following JSON configuration to the `package.json` we just created.
 ```json 
 /*..*/
-"scripts" {
+"scripts": {
     "dev": "parcel watch src/index.html --public-url=./",
     "build": "parcel build src/index.html --public-url=./"
 }
@@ -70,9 +67,14 @@ These commands are basically variants on "let parcel look at this file and do al
 ## Popups and background scripts 
 This is the time to make ourselves familiar with some extension consepts. I'll keep it short. 
 ### Popups are UI 
-Extension popups define the GUI of our appliaction
+Extension popups define the GUI of our application. That is, 
+the visual elements that pop up when you click on the extension. 
+If you use a password manager, the popup would be the window where you 
+enter your master password and search for the password you want to use. 
 ### Background scripts are useful for interacting with the browser 
-
+Background scripts are programs that run independently of the UI or other state in the browser. 
+They are useful for handling long term state, e.g. by interacting with the [storage API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage). They can also be used to run code on events in the browser. Such 
+events can be creation of new windows or navigation between tabs. 
 
 ### Telling the browser about our extension
 The details of the extension is defined in a `manifest.json` file at the root of our project folder. 
@@ -80,7 +82,8 @@ The details of the extension is defined in a `manifest.json` file at the root of
 You can [check out MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#manifest.json) for further details. 
 
 For now, let's add a `manifest.json` looking like this: 
-```{
+```json 
+{
   "name": "My First Extension",
   "version": "0.0.1",
   "description": "My first browser extension!",
