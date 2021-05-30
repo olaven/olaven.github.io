@@ -103,7 +103,7 @@ This allows us to see what we're making.
 * If you're using Firefox
   1. navigate to `about:debugging` in your browser
   2. click _This Firefox_
-  3. click _Add temporary extension_
+  3. click _Load temporary Add-on_
   4. select the `manifest.json` file in this folder 
 * If you're using Chrome
   1. navigate to `chrome://extensions`
@@ -179,20 +179,68 @@ going on. You can always refer to [the full solution](https://github.com/olaven/
 While you're at it, try to make a change in your component. Notice how the change is picked up in the browser at once. Parcel has rebuilt our source files automatically :-)
 
 ### Adding a background script 
-* tell browser about it through `manifest.json`
-* create the file -> listen for tab creation 
-* add to parcel command 
-* how to see the logs 
+Now that we have our popup working, lets try to add a background script as well. 
+[As mentioned](#background-scripts-are-useful-for-interacting-with-the-browser), these can (amongst other things) be used to listen for browser events. To demonstrate this, we'll create a script that logs the id of a tab whenever we create one!
 
-## See the results! 
+First, create the file at `src/background/script.ts` with the following code: 
+```ts 
+
+//Every time a tab is created...
+chrome.tabs.onCreated.addListener((tab) => {
+    //run this code 
+    console.log(`You just created a tab with id: ${tab.id}`)
+}); 
+```
+
+Like with popups, we have to tell the browser about this through `manifest.json`: 
+```json
+/*..*/
+"background": {
+  "scripts": [
+    "dist/background/script.js"
+  ]
+}
+/*..*/
+```
+
+Again, we're referencing the `dist` folder where Parcel leaves our files. 
+You might recall that background scripts [run separately](#background-scripts-are-useful-for-interacting-with-the-browser). 
+In other words, our popup knows nothing of this background script. Hence, we have to explicitly tell Parcel to include this file. 
+Do this by editing the `"dev"` and `"build"` commands in `package.json` like this: 
+```json
+/*..*/
+"scripts": {
+    "dev": "parcel watch src/index.html src/background/script.ts --public-url=./",
+    "build": "parcel build src/index.html src/background/script.ts --public-url=./"
+}
+/*..*/
+```
+
+Since we've modified our `dev`-script, we need to stop and restart it in the terminal window.
+
+We're almost ready to see our background script in action! 
+We just need to access the console where the `console.log`'s are written. 
+* If you're using Firefox
+  1. navigate to "about:config" and add `extensions.sdk.console.logLevel` with a string value of `"all"`
+  2. restart Firefox
+  3. Open to Tools -> Web developer -> Browser console (alternatively use cmd+shift+j)
+  4. Click the settings icon and enable Show Content Messages
+* If you're using Chrome 
+  * navigate to "chrome://extensions"
+  * click on "background page" on your extension (you might need to hit the refresh button for this to show up)  
+
+
+You should now see the console for your background script! Open your browser and console side by side and create a few tabs. 
+The handler is running and `You just created a tab with id: N` gets logged ✨
 
 ## See browser vendors for publishing 
 I'm not going to cover how to publish your extensions here. 
-This blog post covers a lot already. Browsers will have guides for this. 
+This blog post covers a lot already. Browsers themselves have guides for this.
 [Here's one the one for Chrome](https://developer.chrome.com/docs/webstore/publish/) and [here's the same for Firefox](https://extensionworkshop.com/documentation/publish/submitting-an-add-on/). 
 
 
 ## Closing 
 Thank you for reading. It really means a lot to me.
+Hopefully this gave you enough knowledge to start experimenting with extensions for yourself. 
 If this helped you out, please consider supporting my work through [Github Sponsors](https://github.com/sponsors/olaven).  
 If you have any questions, feel free to [send me an email](mailto:olav@sundfoer.com) :-) 
