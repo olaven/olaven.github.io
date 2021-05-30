@@ -1,6 +1,8 @@
 # How I'm building an Extension with Typescript and React 
 My goal with this guide is to show how I ended up building a chrome extension with [Typescript](https://www.typescriptlang.org/) and [react](https://reactjs.org/). It won't necessarily fit your use case. But I certainly hope you can draw inspiration from it :-) 
 
+To follow this post, you should have [a basic understanding of React](https://reactjs.org/docs/getting-started.html) as well a little experience with [NodeJS](nodejs.org). 
+
 I've divided this post into two parts: 
 1. [Why I chose the tech stack that I did](#going-with-a-comfortable-tech-stack)
 2. [Showing you how to setup the project](#lets-actually-make-something)
@@ -65,7 +67,7 @@ This will be the entry point of our extension (more on this [in in a second](#ad
 These commands are basically variants on "let parcel look at this file and do all the stuff Babel and Webpack would usually do".
 
 ## Popups and background scripts 
-This is the time to make ourselves familiar with some extension consepts. I'll keep it short. 
+This is the time to make ourselves familiar with some extension concepts. I'll keep it short. 
 ### Popups are UI 
 Extension popups define the GUI of our application. That is, 
 the visual elements that pop up when you click on the extension. 
@@ -90,11 +92,23 @@ For now, let's add a `manifest.json` looking like this:
   "manifest_version": 2,
 }
 ```
-### Add your first popup
-
-### Adding a background script 
 
 ## Install your extension in chrome or firefox 
+* before we start making stuff, we should add it to our browsers
+* link to Firefox 
+* link to Chrome
+### Add your first popup
+* tell browser about it with `manifest.json`
+* create index 
+* create index.tsx 
+* create the Counter component
+* match these with the parcel commands 
+
+### Adding a background script 
+* tell browser about it through `manifest.json`
+* create the file -> listen for tab creation 
+* add to parcel command 
+* how to see the logs 
 
 ## See the results! 
 
