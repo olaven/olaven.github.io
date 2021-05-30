@@ -31,6 +31,9 @@ I landed on [Parcel](parceljs.org) which promises to need zero configuration. An
 
 ## Let's actually make something!
 Did you just skip to this section? That's fine. I'd likely have done the same. 
+The contents of this section should be enough to create your extension. However, the full source 
+code is available [on Github](https://github.com/olaven/browser-extension-with-tsx).  
+
 ## Initialize and add dependencies 
 We first need to initialize a new project and add the dependencies we need. 
 I've written a short script with the commands below. 
@@ -44,7 +47,7 @@ yarn add --dev typescript parcel @types/react @types/react-dom  @types/chrome;
 echo "Extension setup done 🧑‍🚀";
 ```
 
-This script addds `"main": "index.js"` to our file. Remove this manually.
+This script adds `"main": "index.js"` to `package.json`. Remove this manually.
 
 ## Simple Workflow 
 This is the workflow we'll end up with: 
@@ -94,15 +97,86 @@ For now, let's add a `manifest.json` looking like this:
 ```
 
 ## Install your extension in chrome or firefox 
-* before we start making stuff, we should add it to our browsers
-* link to Firefox 
-* link to Chrome
+Before we start making stuff, we want to install our extension in the browser. 
+This allows us to see what we're making.
+
+* If you're using Firefox
+  1. navigate to `about:debugging` in your browser
+  2. click _This Firefox_
+  3. click _Add temporary extension_
+  4. select the `manifest.json` file in this folder 
+* If you're using Chrome
+  1. navigate to `chrome://extensions`
+  2. click _Load Unpacked_
+  3. select the your project directory
+  
 ### Add your first popup
-* tell browser about it with `manifest.json`
-* create index 
-* create index.tsx 
-* create the Counter component
-* match these with the parcel commands 
+Most of the following should be familiar if you've used React before. If you're confused, refer to the code comments :-)  
+
+The entry point of our application will be `index.html` - [classic](https://www.youtube.com/watch?v=x3AYYRqRMC4). 
+We'll add it at `src/index.html` as this matches with the [build script](#simple-workflow) we added in `package.json` earlier.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- The root node of our component tree -->
+    <div id="root"></div>
+</body>
+<!-- The entry point for our React components -->
+<script src="./components/index.tsx"></script>
+</html>
+```
+
+Similarly, let's add a `./src/components.index.tsx`. This file will load our react component. 
+```tsx
+
+import * as React from "react"; 
+import * as ReactDOM from "react-dom"; 
+
+//This is our counter component 
+const Counter = () => {
+    const [ count, setCount ] = React.useState(0);
+    return <>
+        <h2>{count}</h2>
+        <button onClick={() => {setCount(count + 1)}}>increment</button>
+        <button onClick={() => {setCount(count - 1)}}>decrement</button>
+    </>
+}
+
+/* We're now telling React to render this component on the webpage, inside 
+the first element it can find with and id of "root". Notice how this matches 
+the `div`-tag in our `index.html` :-) */
+ReactDOM.render(<Counter />, document.getElementById("root"));
+```
+
+Lastly, the browser needs to know about our popup to show it. 
+As [just discussed](#telling-the-browser-about-our-extension), this is done through our `manifest.json` file. 
+Simply add the following to it: 
+```json
+/*...*/
+"browser_action": {
+  "default_popup": "dist/index.html"
+}
+/*...*/
+```
+
+Notice how we're referencing `dist/index.html` and not `src/index.html`. This is because 
+parcel creates and leaves our files in the `dist`-directory when it is done transforming our Typescript and React code to 
+plain `.js`-files :-) 
+
+
+### Did it work? 
+It's time to see our beautiful creation!
+Open a terminal and run `yarn dev`. You should see a message like `✨ Built in 58ms`. 
+
+Now open your browser, and click on your extension. There it is! Or should be.
+If something went wrong, read the error message carefully and try to figure out what's 
+going on. You can always refer to [the full solution](https://github.com/olaven/browser-extension-with-tsx) if you're stuck.
+
+While you're at it, try to make a change in your component. Notice how the change is picked up in the browser at once. Parcel has rebuilt our source files automatically :-)
 
 ### Adding a background script 
 * tell browser about it through `manifest.json`
