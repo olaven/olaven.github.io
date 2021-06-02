@@ -112,6 +112,209 @@ onto the <code>writing</code>-branch, and your automation will do the rest 🍇 
 <p>Check out <a href="https://github.com/olaven/markblog#documentation">Markblog&#39;s documentation</a> for more information about how to customize your blog.
 See <a href="https://olaven.org">my blog</a>(<a href="https://github.com/olaven/olaven.github.io">github repo</a>) for a live example.</p>
 <p>Thanks for reading! </p>
+</description></item><item><title>making a browser extension with typescript and react</title><link>https://olaven.org/out/guides/making_a_browser_extension_with_typescript_and_react.html</link><guid>https://olaven.org/out/guides/making_a_browser_extension_with_typescript_and_react.html</guid><description><h1 id="how-im-building-an-extension-with-typescript-and-react">How I&#39;m building an Extension with Typescript and React</h1>
+<p>My goal with this guide is to show how I ended up building a chrome extension with <a href="https://www.typescriptlang.org/">Typescript</a> and <a href="https://reactjs.org/">react</a>. It won&#39;t necessarily fit your use case. But I certainly hope you can draw inspiration from it :-) </p>
+<p>To follow this post, you should have <a href="https://reactjs.org/docs/getting-started.html">a basic understanding of React</a> as well a little experience with <a href="nodejs.org">NodeJS</a>. </p>
+<p>I&#39;ve divided this post into two parts: </p>
+<ol>
+<li><a href="#going-with-a-comfortable-tech-stack">Why I chose the tech stack that I did</a></li>
+<li><a href="#lets-actually-make-something">Showing you how to setup the project</a></li>
+</ol>
+<h2 id="going-with-a-comfortable-tech-stack">Going with a comfortable tech stack</h2>
+<h3 id="i-want-the-type-safety-typescript-can-give-me">I want the type-safety typescript can give me</h3>
+<p>My experience is that the benefits of Typescript (or other statically typed languages) outweigh the downsides. 
+I especially like how it makes refactoring much easier. 
+Typescript screams at you when things are changing. Javascript silently fails. 
+The former allows me to constantly search for better ways of expressing the program I&#39;m writing without 
+being afraid (too afraid) of breaking something down the line. </p>
+<h3 id="react-is-familiar">React is familiar</h3>
+<p>Although I prefer to work on backend code, I happen to know React quite well. 
+I decided to learn it sometime back in 2017, and stuck with it. When <a href="https://reactjs.org/docs/hooks-intro.html">hooks</a> were released, I transitioned into writing functional react components and I have yet to look back. I have no good explanation for why I like this. This way of writing UI and handling state just happens to work well with the way I think. 
+Naturally, React was my first choice for writing a browser extension.</p>
+<h3 id="lets-try-to-avoid-bloated-configuration-files">Let&#39;s try to avoid bloated configuration files</h3>
+<p>Configuration files very quickly become a mess. I find this to be escpecially true in the JS ecosystem. Before knowing it, you end up with a <code>.babelrc</code>, <code>webpack.config.js</code>, <code>package.json</code>, <code>&lt;INSERT_TEST_FRAMEWORK&gt;.config.ts</code>, <code>.eslintrc</code> and so on. </p>
+<p>This quickly becomes hard to maintain. Perhaps it shouldn&#39;t be this way, but I mostly find configuration files to be instances of &quot;I have no idea why this works, let&#39;s not touch it&quot;. 
+It&#39;s hard to debug and easy to make mistakes. Bad combination. 
+(<a href="https://preview.redd.it/a0hf4zzwv4a11.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0dad1c1d40783ba976a6d39f994fe423eb305dc5">relevant comic</a>) </p>
+<p>I landed on <a href="parceljs.org">Parcel</a> which promises to need zero configuration. And I&#39;ve found this to be largely true. This <a href="https://imgs.xkcd.com/comics/will_it_work.png">might bite me some day</a>, but for now I&#39;m happy :-) </p>
+<h2 id="lets-actually-make-something">Let&#39;s actually make something!</h2>
+<p>Did you just skip to this section? That&#39;s fine. I&#39;d likely have done the same. 
+The contents of this section should be enough to create your extension. However, the full source 
+code is available <a href="https://github.com/olaven/browser-extension-with-tsx">on Github</a>.  </p>
+<h2 id="initialize-and-add-dependencies">Initialize and add dependencies</h2>
+<p>We first need to initialize a new project and add the dependencies we need. 
+I&#39;ve written a short script with the commands below. 
+It boils down to: initialize a project, and add parcel and typescript. </p>
+<pre><code class="language-sh">mkdir my_extension_project;
+cd my_extension_project; 
+yarn init -y; 
+yarn add react react-dom 
+yarn add --dev typescript parcel @types/react @types/react-dom  @types/chrome;
+echo &quot;Extension setup done 🧑‍🚀&quot;;</code></pre>
+<p>This script adds <code>&quot;main&quot;: &quot;index.js&quot;</code> to <code>package.json</code>. Remove this manually.</p>
+<h2 id="simple-workflow">Simple Workflow</h2>
+<p>This is the workflow we&#39;ll end up with: 
+We want a <code>yarn dev</code> command, automatically rebuilding our source code when developing. 
+We&#39;ll add a <code>yarn build</code>  command as well, for building our extension for distribution :) </p>
+<p>With parcel, these are very simple. Just add the following JSON configuration to the <code>package.json</code> we just created.</p>
+<pre><code class="language-json">/*..*/
+&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;parcel watch src/index.html --public-url=./&quot;,
+    &quot;build&quot;: &quot;parcel build src/index.html --public-url=./&quot;
+}
+/*..*/</code></pre>
+<p>You&#39;ll notice that we&#39;re referencing an <code>index.html</code> file in these scripts. 
+This will be the entry point of our extension (more on this <a href="#add-your-first-popup">in in a second</a>).</p>
+<p>These commands are basically variants on &quot;let parcel look at this file and do all the stuff Babel and Webpack would usually do&quot;.</p>
+<h2 id="popups-and-background-scripts">Popups and background scripts</h2>
+<p>This is the time to make ourselves familiar with some extension concepts. I&#39;ll keep it short. </p>
+<h3 id="popups-are-ui">Popups are UI</h3>
+<p>Extension popups define the GUI of our application. That is, 
+the visual elements that pop up when you click on the extension. 
+If you use a password manager, the popup would be the window where you 
+enter your master password and search for the password you want to use. </p>
+<h3 id="background-scripts-are-useful-for-interacting-with-the-browser">Background scripts are useful for interacting with the browser</h3>
+<p>Background scripts are programs that run independently of the UI or other state in the browser. 
+They are useful for handling long term state, e.g. by interacting with the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage API</a>. They can also be used to run code on events in the browser. Such 
+events can be creation of new windows or navigation between tabs. </p>
+<h3 id="telling-the-browser-about-our-extension">Telling the browser about our extension</h3>
+<p>The details of the extension is defined in a <code>manifest.json</code> file at the root of our project folder. 
+<code>manifest.json</code> tells the browser what our extension should have permission to do and where it&#39;s source files are.
+You can <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#manifest.json">check out MDN</a> for further details. </p>
+<p>For now, let&#39;s add a <code>manifest.json</code> looking like this: </p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;My First Extension&quot;,
+  &quot;version&quot;: &quot;0.0.1&quot;,
+  &quot;description&quot;: &quot;My first browser extension!&quot;,
+  &quot;manifest_version&quot;: 2
+}</code></pre>
+<h2 id="install-your-extension-in-chrome-or-firefox">Install your extension in chrome or firefox</h2>
+<p>Before we start making stuff, we want to install our extension in the browser. 
+This allows us to see what we&#39;re making.</p>
+<ul>
+<li>If you&#39;re using Firefox<ol>
+<li>navigate to <code>about:debugging</code> in your browser</li>
+<li>click <em>This Firefox</em></li>
+<li>click <em>Load temporary Add-on</em></li>
+<li>select the <code>manifest.json</code> file in this folder </li>
+</ol>
+</li>
+<li>If you&#39;re using Chrome<ol>
+<li>navigate to <code>chrome://extensions</code></li>
+<li>enable developer mode in the upper left corner </li>
+<li>click <em>Load Unpacked</em> </li>
+<li>select the your project directory</li>
+</ol>
+</li>
+</ul>
+<h3 id="add-your-first-popup">Add your first popup</h3>
+<p>Most of the following should be familiar if you&#39;ve used React before. If you&#39;re confused, refer to the code comments :-)  </p>
+<p>The entry point of our application will be <code>index.html</code> - <a href="https://www.youtube.com/watch?v=x3AYYRqRMC4">classic</a>. 
+We&#39;ll add it at <code>src/index.html</code> as this matches with the <a href="#simple-workflow">build script</a> we added in <code>package.json</code> earlier.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- The root node of our component tree --&gt;
+    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- The entry point for our React components --&gt;
+&lt;script src=&quot;./components/index.tsx&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;</code></pre>
+<p>Similarly, let&#39;s add a <code>./src/components/index.tsx</code>. This file will load our react component. </p>
+<pre><code class="language-tsx">
+import * as React from &quot;react&quot;; 
+import * as ReactDOM from &quot;react-dom&quot;; 
+
+//This is our counter component 
+const Counter = () =&gt; {
+    const [ count, setCount ] = React.useState(0);
+    return &lt;&gt;
+        &lt;h2&gt;{count}&lt;/h2&gt;
+        &lt;button onClick={() =&gt; {setCount(count + 1)}}&gt;increment&lt;/button&gt;
+        &lt;button onClick={() =&gt; {setCount(count - 1)}}&gt;decrement&lt;/button&gt;
+    &lt;/&gt;
+}
+
+/* We&#39;re now telling React to render this component on the webpage, inside 
+the first element it can find with and id of &quot;root&quot;. Notice how this matches 
+the `div`-tag in our `index.html` :-) */
+ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));</code></pre>
+<p>Lastly, the browser needs to know about our popup to show it. 
+As <a href="#telling-the-browser-about-our-extension">just discussed</a>, this is done through our <code>manifest.json</code> file. 
+Simply add the following to it: </p>
+<pre><code class="language-json">/*...*/
+&quot;browser_action&quot;: {
+  &quot;default_popup&quot;: &quot;dist/index.html&quot;
+}
+/*...*/</code></pre>
+<p>Notice how we&#39;re referencing <code>dist/index.html</code> and not <code>src/index.html</code>. This is because 
+parcel creates and leaves our files in the <code>dist</code>-directory when it is done transforming our Typescript and React code to 
+plain <code>.js</code>-files :-) </p>
+<h3 id="did-it-work">Did it work?</h3>
+<p>It&#39;s time to see our beautiful creation!
+Open a terminal and run <code>yarn dev</code>. You should see a message like <code>✨ Built in 58ms</code>. </p>
+<p>Now open your browser, and click on your extension. There it is! Or should be.
+If something went wrong, read the error message carefully and try to figure out what&#39;s 
+going on. You can always refer to <a href="https://github.com/olaven/browser-extension-with-tsx">the full solution</a> if you&#39;re stuck.</p>
+<p>While you&#39;re at it, try to make a change in your component. Notice how the change is picked up in the browser at once. Parcel has rebuilt our source files automatically :-)</p>
+<h3 id="adding-a-background-script">Adding a background script</h3>
+<p>Now that we have our popup working, lets try to add a background script as well. 
+<a href="#background-scripts-are-useful-for-interacting-with-the-browser">As mentioned</a>, these can (amongst other things) be used to listen for browser events. To demonstrate this, we&#39;ll create a script that logs the id of a tab whenever we create one!</p>
+<p>First, create the file at <code>src/background/script.ts</code> with the following code: </p>
+<pre><code class="language-ts">
+//Every time a tab is created...
+chrome.tabs.onCreated.addListener((tab) =&gt; {
+    //run this code 
+    console.log(`You just created a tab with id: ${tab.id}`)
+}); </code></pre>
+<p>Like with popups, we have to tell the browser about this through <code>manifest.json</code>: </p>
+<pre><code class="language-json">/*..*/
+&quot;background&quot;: {
+  &quot;scripts&quot;: [
+    &quot;dist/background/script.js&quot;
+  ]
+}
+/*..*/</code></pre>
+<p>Again, we&#39;re referencing the <code>dist</code> folder where Parcel leaves our files. 
+You might recall that background scripts <a href="#background-scripts-are-useful-for-interacting-with-the-browser">run separately</a>. 
+In other words, our popup knows nothing of this background script. Hence, we have to explicitly tell Parcel to include this file. 
+Do this by editing the <code>&quot;dev&quot;</code> and <code>&quot;build&quot;</code> commands in <code>package.json</code> like this: </p>
+<pre><code class="language-json">/*..*/
+&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;parcel watch src/index.html src/background/script.ts --public-url=./&quot;,
+    &quot;build&quot;: &quot;parcel build src/index.html src/background/script.ts --public-url=./&quot;
+}
+/*..*/</code></pre>
+<p>Since we&#39;ve modified our <code>dev</code>-script, we need to stop and restart it in the terminal window.</p>
+<p>We&#39;re almost ready to see our background script in action! 
+We just need to access the console where the <code>console.log</code>&#39;s are written. </p>
+<ul>
+<li>If you&#39;re using Firefox<ol>
+<li>navigate to &quot;about:config&quot; and add <code>extensions.sdk.console.logLevel</code> with a string value of <code>&quot;all&quot;</code></li>
+<li>restart Firefox</li>
+<li>Open to Tools -&gt; Web developer -&gt; Browser console (alternatively use cmd+shift+j)</li>
+<li>Click the settings icon and enable Show Content Messages</li>
+</ol>
+</li>
+<li>If you&#39;re using Chrome <ul>
+<li>navigate to &quot;chrome://extensions&quot;</li>
+<li>click on &quot;background page&quot; on your extension (you might need to hit the refresh button for this to show up)  </li>
+</ul>
+</li>
+</ul>
+<p>You should now see the console for your background script! Open your browser and console side by side and create a few tabs. 
+The handler is running and <code>You just created a tab with id: N</code> gets logged ✨</p>
+<h2 id="see-browser-vendors-for-publishing">See browser vendors for publishing</h2>
+<p>I&#39;m not going to cover how to publish your extensions here. 
+This blog post covers a lot already. Browsers themselves have guides for this.
+<a href="https://developer.chrome.com/docs/webstore/publish/">Here&#39;s one the one for Chrome</a> and <a href="https://extensionworkshop.com/documentation/publish/submitting-an-add-on/">here&#39;s the same for Firefox</a>. </p>
+<h2 id="closing">Closing</h2>
+<p>Thank you for reading. It really means a lot to me.
+Hopefully this gave you enough knowledge to start experimenting with extensions for yourself. 
+If this helped you out, please consider supporting my work through <a href="https://github.com/sponsors/olaven">Github Sponsors</a>.<br>If you have any questions, feel free to <a href="mailto:olav@sundfoer.com">send me an email</a> :-) </p>
 </description></item><item><title>Lessons from building Krets</title><link>https://olaven.org/out/reflections/Lessons_from_building_Krets.html</link><guid>https://olaven.org/out/reflections/Lessons_from_building_Krets.html</guid><description><h1 id="lessons-from-building-krets">Lessons from building Krets</h1>
 <h2 id="trying-to-create-a-profitable-project-alone">Trying to create a profitable project alone</h2>
 <p>I&#39;ve spent most of my time between summer and christmas 2020 working on <a href="https://krets.app">Krets</a>. The project was 
