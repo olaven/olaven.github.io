@@ -107,8 +107,9 @@ This allows us to see what we're making.
   4. select the `manifest.json` file in this folder 
 * If you're using Chrome
   1. navigate to `chrome://extensions`
-  2. click _Load Unpacked_
-  3. select the your project directory
+  2. enable developer mode in the upper left corner 
+  3. click _Load Unpacked_ 
+  4. select the your project directory
   
 ### Add your first popup
 Most of the following should be familiar if you've used React before. If you're confused, refer to the code comments :-)  
