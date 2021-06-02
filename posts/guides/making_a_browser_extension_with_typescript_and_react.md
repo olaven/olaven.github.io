@@ -92,7 +92,7 @@ For now, let's add a `manifest.json` looking like this:
   "name": "My First Extension",
   "version": "0.0.1",
   "description": "My first browser extension!",
-  "manifest_version": 2,
+  "manifest_version": 2
 }
 ```
 
