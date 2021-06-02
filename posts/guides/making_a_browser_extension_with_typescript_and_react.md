@@ -131,7 +131,7 @@ We'll add it at `src/index.html` as this matches with the [build script](#simple
 </html>
 ```
 
-Similarly, let's add a `./src/components.index.tsx`. This file will load our react component. 
+Similarly, let's add a `./src/components/index.tsx`. This file will load our react component. 
 ```tsx
 
 import * as React from "react"; 
