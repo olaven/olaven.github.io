@@ -86,3 +86,10 @@ my body just has to adjust to this new way of moving.
 
 
 ### Day four 
+- arrived at 20:00 
+- blisters started to heal
+- stayed for an hour and was able to keep running for longer at a time 
+- less sore than yesterday and less than I expected
+- the soreness moved to the sides of my legs
+- nosebleed afterwards - not sure if related 
+- going in itself is starting to lose some of it's novelty. That's interesting, and quick!
