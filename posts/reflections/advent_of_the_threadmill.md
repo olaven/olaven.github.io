@@ -31,6 +31,9 @@ and I enjoy having projects :)
 [day 1](#day-one)
 [day 2](#day-two)
 [day 3](#day-three)
+[day 4](#day-four)
+[day 5](#day-five)
+[day siz](#day-six)
 
 ### Day one 
 I was starting to get bored. Can't let that happen!
@@ -86,10 +89,31 @@ my body just has to adjust to this new way of moving.
 
 
 ### Day four 
-- arrived at 20:00 
-- blisters started to heal
-- stayed for an hour and was able to keep running for longer at a time 
-- less sore than yesterday and less than I expected
-- the soreness moved to the sides of my legs
-- nosebleed afterwards - not sure if related 
-- going in itself is starting to lose some of it's novelty. That's interesting, and quick!
+I went to the gym at 20:00 and spent most 
+of the upcoming hour on the treadmill. I 
+was able to run for noticeably longer than 
+earlier before turning to walking speeds. 
+
+My blisters have started to heal, but are 
+still very present. They're not as painful
+anymore though. The soreness I felt afterwards 
+moved more to the sides of my legs compared 
+to earlier days. 
+
+Later in the evening my nose started 
+bleeding. This is fairly common for me, so
+I'm not sure if it's connected to the running.
+
+Interestingly enough this was the first night
+where running on the treadmill no longer felt 
+like a novel thing. Rather, it is approaching 
+a feeling I would associate with the norm. 
+Quicker than I expected! 
+### Day five 
+- arrived at 19:00
+- 2x 10 minutes and 2x 5 with walking in between 
+- first day I was getting close to something like "the zone" I achieve when cycling
+- noticed that I started to hit the ground a bit differently. Maybe an automated response to the blisters? 
+- a bit sore in slightly new places, but not painful in the same way as before 
+
+### Day six
