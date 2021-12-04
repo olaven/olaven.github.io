@@ -33,7 +33,8 @@ and I enjoy having projects :)
 [day 3](#day-three)
 [day 4](#day-four)
 [day 5](#day-five)
-[day siz](#day-six)
+[day 6](#day-six)
+[day 7](#day-seven)
 
 ### Day one 
 I was starting to get bored. Can't let that happen!
@@ -111,11 +112,24 @@ a feeling I would associate with the norm.
 Quicker than I expected! 
 
 ### Day five 
-- arrived at 19:00
-- 2x 10 minutes and 2x 5 with walking in between 
-- first day I was getting close to something like "the zone" I achieve when cycling
-- noticed that I started to hit the ground a bit differently. Maybe an automated response to the blisters? 
-- a bit sore in slightly new places, but not painful in the same way as before 
+I'm finally starting to get somewhere close 
+to achieving "the zone" I can get into when
+riding my bike. I'm still far away, noticeably 
+less so. 
+
+I arrived at 19:00 and did 2x 10 minutes of 
+jogging and then 2x 5 minutes, all with relatively 
+fast walking in between. This is roughly what 
+I have been doing the other days as well, but 
+it's starting to feel more solid and it comes 
+a bit easier. 
+
+My foot started to hit the ground a bit differently 
+today. I'm wondering if this is an automated 
+response to the blisters. Those haven't quite 
+healed yet. The soreness is no longer painful
+in the same way as before. Just present. It's 
+also moved further to the sides of my legs. 
 
 ### Day six
 - arrived around 15:00 
@@ -124,3 +138,5 @@ Quicker than I expected!
 - spent an hour on an exercise bike instead 
 - that didn't hurt my foot at all. Hopefully healed tomorrow 
 - I like bikes a lot, but this made me really miss the road :) 
+
+### Day seven
