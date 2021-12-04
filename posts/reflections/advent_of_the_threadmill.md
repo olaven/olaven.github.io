@@ -109,6 +109,7 @@ where running on the treadmill no longer felt
 like a novel thing. Rather, it is approaching 
 a feeling I would associate with the norm. 
 Quicker than I expected! 
+
 ### Day five 
 - arrived at 19:00
 - 2x 10 minutes and 2x 5 with walking in between 
@@ -117,3 +118,9 @@ Quicker than I expected!
 - a bit sore in slightly new places, but not painful in the same way as before 
 
 ### Day six
+- arrived around 15:00 
+- walking felt strange all morning 
+- hurt when I started running
+- spent an hour on an exercise bike instead 
+- that didn't hurt my foot at all. Hopefully healed tomorrow 
+- I like bikes a lot, but this made me really miss the road :) 
