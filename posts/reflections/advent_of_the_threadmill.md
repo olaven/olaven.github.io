@@ -114,7 +114,7 @@ Quicker than I expected!
 ### Day five 
 I'm finally starting to get somewhere close 
 to achieving "the zone" I can get into when
-riding my bike. I'm still far away, noticeably 
+riding my bike. I'm still far away, but noticeably 
 less so. 
 
 I arrived at 19:00 and did 2x 10 minutes of 
@@ -132,11 +132,30 @@ in the same way as before. Just present. It's
 also moved further to the sides of my legs. 
 
 ### Day six
-- arrived around 15:00 
-- walking felt strange all morning 
-- hurt when I started running
-- spent an hour on an exercise bike instead 
-- that didn't hurt my foot at all. Hopefully healed tomorrow 
-- I like bikes a lot, but this made me really miss the road :) 
+After arriving around 15:00, I noticed 
+instant pain in my foot when I started to 
+run. Walking had been strange all day, but 
+I somehow thought it would just go away. 
+
+Because of this I sat on one of the exercise 
+bikes instead. This was a good exercise and 
+my foot didn't hurt at all. Great! 
+Riding on a still bike was boring. 
+I missed the road. Following the [World 
+Chess Championship](https://en.wikipedia.org/wiki/World_Chess_Championship_2021)
+helped a bunch :) 
 
 ### Day seven
+In order to make some pre-arranged plans I arrived 
+much earlier than I usually do. And my foot was 
+fine again! No pain. So I went back to running :) 
+
+This day went similar to [day five](#day-five). That's 
+good! Day seven also feels a bit like a milestone. 
+I'm not celebrating anything until the end though. 
+
+### Day eight 
+- arrived around 20:00 
+- had too much to heat before going
+- walked for longer during my breaks and ran for five minutes less than usual
+- not good, I will get back stronger!
