@@ -173,9 +173,9 @@ takes a lot of time.
 
 I also ate a lot of liquorice and drank a liter 
 of chocolate milk while making dinner. 
-IProbably shouldn't mention this since I'm 
-sort of documenting exercise, but I feel 
-it feels a bit wrong to leave out. 
+I probably shouldn't mention this since I'm 
+sort of documenting exercise, but it feels
+a bit disingenuous to leave it out. 
 
 ## Day ten 
 - arrived around 18:00 
