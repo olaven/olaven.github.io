@@ -152,10 +152,35 @@ fine again! No pain. So I went back to running :)
 
 This day went similar to [day five](#day-five). That's 
 good! Day seven also feels a bit like a milestone. 
-I'm not celebrating anything until the end though. 
+I'm not celebrating anything until the end though.  
 
 ### Day eight 
-- arrived around 20:00 
-- had too much to heat before going
-- walked for longer during my breaks and ran for five minutes less than usual
-- not good, I will get back stronger!
+Arrived around 20:00 in the evening. 
+I'd had too much to eat for dinner and clearly 
+payed for that when running. 
+
+I had slightly longer breaks of walking than 
+I usually do and ran for 2x 10 and 1x 5, which 
+is 5 minutes less than the other days. 
+I'm not feeling too bad about it, but I do 
+want to return stronger next time!
+
+## Day nine 
+This evening was spent working on my bike.
+That is fixing it, not riding. Being a hopeless amateur
+bike mechanic is fun sometimes, but usually 
+takes a lot of time. 
+
+I also ate a lot of liquorice and drank a liter 
+of chocolate milk while making dinner. 
+IProbably shouldn't mention this since I'm 
+sort of documenting exercise, but I feel 
+it feels a bit wrong to leave out. 
+
+## Day ten 
+- arrived around 18:00 
+- ran for 3x 10 minutes! Great 
+- took of the plasters earlier in the day because everything 
+looked fine and unfortunately one of the blisters flared up again.
+- I feeling stuff was tough when I was there, but looking back at it now 
+(~3 hours later) I feel like time flew by relatively quickly
