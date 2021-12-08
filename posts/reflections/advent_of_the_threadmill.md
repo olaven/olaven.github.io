@@ -35,6 +35,10 @@ and I enjoy having projects :)
 [day 5](#day-five)
 [day 6](#day-six)
 [day 7](#day-seven)
+[day 8](#day-eight)
+[day 9](#day-nine)
+[day 10](#day-ten)
+[day 11](#day-eleven)
 
 ### Day one 
 I was starting to get bored. Can't let that happen!
@@ -184,3 +188,5 @@ a bit disingenuous to leave it out.
 looked fine and unfortunately one of the blisters flared up again.
 - I feeling stuff was tough when I was there, but looking back at it now 
 (~3 hours later) I feel like time flew by relatively quickly
+
+## Day eleven
