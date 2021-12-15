@@ -182,11 +182,96 @@ sort of documenting exercise, but it feels
 a bit disingenuous to leave it out. 
 
 ## Day ten 
-- arrived around 18:00 
-- ran for 3x 10 minutes! Great 
-- took of the plasters earlier in the day because everything 
-looked fine and unfortunately one of the blisters flared up again.
-- I feeling stuff was tough when I was there, but looking back at it now 
-(~3 hours later) I feel like time flew by relatively quickly
+I arrived at 18:00 today. 
+I did 3x 10 minutes. That has become 
+the "mark of success" at this point, so 
+I am happy :)  
+
+I took off the plasters earlier because 
+everything looked and felt fine again. 
+Unfortunately one of the blisters flared 
+up again today, and I applied new ones 
+as a result. 
+
+Things felt tough when I was running, but 
+when I look back at it, I feel like the time 
+passed relatively quickly!
 
 ## Day eleven
+Another day of 3x 10 minutes! 
+Running felt easier today, and 
+time flew by with some fun podcasts. 
+
+## Day twelve 
+I had plans today and I did not 
+have time to run after work. The plans 
+involved playing Padel, so at least 
+some activity was involved :) 
+
+## Day thirteen
+Played Padel today as well, but since 
+this was a saturday I had time to run 
+as well :-) I did 20 minutes of continous 
+running and then ten more after a break! 
+That is the longest yet and it feels like a 
+step up from the usual 3x 10.
+
+There were few people at the gym; I 
+had the place almost to myself. I addition, 
+getting to and from the Padel court
+involved quite a lot of uphil cycling on 
+snowy roads. What a day!
+
+## Day fourteen 
+Another day of 3x 10 minutes. This was fun.
+Running starts to feel very normal. I actually 
+like it, more than I expected to at the very least. 
+
+This time I was listening ot music instead of 
+podcasts. This was an interesting change. I thought 
+it would bore me, but my head had enough going on 
+on its own. Coming to think of it, that is why I 
+listen to podcasts in the first place; it makes my 
+brain shut up, at least partially. 
+
+
+## Day fifteen
+My legs are hurting a lot. And for some reason they 
+are painfully stinging when I try to get up from a 
+squatting position or otherwise putting a lot of 
+weight on my right knee. Not good. My foot also 
+feels like it is lightly sprained. 
+
+I think a rest day is much needed. Luckily I am practically
+drowning in work to keep me occupied today. 
+
+## Day sixteen 
+I am afrad that the pain is similar to yesterday and I am staying 
+off running. I am still cycling to work though. I do not believe 
+that triggers any of the pain and it is not far, so I do not think
+it has a huge impact. 
+
+I have started doing stretching exercises. I now realize that I should 
+have done this from the beginning. Obvious in hindsight. Oh well, 
+at least I am learning. 
+
+Hopefully this will get better soon.
+
+
+## Day seventeen 
+The pain is slowly but surely getting better :) 
+I am still doing stretching exercises during the day 
+and staying away from running. 
+
+In addition to not stretching properly, I now see 
+that I have not been good enough at starting slowly 
+and getting properly warmed up. I have usually done 
+around 2-5 minutes of walking before attempting to run. 
+In hindsight that does not seem like enough. Another 
+learning point I guess. 
+
+I will keep at this resting and healing for as long 
+as needed. I feel a bit sheepish for putting myself 
+in this position. Again: learning the hard way :) 
+
+## Day eighteen 
