@@ -274,4 +274,33 @@ I will keep at this resting and healing for as long
 as needed. I feel a bit sheepish for putting myself 
 in this position. Again: learning the hard way :) 
 
-## Day eighteen 
+## Day eighteen
+My knee is getting better and so is my foot. 
+There is still some pain, but nothing compared to just 
+two days ago. That is great! 
+
+I am a bit sorry this did not go like expected, but 
+I really learned a lot in a short amount of time. 
+The importance of stretching and starting slow, for 
+one thing. I have anything close to these kinds of 
+issues when cycling. Running is harder on the body, 
+obviously. 
+
+I played Padel again today and really enjoyed it. 
+My legs and general soreness is holding me back a 
+bit, but not enough to remove the fun from it. 
+
+
+## Summary 
+This has been some interesting weeks. For one thing, 
+I discovered that running can be alright. I also learned 
+a lot about some of the mistakes one can make when 
+starting out. All things I kind of thought I knew. And 
+all things I was warned about by people close to me. 
+This shows that I can be a bit stubborn and sometimes 
+need to learn something for myself to actually understand 
+and take i seriously. Although often advantageous, this 
+mindset definetly has some drawbacks as well :) 
+
+I am happy that I exposed myself to something new, made 
+some mistakes and learned from it :) 
