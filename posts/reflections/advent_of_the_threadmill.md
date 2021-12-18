@@ -1,15 +1,40 @@
 # Advent of the Treadmill
+or Trying to Run and Making Mistakes 
 
-## Background 
+- [Advent of the Treadmill](#advent-of-the-treadmill)
+  - [Thoughts before](#thoughts-before)
+  - [Daily log](#daily-log)
+    - [Day one](#day-one)
+    - [Day two](#day-two)
+    - [Day three](#day-three)
+    - [Day four](#day-four)
+    - [Day five](#day-five)
+    - [Day six](#day-six)
+    - [Day seven](#day-seven)
+    - [Day eight](#day-eight)
+    - [Day nine](#day-nine)
+    - [Day ten](#day-ten)
+    - [Day eleven](#day-eleven)
+    - [Day twelve](#day-twelve)
+    - [Day thirteen](#day-thirteen)
+    - [Day fourteen](#day-fourteen)
+    - [Day fifteen](#day-fifteen)
+    - [Day sixteen](#day-sixteen)
+    - [Day seventeen](#day-seventeen)
+    - [Day eighteen](#day-eighteen)
+  - [Thoughts after](#thoughts-after)
+
+## Thoughts before 
 I've been getting increasingly into riding my bike over 
 the past year. From not being a very active person at 
 all I'm now able to cover some moderate distances on my 
 bike relatively fast. Fun! 
 
-It's getting cold and dark. It's (and will be) way 
-below 0 degrees outside and it gets dark long before 
+It's getting cold and dark. It's way below 0 degrees outside
+and it will remain so for the next months. 
+It also gets dark long before 
 I am done with work. Cycling around town and exploring 
-is still fun. However I've found it a bit hard to 
+is fun. However I've found it hard to 
 be motivated for regular exercise sessions on my bike. 
 
 I need to try something different to stay active. 
@@ -27,18 +52,7 @@ and I enjoy having projects :)
 
 
 
-## Log 
-[day 1](#day-one)
-[day 2](#day-two)
-[day 3](#day-three)
-[day 4](#day-four)
-[day 5](#day-five)
-[day 6](#day-six)
-[day 7](#day-seven)
-[day 8](#day-eight)
-[day 9](#day-nine)
-[day 10](#day-ten)
-[day 11](#day-eleven)
+## Daily log 
 
 ### Day one 
 I was starting to get bored. Can't let that happen!
@@ -48,7 +62,7 @@ try jogging.
 Arrived at 19:00. The gym was larger than I expected.
 Many people and loud music. On the second floor I 
 found a room with no music and mostly treadmills.
-Alright, should work. 
+Should work. 
 
 Turned on a podcast and did on-and-off jogging for 
 45-60 minutes. I'm feeling surprisingly OK, if a 
@@ -107,11 +121,12 @@ to earlier days.
 
 Later in the evening my nose started 
 bleeding. This is fairly common for me, so
-I'm not sure if it's connected to the running.
+I'm not sure if it's connected to the running 
+or not.
 
-Interestingly enough this was the first night
+Interestingly this was the first night
 where running on the treadmill no longer felt 
-like a novel thing. Rather, it is approaching 
+completely novel. Rather, it is approaching 
 a feeling I would associate with the norm. 
 Quicker than I expected! 
 
@@ -139,12 +154,13 @@ also moved further to the sides of my legs.
 After arriving around 15:00, I noticed 
 instant pain in my foot when I started to 
 run. Walking had been strange all day, but 
-I somehow thought it would just go away. 
+somehow I thought it would disappear when I 
+started to run. 
 
-Because of this I sat on one of the exercise 
-bikes instead. This was a good exercise and 
+Because of this I sat on an exercise 
+bikes instead. This was still good exercise and 
 my foot didn't hurt at all. Great! 
-Riding on a still bike was boring. 
+Riding on a still-standing bike was boring. 
 I missed the road. Following the [World 
 Chess Championship](https://en.wikipedia.org/wiki/World_Chess_Championship_2021)
 helped a bunch :) 
@@ -164,12 +180,12 @@ I'd had too much to eat for dinner and clearly
 payed for that when running. 
 
 I had slightly longer breaks of walking than 
-I usually do and ran for 2x 10 and 1x 5, which 
+I usually do and ran for 2x10 minutes and 1x5, which 
 is 5 minutes less than the other days. 
-I'm not feeling too bad about it, but I do 
-want to return stronger next time!
+I'm not feeling too bad about it, but I 
+can return stronger next time!
 
-## Day nine 
+### Day nine 
 This evening was spent working on my bike.
 That is fixing it, not riding. Being a hopeless amateur
 bike mechanic is fun sometimes, but usually 
@@ -181,9 +197,9 @@ I probably shouldn't mention this since I'm
 sort of documenting exercise, but it feels
 a bit disingenuous to leave it out. 
 
-## Day ten 
+### Day ten 
 I arrived at 18:00 today. 
-I did 3x 10 minutes. That has become 
+I did 3x10 minutes. That has become 
 the "mark of success" at this point, so 
 I am happy :)  
 
@@ -197,18 +213,18 @@ Things felt tough when I was running, but
 when I look back at it, I feel like the time 
 passed relatively quickly!
 
-## Day eleven
+### Day eleven
 Another day of 3x 10 minutes! 
 Running felt easier today, and 
 time flew by with some fun podcasts. 
 
-## Day twelve 
+### Day twelve 
 I had plans today and I did not 
 have time to run after work. The plans 
 involved playing Padel, so at least 
 some activity was involved :) 
 
-## Day thirteen
+### Day thirteen
 Played Padel today as well, but since 
 this was a saturday I had time to run 
 as well :-) I did 20 minutes of continous 
@@ -218,11 +234,11 @@ step up from the usual 3x 10.
 
 There were few people at the gym; I 
 had the place almost to myself. I addition, 
-getting to and from the Padel court
-involved quite a lot of uphil cycling on 
+getting to and from the padel court
+involved some uphil cycling on 
 snowy roads. What a day!
 
-## Day fourteen 
+### Day fourteen 
 Another day of 3x 10 minutes. This was fun.
 Running starts to feel very normal. I actually 
 like it, more than I expected to at the very least. 
@@ -235,7 +251,7 @@ listen to podcasts in the first place; it makes my
 brain shut up, at least partially. 
 
 
-## Day fifteen
+### Day fifteen
 My legs are hurting a lot. And for some reason they 
 are painfully stinging when I try to get up from a 
 squatting position or otherwise putting a lot of 
@@ -245,11 +261,12 @@ feels like it is lightly sprained.
 I think a rest day is much needed. Luckily I am practically
 drowning in work to keep me occupied today. 
 
-## Day sixteen 
-I am afrad that the pain is similar to yesterday and I am staying 
-off running. I am still cycling to work though. I do not believe 
-that triggers any of the pain and it is not far, so I do not think
-it has a huge impact. 
+### Day sixteen 
+I am afraid that the pain is similar to yesterday. I will
+continue staying away from running. I am still cycling to work though. 
+Cycling does not seem to trigger the pain. Furhthermore, it is not long 
+to the office. I do not thing it will have a negative impact on my 
+recovery. 
 
 I have started doing stretching exercises. I now realize that I should 
 have done this from the beginning. Obvious in hindsight. Oh well, 
@@ -257,8 +274,7 @@ at least I am learning.
 
 Hopefully this will get better soon.
 
-
-## Day seventeen 
+### Day seventeen 
 The pain is slowly but surely getting better :) 
 I am still doing stretching exercises during the day 
 and staying away from running. 
@@ -274,13 +290,13 @@ I will keep at this resting and healing for as long
 as needed. I feel a bit sheepish for putting myself 
 in this position. Again: learning the hard way :) 
 
-## Day eighteen
+### Day eighteen
 My knee is getting better and so is my foot. 
 There is still some pain, but nothing compared to just 
 two days ago. That is great! 
 
-I am a bit sorry this did not go like expected, but 
-I really learned a lot in a short amount of time. 
+I am a bit sorry this whole running thing did not go as expected. 
+I really learned a lot in a short amount of time, however! 
 The importance of stretching and starting slow, for 
 one thing. I have anything close to these kinds of 
 issues when cycling. Running is harder on the body, 
@@ -291,7 +307,7 @@ My legs and general soreness is holding me back a
 bit, but not enough to remove the fun from it. 
 
 
-## Summary 
+## Thoughts after 
 This has been some interesting weeks. For one thing, 
 I discovered that running can be alright. I also learned 
 a lot about some of the mistakes one can make when 
@@ -300,7 +316,7 @@ all things I was warned about by people close to me.
 This shows that I can be a bit stubborn and sometimes 
 need to learn something for myself to actually understand 
 and take i seriously. Although often advantageous, this 
-mindset definetly has some drawbacks as well :) 
+mindset definitely has some drawbacks as well :) 
 
 I am happy that I exposed myself to something new, made 
 some mistakes and learned from it :) 
