@@ -136,8 +136,8 @@ to achieving "the zone" I can get into when
 riding my bike. I'm still far away, but noticeably 
 less so. 
 
-I arrived at 19:00 and did 2x 10 minutes of 
-jogging and then 2x 5 minutes, all with relatively 
+I arrived at 19:00 and did 2x10 minutes of 
+jogging and then 2x5 minutes, all with relatively 
 fast walking in between. This is roughly what 
 I have been doing the other days as well, but 
 it's starting to feel more solid and it comes 
@@ -214,32 +214,32 @@ when I look back at it, I feel like the time
 passed relatively quickly!
 
 ### Day eleven
-Another day of 3x 10 minutes! 
+Another day of 3x10 minutes! 
 Running felt easier today, and 
 time flew by with some fun podcasts. 
 
 ### Day twelve 
 I had plans today and I did not 
 have time to run after work. The plans 
-involved playing Padel, so at least 
+involved playing padel, so at least 
 some activity was involved :) 
 
 ### Day thirteen
-Played Padel today as well, but since 
+Played padel today as well, but since 
 this was a saturday I had time to run 
-as well :-) I did 20 minutes of continous 
+as well :-) I did 20 minutes of continuos 
 running and then ten more after a break! 
 That is the longest yet and it feels like a 
-step up from the usual 3x 10.
+step up from the usual 3x10.
 
 There were few people at the gym; I 
 had the place almost to myself. I addition, 
 getting to and from the padel court
-involved some uphil cycling on 
+involved some uphill cycling on 
 snowy roads. What a day!
 
 ### Day fourteen 
-Another day of 3x 10 minutes. This was fun.
+Another day of 3x10 minutes. This was fun.
 Running starts to feel very normal. I actually 
 like it, more than I expected to at the very least. 
 
@@ -298,11 +298,11 @@ two days ago. That is great!
 I am a bit sorry this whole running thing did not go as expected. 
 I really learned a lot in a short amount of time, however! 
 The importance of stretching and starting slow, for 
-one thing. I have anything close to these kinds of 
-issues when cycling. Running is harder on the body, 
-obviously. 
+one thing. I also learned that running is very hard on 
+the body; I have not had anything close to these kinds of 
+issues when cycling. 
 
-I played Padel again today and really enjoyed it. 
+I played padel again today and really enjoyed it. 
 My legs and general soreness is holding me back a 
 bit, but not enough to remove the fun from it. 
 
