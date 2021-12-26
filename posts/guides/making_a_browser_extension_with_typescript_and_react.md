@@ -243,5 +243,4 @@ This blog post covers a lot already. Browsers themselves have guides for this.
 ## Closing 
 Thank you for reading. It really means a lot to me.
 Hopefully this gave you enough knowledge to start experimenting with extensions for yourself. 
-If this helped you out, please consider supporting my work through [Github Sponsors](https://github.com/sponsors/olaven).  
-If you have any questions, feel free to [send me an email](mailto:olav@sundfoer.com) :-) 
+If this helped you out, please consider supporting my work through [Github Sponsors](https://github.com/sponsors/olaven). If you have any questions, feel free to [send me an email](mailto:olav@sundfoer.com) :-) 
