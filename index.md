@@ -1,7 +1,6 @@
 # Olav Sundfør - @olaven
 I'm a programmer currently working [@enode](https://enode.io). 
-From time to time, I also work on [paperpod.fm](https://github.com/olaven/paperpod). 
-I also wrote a super-simple blogging engine called [Markblog](https://github.com/olaven/markblog). It's running this page :) 
+From time to time, I also work on [paperpod.fm](https://github.com/olaven/paperpod), as well as a super-simple blogging engine called [Markblog](https://github.com/olaven/markblog). It's running this page :) 
 
 Other times, I'm: 
 * getting better at cycling
