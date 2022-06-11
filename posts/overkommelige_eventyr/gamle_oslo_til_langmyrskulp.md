@@ -224,7 +224,7 @@ fall har potensiale til å være nyttig.
 Det er som en evig informasjonssirkel. Støy -> Inndata - Lage noe -> hvilke -> Repeat. Ny inndata er nødvendig for å få noe UT igjen. 
 Iallfall ikke for meg. Og jeg tror det er slik for andre også. Og derfor kommer man seg aldri helt ut av sirkelen.
 
-![modell](./assets/modell_overkommelige_eventyr_v1.png)
+![modell](./../assets/images/modell_overkommelige_eventyr_v1.png)
 
 Her føler jeg et ansvar for å påpeke at denne modellen ikke er vitenskapelig. Det vil si, det vet jeg ikke om den er. Dette kommer mer eller mindre ret fra mitt eget hode.
 Jeg har ikke lest meg opp på eksisterende litteratur på kreativitet eller mental støy. Dette er ikke fagfellevurdert. Idet heel tatt. Ikke ta det mer seriøst enn det fortjener.
@@ -261,7 +261,7 @@ min med enn det pleier å være.
 Apropos modellen lurer jeg på om det mangler et steg for behandling av inforamsjon. Altså et steg som lar hjernen jobbe med inndata uforstyrret.
 Dette steget må i så fall vfå plass etter inndata og før man lager noe.
 
-![modell v2](./assets/images/modell_overkommelige_eventyr_v2.png)
+![modell v2](./../assets/images/modell_overkommelige_eventyr_v2.png)
 
 Men er ikke dette allerede hvile-steget? jeg lurer på om jeg har laget en liten felle for meg selv her. "Hvile" impliserer at det
 ikke skjer noe. Men det tror jeg ikke stemmer. Selv under søvn jobber hjernen med å danne minner og koble om seg selv. Det
@@ -274,7 +274,7 @@ tegnet opp.
 1. "Hvile" burde kalles "behandling"
 2. "Behandling" må inn to ganger.
 
-![modell v3](./assets/images/modell_overkommelige_eventyr_v3.png)
+![modell v3](./../assets/images/modell_overkommelige_eventyr_v3.png)
 
 Denne modellen tror jeg er nærere virkeligheten. Dessverre ble den litt mindre elegant med et dobbelt steg.
 Men det får så være inntil videre.
