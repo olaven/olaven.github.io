@@ -10,9 +10,9 @@ jobs:
       - uses: actions/checkout@master
       - uses: denolib/setup-deno@master
         with:
-          deno-version: 1.10.2
+          deno-version: 1.15.3
       - name: Build
-        run: deno run --allow-read --allow-write https://denopkg.com/olaven/markblog/mod.ts build
+        run: deno run --allow-read --allow-write --unstable https://denopkg.com/olaven/markblog/mod.ts build
       - name: merge master -> publish
         uses: devmasx/merge-branch@v1.3.1
         with:

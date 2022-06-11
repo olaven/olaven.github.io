@@ -87,9 +87,9 @@ jobs:
           - uses: actions/checkout@master
           - uses: denolib/setup-deno@master
             with:
-              deno-version: 0.36
+              deno-version: 1.15.3
           - name: Build
-            run: deno --allow-read --allow-write https://raw.githubusercontent.com/olaven/markblog/master/markblog.ts build 
+            run: deno --allow-read --allow-write --unstable https://raw.githubusercontent.com/olaven/markblog/master/mod.ts build 
           - name: Deploy
             uses: JamesIves/github-pages-deploy-action@releases/v3
             with:
