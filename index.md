@@ -1,11 +1,12 @@
 # Olav Sundfør - @olaven
-I'm a programmer currently working [@enode](https://enode.io). 
-From time to time, I also work on [paperpod.fm](https://github.com/olaven/paperpod), as well as a super-simple blogging engine called [Markblog](https://github.com/olaven/markblog). It's running this page :) 
+- I enjoy thinking about- and working on different things in parallel. 
+- I strive to have an intentional and structured approach to my time. 
+- I like to ride my bike. 
+- I enjoy freelancing as a software developer (experienced fullstack developer)
+- I am taking courses in language and culture at the [University of Utrecht](https://www.uu.nl/). 
+- I occasionally work on various open source projects, like [paperpod.fm](https://github.com/olaven/paperpod) and [Markblog](https://github.com/olaven/markblog). (The latter is running this page!)
 
-Other times, I'm: 
-* getting better at cycling
-* learning new stuff
-* doing occasional freelance-work 
+
 ## Contact me
 * [olav@sundfoer.com](mailto:olav@sundfoer.com)
 * [Github](https://github.com/olaven)
