@@ -1,10 +1,10 @@
 # Olav Sundfør - @olaven
-- I enjoy thinking about- and working on different things in parallel. 
-- I strive to have an intentional and structured approach to my time. 
-- I like to ride my bike. 
-- I enjoy freelancing as a software developer (experienced fullstack developer)
-- I am taking courses in language and culture at the [University of Utrecht](https://www.uu.nl/). 
-- I occasionally work on various open source projects, like [paperpod.fm](https://github.com/olaven/paperpod) and [Markblog](https://github.com/olaven/markblog). (The latter is running this page!)
+- I enjoy thinking about- and working on _different things in parallel_. 
+- I strive to have an _intentional_ and structured approach to my time. 
+- I like to _ride my bike_. 
+- I enjoy _freelancing as a software developer_ (experienced fullstack developer)
+- I am _taking courses in language and culture_ at the [University of Utrecht](https://www.uu.nl/). 
+- I occasionally work on various _open source projects_, like [paperpod.fm](https://github.com/olaven/paperpod) and [Markblog](https://github.com/olaven/markblog). (The latter is running this page!)
 
 
 ## Contact me
