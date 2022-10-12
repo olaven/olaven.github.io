@@ -21,11 +21,11 @@ These are a collection of my notes for grammar exam at [University College Utrec
 The thing that performs the action described by the verb. 
 "Ik ga met har" -> "ik" is the one acting. 
 
-| __person__ | __ singular__                                   | __plural__ |
+| **person** | **singular**                                    | **plural** |
 | ---------- | ----------------------------------------------- | ---------- |
-| __1de__    | ik                                              | wij/we     |
-| __2de__    | jij/je, u (formal)                              | jullie     |
-| __3de__    | hij (m), zij/ze (f), het (obj), hen (nonbinary) | zij/ze     |
+| **1de**    | ik                                              | wij/we     |
+| **2de**    | jij/je, u (formal)                              | jullie     |
+| **3de**    | hij (m), zij/ze (f), het (obj), hen (nonbinary) | zij/ze     |
 
 wij/we en zij/ze representeert "light" en "heavy" varianten. 
 
@@ -33,20 +33,20 @@ wij/we en zij/ze representeert "light" en "heavy" varianten.
 When things are acted upon -> Ik ga met haar -> "haar" is acted upon. 
 
 
-| __person__ | __ singular__      | __plural__ |
+| **person** | **singular**       | **plural** |
 | ---------- | ------------------ | ---------- |
-| __1de__    | mij/me             | ons        |
-| __2de__    | jou/je, u (formal) | jullie     |
-| __3de__    | hem (m), haar (f)  | hen/ze     |
+| **1de**    | mij/me             | ons        |
+| **2de**    | jou/je, u (formal) | jullie     |
+| **3de**    | hem (m), haar (f)  | hen/ze     |
 
 ## Regular Verbs - Regelmatige werkwoorden
 Infinitiv -> stem + "en"
 
-| __regular__ | __ singular__  | __plural__ |
+| **regular** | **singular**   | **plural** |
 | ----------- | -------------- | ---------- |
-| __1de__     | stem           | infinitive |
-| __2de__     | stem + t !EXC1 | infinitive |
-| __3de__     | stem + t       | infinitive |
+| **1de**     | stem           | infinitive |
+| **2de**     | stem + t !EXC1 | infinitive |
+| **3de**     | stem + t       | infinitive |
 
 !EXC 1.: verb -> subj. + informal = kun stem
 
@@ -54,18 +54,18 @@ Infinitiv -> stem + "en"
 ## Irregular Verbs - Onregelmatige wekwoorden
 
 
-| __zijn__ | __ singular__ | __plural__ |
-| -------- | ------------- | ---------- |
-| __1de__  | ben           | zijn       |
-| __2de__  | bent, !EXC1   | zijn       |
-| __3de__  | is            | zijn       |
+| **zijn** | **singular** | **plural** |
+| -------- | ------------ | ---------- |
+| **1de**  | ben          | zijn       |
+| **2de**  | bent, !EXC1  | zijn       |
+| **3de**  | is           | zijn       |
 
 
-| __hebben__ | __ singular__ | __plural__ |
-| ---------- | ------------- | ---------- |
-| __1de__    | heb           | hebben     |
-| __2de__    | hebt, !EXC1   | hebben     |
-| __3de__    | heeft         | hebben     |
+| **hebben** | **singular** | **plural** |
+| ---------- | ------------ | ---------- |
+| **1de**    | heb          | hebben     |
+| **2de**    | hebt, !EXC1  | hebben     |
+| **3de**    | heeft        | hebben     |
 
 ## Word order - Woord Volgorde
 I vanlige setninger er rekkefølgen SVO -> Subjekt, Verb, Objekt. F.eks. "Hij loopt naar het bibliotheek". 
@@ -93,9 +93,9 @@ Similarly, when finding the stem of a word, we have to adjust the vowel to get t
 ## Plural - Meervoud 
 Det er fire forskjellige suffixser som brukes for aa markere flertall. 
 
-| __suffix__ | __regel__                                      |
+| **suffix** | **regel**                                      |
 | ---------- | ---------------------------------------------- |
-| -s         | 2+ stavelser __og__ suffiks -er, -el, -em, -en |
+| -s         | 2+ stavelser **og** suffiks -er, -el, -em, -en |
 | -'s        | slutter paa a, i, o, u, y,                     |
 | -en        | ellers                                         |
 
@@ -133,7 +133,6 @@ Possessive pronouns indicates whos possession someone or something is.
 | 1de        | mijn                                | onze (de), ons (sing + het) |
 | 2de        | jouw/je, uw                         | jullie                      |
 | 3de        | zijn (m), haar (f), hun(n), zijn(c) | hun                         |
-TODO: look up the 3de singular meanings of hun en zijn
 
 "jouw" and "uw" must not be confused with "jou" and "u". The latter are [personal pronouns](#personal-pronouns), not possessive pronouns. 
 
