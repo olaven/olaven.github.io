@@ -960,6 +960,487 @@ Blogging is a strange beast that I&#39;m still trying to figure out. <br/></p>
 <li>or checkout my other <a href="https://github.com/olaven">work on Github</a> </li>
 <li>if it&#39;s your thing, subscribe to <a href="https://olaven.org/feed.xml">RSS Feed</a></li>
 </ul>
+</description></item><item><title>dutch grammar</title><link>https://olaven.org/out/nederland/dutch_grammar.html</link><guid>https://olaven.org/out/nederland/dutch_grammar.html</guid><description><h1 id="nederlandse-grammatica">Nederlandse Grammatica</h1>
+<p>These are a collection of my notes for grammar exam at <a href="https://www.uu.nl/en/organisation/university-college-utrecht">University College Utrecht</a>. I am posting them because I believe sharing knowledge fundamentally is a good thing, and of course because I hope this can serve as a useful resource for others. I have done my best to make sure that the information on this page is correct. If, however, you find this not to be the case, please <a href="mailto:olav@sundfoer.com">email me</a>, and then I will update the page. The full edit history is available on <a href="https://github.com/olaven/olaven.github.io">Github</a>. </p>
+<ul>
+<li><a href="#nederlandse-grammatica">Nederlandse Grammatica</a><ul>
+<li><a href="#personal-pronouns">Personal Pronouns</a></li>
+<li><a href="#object-pronouns">Object Pronouns</a></li>
+<li><a href="#regular-verbs---regelmatige-werkwoorden">Regular Verbs - Regelmatige werkwoorden</a></li>
+<li><a href="#irregular-verbs---onregelmatige-wekwoorden">Irregular Verbs - Onregelmatige wekwoorden</a></li>
+<li><a href="#word-order---woord-volgorde">Word order - Woord Volgorde</a></li>
+<li><a href="#schematized-syllables">Schematized Syllables</a></li>
+<li><a href="#spelling---spellen">Spelling - Spellen</a></li>
+<li><a href="#plural---meervoud">Plural - Meervoud</a></li>
+<li><a href="#indefinite-article---onbepaald-lidwoord">Indefinite Article - Onbepaald Lidwoord</a></li>
+<li><a href="#definite-article---bepaald-lidwoord">Definite Article - Bepaald Lidwoord</a></li>
+<li><a href="#possessive-pronouns---bezittelijke-voornaamwoorden">Possessive pronouns - Bezittelijke Voornaamwoorden</a></li>
+<li><a href="#modal-verbs---modale-werkwoorden">Modal Verbs - Modale Werkwoorden</a></li>
+<li><a href="#word-order">Word Order</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="personal-pronouns">Personal Pronouns</h2>
+<p>The thing that performs the action described by the verb. 
+&quot;Ik ga met har&quot; -&gt; &quot;ik&quot; is the one acting. </p>
+<table>
+<thead>
+<tr>
+<th><strong>person</strong></th>
+<th>__ singular__</th>
+<th><strong>plural</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1de</strong></td>
+<td>ik</td>
+<td>wij/we</td>
+</tr>
+<tr>
+<td><strong>2de</strong></td>
+<td>jij/je, u (formal)</td>
+<td>jullie</td>
+</tr>
+<tr>
+<td><strong>3de</strong></td>
+<td>hij (m), zij/ze (f), het (obj), hen (nonbinary)</td>
+<td>zij/ze</td>
+</tr>
+</tbody></table>
+<p>wij/we en zij/ze representeert &quot;light&quot; en &quot;heavy&quot; varianten. </p>
+<h2 id="object-pronouns">Object Pronouns</h2>
+<p>When things are acted upon -&gt; Ik ga met haar -&gt; &quot;haar&quot; is acted upon. </p>
+<table>
+<thead>
+<tr>
+<th><strong>person</strong></th>
+<th>__ singular__</th>
+<th><strong>plural</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1de</strong></td>
+<td>mij/me</td>
+<td>ons</td>
+</tr>
+<tr>
+<td><strong>2de</strong></td>
+<td>jou/je, u (formal)</td>
+<td>jullie</td>
+</tr>
+<tr>
+<td><strong>3de</strong></td>
+<td>hem (m), haar (f)</td>
+<td>hen/ze</td>
+</tr>
+</tbody></table>
+<h2 id="regular-verbs---regelmatige-werkwoorden">Regular Verbs - Regelmatige werkwoorden</h2>
+<p>Infinitiv -&gt; stem + &quot;en&quot;</p>
+<table>
+<thead>
+<tr>
+<th><strong>regular</strong></th>
+<th>__ singular__</th>
+<th><strong>plural</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1de</strong></td>
+<td>stem</td>
+<td>infinitive</td>
+</tr>
+<tr>
+<td><strong>2de</strong></td>
+<td>stem + t !EXC1</td>
+<td>infinitive</td>
+</tr>
+<tr>
+<td><strong>3de</strong></td>
+<td>stem + t</td>
+<td>infinitive</td>
+</tr>
+</tbody></table>
+<p>!EXC 1.: verb -&gt; subj. + informal = kun stem</p>
+<h2 id="irregular-verbs---onregelmatige-wekwoorden">Irregular Verbs - Onregelmatige wekwoorden</h2>
+<table>
+<thead>
+<tr>
+<th><strong>zijn</strong></th>
+<th>__ singular__</th>
+<th><strong>plural</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1de</strong></td>
+<td>ben</td>
+<td>zijn</td>
+</tr>
+<tr>
+<td><strong>2de</strong></td>
+<td>bent, !EXC1</td>
+<td>zijn</td>
+</tr>
+<tr>
+<td><strong>3de</strong></td>
+<td>is</td>
+<td>zijn</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>hebben</strong></th>
+<th>__ singular__</th>
+<th><strong>plural</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1de</strong></td>
+<td>heb</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td><strong>2de</strong></td>
+<td>hebt, !EXC1</td>
+<td>hebben</td>
+</tr>
+<tr>
+<td><strong>3de</strong></td>
+<td>heeft</td>
+<td>hebben</td>
+</tr>
+</tbody></table>
+<h2 id="word-order---woord-volgorde">Word order - Woord Volgorde</h2>
+<p>I vanlige setninger er rekkefølgen SVO -&gt; Subjekt, Verb, Objekt. F.eks. &quot;Hij loopt naar het bibliotheek&quot;. 
+I spørsmål er rekkefølgen imidlertid VSO -&gt; &quot;Loopt hij naar het bibliotheek?&quot; eller evt. QVSO -&gt; &quot;Waneer loopt hij naar het bibliotheek?&quot;. </p>
+<h2 id="schematized-syllables">Schematized Syllables</h2>
+<p>Dutch syllables have one of the following patterns: </p>
+<ul>
+<li>V </li>
+<li>CV </li>
+<li>CVC</li>
+<li>VC</li>
+</ul>
+<p>Boundaries for syllables occurs: </p>
+<ul>
+<li>between two <em>adjacent consonants</em> (i.e CC), e.g. &quot;mannen&quot; -&gt; &quot;man&quot; + &quot;nen&quot; -&gt; CVC + CVC</li>
+<li>before a <em>single</em> consonant, i.e. &quot;uren&quot; -&gt; VCVC -&gt; V + CVC</li>
+</ul>
+<p>Open syllables (i.e. CV), the vocals are pronounced as their long variants. E.g. &quot;lezen&quot; -&gt; CV + CVC, the first &quot;long e&quot; is pronounced as &quot;ee&quot; because CV is open. The last e however, is pronounced as &quot;short e&quot; because the syllable (&quot;zen&quot; = CVC) is closed. </p>
+<p>Similarly, when finding the stem of a word, we have to adjust the vowel to get the correct pronunciation. &quot;Lezen&quot;&#39;s stem is &quot;Lees&quot;, not &quot;Les&quot;. In the latter case we would&#39;ve had to pronounce a short e. However, we want a long e. To achieve that within the one syllable, we have to use &quot;ee&quot;, not &quot;e&quot;. </p>
+<h2 id="spelling---spellen">Spelling - Spellen</h2>
+<p><code>v</code> and <code>z</code> <em>never occur at the end</em> of a word. If they do after conjugating (e.g. finding a verb stem), <code>v</code> is substituted by an <code>f</code> and <code>z</code> by an <code>s</code>. In other words, &quot;lezen&quot;&#39;s stem is &quot;lees&quot;, not &quot;leez&quot;, and &quot;gefen&quot;&#39;s stem is &quot;geef&quot; and not &quot;geev&quot;. (also notice the addition of a vocal to <a href="#schematized-syllables">preserve the long pronounciation</a>)</p>
+<h2 id="plural---meervoud">Plural - Meervoud</h2>
+<p>Det er fire forskjellige suffixser som brukes for aa markere flertall. </p>
+<table>
+<thead>
+<tr>
+<th><strong>suffix</strong></th>
+<th><strong>regel</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-s</td>
+<td>2+ stavelser <strong>og</strong> suffiks -er, -el, -em, -en</td>
+</tr>
+<tr>
+<td>-&#39;s</td>
+<td>slutter paa a, i, o, u, y,</td>
+</tr>
+<tr>
+<td>-en</td>
+<td>ellers</td>
+</tr>
+</tbody></table>
+<h2 id="indefinite-article---onbepaald-lidwoord">Indefinite Article - Onbepaald Lidwoord</h2>
+<p>The indefinite article is &quot;een&quot;, for all singular nouns. Confusingly, it is spelled the same as the word for 1 - een. To differ between the two, one might spell 1 as één. Eks. &quot;Heeft jij een rugzak, maar alleen één boek?&quot;. </p>
+<p>Furthermore, the indefinite article is only used in singular-, and not in plural form. </p>
+<table>
+<thead>
+<tr>
+<th><strong>onbepaalde lidwoord</strong></th>
+<th>common nouns</th>
+<th>neuter nouns</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>singular</em></td>
+<td>een</td>
+<td>een</td>
+</tr>
+<tr>
+<td><em>plural</em></td>
+<td><em>nothing</em></td>
+<td><em>nothing</em></td>
+</tr>
+</tbody></table>
+<p>Wether a noun is a common- or a neuter noun often has to learned by heart. However, there are a few rules: </p>
+<ol>
+<li>Plural? -&gt; always <em>de</em></li>
+<li>Diminutive (ends in -je) -&gt; <em>het</em> </li>
+<li>Language name, e.g. het Frans -&gt; <em>het</em> </li>
+<li>other -&gt; learn by heart.. </li>
+<li>if you have to guess -&gt; <em>de</em> </li>
+</ol>
+<h2 id="definite-article---bepaald-lidwoord">Definite Article - Bepaald Lidwoord</h2>
+<p>There are two definite articles in Dutch: &quot;de&quot; and &quot;het&quot;. Het is only used in singular, for neuter nouns. </p>
+<table>
+<thead>
+<tr>
+<th><strong>definite artlce</strong></th>
+<th>common nouns</th>
+<th>neuter nouns</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>singular</em></td>
+<td>de</td>
+<td>het</td>
+</tr>
+<tr>
+<td><em>plural</em></td>
+<td>de</td>
+<td>de</td>
+</tr>
+</tbody></table>
+<h2 id="possessive-pronouns---bezittelijke-voornaamwoorden">Possessive pronouns - Bezittelijke Voornaamwoorden</h2>
+<p>Possessive pronouns indicates whos possession someone or something is. </p>
+<table>
+<thead>
+<tr>
+<th><strong>Person</strong></th>
+<th><em>singular</em></th>
+<th><em>plural</em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1de</td>
+<td>mijn</td>
+<td>onze (de), ons (sing + het)</td>
+</tr>
+<tr>
+<td>2de</td>
+<td>jouw/je, uw</td>
+<td>jullie</td>
+</tr>
+<tr>
+<td>3de</td>
+<td>zijn (m), haar (f), hun(n), zijn(c)</td>
+<td>hun</td>
+</tr>
+<tr>
+<td>TODO: look up the 3de singular meanings of hun en zijn</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>&quot;jouw&quot; and &quot;uw&quot; must not be confused with &quot;jou&quot; and &quot;u&quot;. The latter are <a href="#personal-pronouns">personal pronouns</a>, not possessive pronouns. </p>
+<h2 id="modal-verbs---modale-werkwoorden">Modal Verbs - Modale Werkwoorden</h2>
+<table>
+<thead>
+<tr>
+<th><strong>kunnen</strong></th>
+<th>singular</th>
+<th>plural</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>ik kan</td>
+<td>wij kunnen</td>
+</tr>
+<tr>
+<td>2</td>
+<td>jij kunt/kan / kan jij</td>
+<td>jullie kunnen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>hij/zij kan</td>
+<td>zij kunnen</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>willen</strong></th>
+<th>singular</th>
+<th>plural</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>ik wil</td>
+<td>wij willen</td>
+</tr>
+<tr>
+<td>2</td>
+<td>jij wilt / wilt jij</td>
+<td>jullie willen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>hij/zij wil</td>
+<td>zij willen</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>mogen</strong></th>
+<th>singular</th>
+<th>plural</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>ik mag</td>
+<td>wij mogen</td>
+</tr>
+<tr>
+<td>2</td>
+<td>jij mag / mag jij</td>
+<td>jullie mogen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>hij/zij mag</td>
+<td>zij mogen</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>moeten</strong></th>
+<th>singular</th>
+<th>plural</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>ik moet</td>
+<td>wij moeten</td>
+</tr>
+<tr>
+<td>2</td>
+<td>jij moet / moet jij</td>
+<td>jullie moeten</td>
+</tr>
+<tr>
+<td>3</td>
+<td>hij/zij moet</td>
+<td>zij moeten</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>zullen</strong></th>
+<th>singular</th>
+<th>plural</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>ik zal</td>
+<td>wij zullen</td>
+</tr>
+<tr>
+<td>2</td>
+<td>jij zult/zal / zul/zal jij</td>
+<td>jullie zullen</td>
+</tr>
+<tr>
+<td>3</td>
+<td>hij/zij zal</td>
+<td>zij zullen</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>gaan</strong></th>
+<th>singular</th>
+<th>plural</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>ik ga</td>
+<td>wij gaan</td>
+</tr>
+<tr>
+<td>2</td>
+<td>jij gaat / ga jij</td>
+<td>jullie gaan</td>
+</tr>
+<tr>
+<td>3</td>
+<td>hij/zij gaat</td>
+<td>zij gaan</td>
+</tr>
+</tbody></table>
+<h2 id="word-order">Word Order</h2>
+<table>
+<thead>
+<tr>
+<th><strong>type</strong></th>
+<th><strong>order</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>reg. sentence, 1 verb</td>
+<td>S - V - O - rest</td>
+</tr>
+<tr>
+<td>reg. sentence, 2 verbs</td>
+<td>S - MV - O - rest - V (infinitive)</td>
+</tr>
+<tr>
+<td>y/n question, 1 verb</td>
+<td>V - S - O - rest</td>
+</tr>
+<tr>
+<td>y/n question, 2 verbs</td>
+<td>MV - S - O - rest - V (infinitive)</td>
+</tr>
+<tr>
+<td>open question, 1 verb</td>
+<td>Q - V - O - rest</td>
+</tr>
+<tr>
+<td>open question, 2 verbs</td>
+<td>Q - MV- S - O - rest - V (infinitive)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>term</strong></th>
+<th><strong>explanation</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S</td>
+<td>Subject</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Verb</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Object</td>
+</tr>
+<tr>
+<td>MV</td>
+<td><a href="#modal-verbs---modale-Werkwoorden">Modal Verb</a></td>
+</tr>
+<tr>
+<td>rest</td>
+<td>the rest. of the sentence</td>
+</tr>
+</tbody></table>
 </description></item><item><title>how  this site works</title><link>https://olaven.org/out/about_this_site/how _this_site_works.html</link><guid>https://olaven.org/out/about_this_site/how _this_site_works.html</guid><description><h1 id="blogging-with-markblog">Blogging with <a href="www.github.com/olaven/markblog">Markblog</a></h1>
 <p>Or rather: how I got rid of bloated setup and just wrote markdown. </p>
 <p>When I first built this site almost a year ago, <a href="olaven.org/out/site.html">I was pretty 
