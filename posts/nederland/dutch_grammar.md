@@ -91,9 +91,9 @@ Det er fire forskjellige suffixser som brukes for aa markere flertall.
 
 | **suffix** | **regel**                                      |
 | ---------- | ---------------------------------------------- |
-| -s         | 2+ stavelser **og** suffiks -er, -el, -em, -en |
-| -'s        | slutter paa a, i, o, u, y,                     |
-| -en        | ellers                                         |
+| -s         | 2+ syllables **and** suffix -er, -el, -em, -en |
+| -'s        | ends in a, i, o, u, y,                         |
+| -en        | otherwise                                      |
 
 ## Indefinite Article - Onbepaald Lidwoord  
 The indefinite article is "een", for all singular nouns. Confusingly, it is spelled the same as the word for 1 - een. To differ between the two, one might spell 1 as één. Eks. "Heeft jij een rugzak, maar alleen één boek?". 
