@@ -7,7 +7,6 @@ These are a collection of my notes for grammar exam at [University College Utrec
   - [Object Pronouns](#object-pronouns)
   - [Regular Verbs - Regelmatige werkwoorden](#regular-verbs---regelmatige-werkwoorden)
   - [Irregular Verbs - Onregelmatige wekwoorden](#irregular-verbs---onregelmatige-wekwoorden)
-  - [Word order - Woord Volgorde](#word-order---woord-volgorde)
   - [Schematized Syllables](#schematized-syllables)
   - [Spelling - Spellen](#spelling---spellen)
   - [Plural - Meervoud](#plural---meervoud)
@@ -15,7 +14,7 @@ These are a collection of my notes for grammar exam at [University College Utrec
   - [Definite Article - Bepaald Lidwoord](#definite-article---bepaald-lidwoord)
   - [Possessive pronouns - Bezittelijke Voornaamwoorden](#possessive-pronouns---bezittelijke-voornaamwoorden)
   - [Modal Verbs - Modale Werkwoorden](#modal-verbs---modale-werkwoorden)
-  - [Word Order](#word-order)
+  - [Word Order - Woord Volgorde](#word-order---woord-volgorde)
 
 ## Personal Pronouns 
 The thing that performs the action described by the verb. 
@@ -48,8 +47,7 @@ Infinitiv -> stem + "en"
 | **2de**     | stem + t !EXC1 | infinitive |
 | **3de**     | stem + t       | infinitive |
 
-!EXC 1.: verb -> subj. + informal = kun stem
-
+!EXC1.: verb -> subj. + informal = kun stem
 
 ## Irregular Verbs - Onregelmatige wekwoorden
 
@@ -67,9 +65,7 @@ Infinitiv -> stem + "en"
 | **2de**    | hebt, !EXC1  | hebben     |
 | **3de**    | heeft        | hebben     |
 
-## Word order - Woord Volgorde
-I vanlige setninger er rekkefølgen SVO -> Subjekt, Verb, Objekt. F.eks. "Hij loopt naar het bibliotheek". 
-I spørsmål er rekkefølgen imidlertid VSO -> "Loopt hij naar het bibliotheek?" eller evt. QVSO -> "Waneer loopt hij naar het bibliotheek?". 
+!EXC1.: verb -> subj. + informal = kun stem
 
 ## Schematized Syllables 
 Dutch syllables have one of the following patterns: 
@@ -176,7 +172,7 @@ Possessive pronouns indicates whos possession someone or something is.
 | 3        | hij/zij gaat      | zij gaan    |
 
 
-## Word Order 
+## Word Order - Woord Volgorde
 
 | **type**               | **order**                             |
 | ---------------------- | ------------------------------------- |
