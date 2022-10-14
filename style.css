@@ -5,6 +5,17 @@
   --white: white;
 }
 
+.git-history { 
+  font-size: .79em;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  position: absolute;
+}
+
 body {
   display: block;
   background-color: var(--white);

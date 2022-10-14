@@ -1,9 +1,15 @@
 {
 	"blog_title": "Olaven's website",
 	"favicon": "./favicon.ico",
-	"rss_options": {	
-		"title": "Olaven's blog", 
+	"rss_options": {
+		"title": "Olaven's blog",
 		"description": "General thoughts about software. And other stuff.",
-			"link": "https://olaven.org"
+		"link": "https://olaven.org"
+	},
+	"git_history": {
+		"enabled": true,
+		"host": "github",
+		"username": "olaven",
+		"repo_name": "olaven.github.io"
 	}
 }
