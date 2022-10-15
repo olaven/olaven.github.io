@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: denolib/setup-deno@master
         with:
-          deno-version: 1.15.3
+          deno-version: 1.25.3
       - name: Build
         run: deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/olaven/markblog/v0.1.0/mod.ts build
       - name: merge master -> publish
