@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+        with:
+          fetch-depth: 0 # i.e. fetch entire history, ref. https://github.com/actions/checkout#Fetch-all-history-for-all-tags-and-branches
       - uses: denolib/setup-deno@master
         with:
           deno-version: 1.25.3
