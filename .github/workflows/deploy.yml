@@ -12,7 +12,7 @@ jobs:
         with:
           deno-version: 1.15.3
       - name: Build
-        run: deno run --allow-read --allow-write --unstable https://denopkg.com/olaven/markblog/mod.ts build
+        run: deno run --allow-read --allow-write --allow-run --unstable https://raw.githubusercontent.com/olaven/markblog/v0.1.0/mod.ts build
       - name: merge master -> publish
         uses: devmasx/merge-branch@v1.3.1
         with:
