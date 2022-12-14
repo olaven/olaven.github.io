@@ -15,6 +15,11 @@ These are a collection of my notes for grammar exam at [University College Utrec
   - [Possessive pronouns - Bezittelijke Voornaamwoorden](#possessive-pronouns---bezittelijke-voornaamwoorden)
   - [Modal Verbs - Modale Werkwoorden](#modal-verbs---modale-werkwoorden)
   - [Word Order - Woord Volgorde](#word-order---woord-volgorde)
+  - [Negation](#negation)
+  - [Adjectives](#adjectives)
+  - [Past Tense - Perfectum](#past-tense---perfectum)
+    - [Which oxilary?](#which-oxilary)
+    - [Which Participum Form?](#which-participum-form)
 
 ## Personal Pronouns 
 The thing that performs the action described by the verb. 
@@ -190,3 +195,66 @@ Possessive pronouns indicates whos possession someone or something is.
 | O        | Object                                          |
 | MV       | [Modal Verb](#modal-verbs---modale-Werkwoorden) |
 | rest     | the rest. of the sentence                       |
+
+## Negation 
+Negation (saying that something is _not_ the case) is done with `niet` and `geen`. Use the following rule order to figure out which one to use: 
+1. Preposition? use `niet` in front of it
+2. Indefinite noun? Use `geen` in front of it 
+3. Adjective or Adverb? Use `niet` in front of the noun 
+4. None of the above -> use `niet` at the end !EXC2
+
+!EXC2: If the sentence _ends with a verb_, put `niet` as the second to last word, and change the verb to infinitive. 
+
+
+## Adjectives 
+Adjectives are words that describe nouns. E.g. "moi", "leuk" en "saai". Adjectives may appear as _predicatively_ or as a _modifier_
+
+| *form*      | *example*       | *rule*                         |
+| ----------- | --------------- | ------------------------------ |
+| predicative | Ik ben vroilijk | at end of sentence             |
+| modifier    | de fijne dag    | before noun, and add `e` !EXC3 |
+
+!EXC3: Do _not_ add `e` iff the noun is singular __AND__ het-word (neuter) __AND__ indefinite (i.e. "een <noun>")
+
+## Past Tense - Perfectum 
+Past tense in the perfectum form is done by restructuring the sentence such that 1) it includes an oxilary (the conjugated form of either `zijn` or `hebben`) and a participum form, which is the verb stemp, prefixes with `ge` and suffixed with either `t` or `d`. 
+
+
+### Which oxilary? 
+| *oxilary* | *condition*                                           |
+| --------- | ----------------------------------------------------- |
+| `zijn`    | participum is either `gekomen`, `gegaan` of `geweest` |
+| `zijn`    | with a _change of state_                              |
+| `zijn`    | _movement in a direction_ (i.e. preposition)          |
+| `hebben`  | All others                                            |
+
+### Which Participum Form? 
+| *particip form* | *condition*                                      |
+| --------------- | ------------------------------------------------ |
+| `ge-` + `-d`    | last letter does __not__ occur in "soft ketchup" |
+| `ge-` + `-t`    | last letter does occur in "soft ketchup"         |
+
+
+There are _lots of exceptions_ to the participum form-rules. Some of the irregular verbs are listed below - there are many more. 
+
+| *infinitiv* | *participum* |
+| ----------- | ------------ |
+| ontmoeten   | ontmoet      |
+| vertellen   | verteld      |
+| beloven     | beloofd      |
+| geloven     | geloofd      |
+| herhalen    | herhaald     |
+| erkennen    | erkend       |
+| zijn        | geweest      |
+| hebben      | gehad        |
+| gaan        | gegaan       |
+| komen       | gekomen      |
+| doen        | gedaan       |
+| lopen       | gelopen      |
+| kopen       | gekocht      |
+| zien        | gezien       |
+| beginnen    | begonnen     |
+| spreken     | gesproken    |
+| kijken      | gekeken      |
+| krijgen     | gekregen     |
+| worden      | geworden     |
