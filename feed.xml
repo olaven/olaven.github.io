@@ -1,4 +1,61 @@
-<rss version="2.0"><channel><title>Olaven's blog</title><link>https://olaven.org</link><description>General thoughts about software. And other stuff.</description><item><title>dutch grammar</title><link>https://olaven.org/out/nederland/dutch_grammar.html</link><guid>https://olaven.org/out/nederland/dutch_grammar.html</guid><description><h1 id="nederlandse-grammatica">Nederlandse Grammatica</h1>
+<rss version="2.0"><channel><title>Olaven's blog</title><link>https://olaven.org</link><description>General thoughts about software. And other stuff.</description><item><title>on original setup</title><link>https://olaven.org/out/about_this_site/on_original_setup.html</link><guid>https://olaven.org/out/about_this_site/on_original_setup.html</guid><description><h1 id="the-site">The site</h1>
+<p><em>NOTE</em>: This post is out of date, as the site is <a href="./how_this_site_works.md">updated</a>.
+<em>NOTE</em>: This post was renamed from &quot;site&quot; to &quot;initial site&quot;</p>
+<p>This is my website. I have iterated on it many times. 
+Although I have made many attempts at making it look
+good and stylish, I have never gotten to something that 
+I like. However, my belief is that I am closer now than 
+ever before.</p>
+<h2 id="styling">Styling</h2>
+<p>My approach is simply to keep it as simple as possible. 
+I am certainly not alone in this; a lot of people have 
+very simple websites, focusing solely on content. We 
+are talking <em>properly simple</em>. No styling or anything.
+Just plain HTML-tags with content.</p>
+<p>This means that the page fails or succeeds based on the 
+cotnent alone. Because - quite frankly - content is all 
+that is available. Realising that styling is not what I 
+want to spend time doing, I have done something similar. </p>
+<p>Even if the content quality to warrant such an approach 
+is not there. </p>
+<h2 id="general-setup">General setup</h2>
+<p>I am currently writing in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. 
+More specifically, I am using <a href="https://github.com/mdx-js/mdx">MDX</a>, 
+which seems to combine the pleasentness of Markdowns minimal syntax 
+with the usefulness of <a href="reactjs.org">React</a> and its components.</p>
+<p>For building site itself, I am using <a href="https://nextjs.org">NextJS</a>. 
+The process has been surprisingly straightforward. Writing in
+markdown and automatically receving quite nice webpages on the other 
+end is a delight. The app is deployed with <a href="zeit.co">now</a>. I had 
+some domain-related issues, but that was mainly confusion on my part. </p>
+</description></item><item><title>how  this site works</title><link>https://olaven.org/out/about_this_site/how _this_site_works.html</link><guid>https://olaven.org/out/about_this_site/how _this_site_works.html</guid><description><h1 id="blogging-with-markblog">Blogging with <a href="www.github.com/olaven/markblog">Markblog</a></h1>
+<p>Or rather: how I got rid of bloated setup and just wrote markdown. </p>
+<p>When I first built this site almost a year ago, <a href="olaven.org/out/site.html">I was pretty 
+happy</a> with my setup. It was built with 
+<a href="https://nextjs.org/">NextJS</a>, hosted with <a href="https://zeit.co/home">Zeit now</a> and 
+the pages were written in <a href="https://mdxjs.com/">MDX</a> and styled with <a href="https://sass-lang.com/">Sass</a>.
+A pretty huge pipeline is needed in order to get this to stick together. </p>
+<p>However, the site itself was literally just as basic as the site you are looking 
+at right now (as of march, 2020). Why is such a complicated setup needed? Of 
+course, it is not. But I knew NextJS pretty well, had gotten familiar with Sass and 
+I really wanted to write using <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. 
+What I wanted was achieved: a homepage I could update by writing markdown. However, I 
+could not quite get past the fact that there was so much setup needed for such a basic thing.</p>
+<p>Markblog is my attempt at a solution. It is a small piece of software written in <a href="deno.land">Deno</a>. 
+It simply converts markdown to HTML, and packages it in a nice, tiny, non-bloated blog-like page. 
+As of writing, the default file structure is as follows:  </p>
+<ul>
+<li><code>index.md</code></li>
+<li><code>style.css</code></li>
+<li><code>posts/</code></li>
+</ul>
+<p>(create this automatically with Markblog&#39;s <code>init</code>-command)</p>
+<p>The index page shows the markdown-text in addition to links to posts, in addition to the content 
+written in <code>index.md</code>. Then, Markblog&#39;s <code>build</code>-command triggers conversion to html. In my setup, 
+this runs as part of a simple CI-pipeline, meaning that I never touch anything other than Markdown-files. </p>
+<p>If this interests you, please head over to <a href="www.github.com/olaven/markblog">the project page</a> 
+to see more details!</p>
+</description></item><item><title>dutch grammar</title><link>https://olaven.org/out/nederland/dutch_grammar.html</link><guid>https://olaven.org/out/nederland/dutch_grammar.html</guid><description><h1 id="nederlandse-grammatica">Nederlandse Grammatica</h1>
 <p>These are a collection of my notes for grammar exam at <a href="https://www.uu.nl/en/organisation/university-college-utrecht">University College Utrecht</a>. I am posting them because I believe sharing knowledge fundamentally is a good thing, and of course because I hope this can serve as a useful resource for others. I have done my best to make sure that the information on this page is correct. If, however, you find this not to be the case, please <a href="mailto:olav@sundfoer.com">email me</a>, and then I will update the page. The full edit history is available on <a href="https://github.com/olaven/olaven.github.io">Github</a>. </p>
 <ul>
 <li><a href="#nederlandse-grammatica">Nederlandse Grammatica</a><ul>
@@ -638,380 +695,258 @@
 <td>geworden</td>
 </tr>
 </tbody></table>
-</description></item><item><title>making a browser extension with typescript and react</title><link>https://olaven.org/out/guides/making_a_browser_extension_with_typescript_and_react.html</link><guid>https://olaven.org/out/guides/making_a_browser_extension_with_typescript_and_react.html</guid><description><h1 id="how-im-building-an-extension-with-typescript-and-react">How I&#39;m building an Extension with Typescript and React</h1>
-<p>My goal with this guide is to show how I ended up building a chrome extension with <a href="https://www.typescriptlang.org/">Typescript</a> and <a href="https://reactjs.org/">react</a>. It won&#39;t necessarily fit your use case. But I certainly hope you can draw inspiration from it :-) </p>
-<p>To follow this post, you should have <a href="https://reactjs.org/docs/getting-started.html">a basic understanding of React</a> as well a little experience with <a href="nodejs.org">NodeJS</a>. </p>
-<p>I&#39;ve divided this post into two parts: </p>
-<ol>
-<li><a href="#going-with-a-comfortable-tech-stack">Why I chose the tech stack that I did</a></li>
-<li><a href="#lets-actually-make-something">Showing you how to setup the project</a></li>
-</ol>
-<h2 id="going-with-a-comfortable-tech-stack">Going with a comfortable tech stack</h2>
-<h3 id="i-want-the-type-safety-typescript-can-give-me">I want the type-safety typescript can give me</h3>
-<p>My experience is that the benefits of Typescript (or other statically typed languages) outweigh the downsides. 
-I especially like how it makes refactoring much easier. 
-Typescript screams at you when things are changing. Javascript silently fails. 
-The former allows me to constantly search for better ways of expressing the program I&#39;m writing without 
-being afraid (too afraid) of breaking something down the line. </p>
-<h3 id="react-is-familiar">React is familiar</h3>
-<p>Although I prefer to work on backend code, I happen to know React quite well. 
-I decided to learn it sometime back in 2017, and stuck with it. When <a href="https://reactjs.org/docs/hooks-intro.html">hooks</a> were released, I transitioned into writing functional react components and I have yet to look back. I have no good explanation for why I like this. This way of writing UI and handling state just happens to work well with the way I think. 
-Naturally, React was my first choice for writing a browser extension.</p>
-<h3 id="lets-try-to-avoid-bloated-configuration-files">Let&#39;s try to avoid bloated configuration files</h3>
-<p>Configuration files very quickly become a mess. I find this to be escpecially true in the JS ecosystem. Before knowing it, you end up with a <code>.babelrc</code>, <code>webpack.config.js</code>, <code>package.json</code>, <code>&lt;INSERT_TEST_FRAMEWORK&gt;.config.ts</code>, <code>.eslintrc</code> and so on. </p>
-<p>This quickly becomes hard to maintain. Perhaps it shouldn&#39;t be this way, but I mostly find configuration files to be instances of &quot;I have no idea why this works, let&#39;s not touch it&quot;. 
-It&#39;s hard to debug and easy to make mistakes. Bad combination. 
-(<a href="https://preview.redd.it/a0hf4zzwv4a11.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0dad1c1d40783ba976a6d39f994fe423eb305dc5">relevant comic</a>) </p>
-<p>I landed on <a href="parceljs.org">Parcel</a> which promises to need zero configuration. And I&#39;ve found this to be largely true. This <a href="https://imgs.xkcd.com/comics/will_it_work.png">might bite me some day</a>, but for now I&#39;m happy :-) </p>
-<h2 id="lets-actually-make-something">Let&#39;s actually make something!</h2>
-<p>Did you just skip to this section? That&#39;s fine. I&#39;d likely have done the same. 
-The contents of this section should be enough to create your extension. However, the full source 
-code is available <a href="https://github.com/olaven/browser-extension-with-tsx">on Github</a>.  </p>
-<h2 id="initialize-and-add-dependencies">Initialize and add dependencies</h2>
-<p>We first need to initialize a new project and add the dependencies we need. 
-I&#39;ve written a short script with the commands below. 
-It boils down to: initialize a project, and add parcel and typescript. </p>
-<pre><code class="language-sh">mkdir my_extension_project;
-cd my_extension_project; 
-yarn init -y; 
-yarn add react react-dom 
-yarn add --dev typescript parcel @types/react @types/react-dom  @types/chrome;
-echo &quot;Extension setup done 🧑‍🚀&quot;;</code></pre>
-<p>This script adds <code>&quot;main&quot;: &quot;index.js&quot;</code> to <code>package.json</code>. Remove this manually.</p>
-<h2 id="simple-workflow">Simple Workflow</h2>
-<p>This is the workflow we&#39;ll end up with: 
-We want a <code>yarn dev</code> command, automatically rebuilding our source code when developing. 
-We&#39;ll add a <code>yarn build</code>  command as well, for building our extension for distribution :) </p>
-<p>With parcel, these are very simple. Just add the following JSON configuration to the <code>package.json</code> we just created.</p>
-<pre><code class="language-json">/*..*/
-&quot;scripts&quot;: {
-    &quot;dev&quot;: &quot;parcel watch src/index.html --public-url=./&quot;,
-    &quot;build&quot;: &quot;parcel build src/index.html --public-url=./&quot;
-}
-/*..*/</code></pre>
-<p>You&#39;ll notice that we&#39;re referencing an <code>index.html</code> file in these scripts. 
-This will be the entry point of our extension (more on this <a href="#add-your-first-popup">in in a second</a>).</p>
-<p>These commands are basically variants on &quot;let parcel look at this file and do all the stuff Babel and Webpack would usually do&quot;.</p>
-<h2 id="popups-and-background-scripts">Popups and background scripts</h2>
-<p>This is the time to make ourselves familiar with some extension concepts. I&#39;ll keep it short. </p>
-<h3 id="popups-are-ui">Popups are UI</h3>
-<p>Extension popups define the GUI of our application. That is, 
-the visual elements that pop up when you click on the extension. 
-If you use a password manager, the popup would be the window where you 
-enter your master password and search for the password you want to use. </p>
-<h3 id="background-scripts-are-useful-for-interacting-with-the-browser">Background scripts are useful for interacting with the browser</h3>
-<p>Background scripts are programs that run independently of the UI or other state in the browser. 
-They are useful for handling long term state, e.g. by interacting with the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage API</a>. They can also be used to run code on events in the browser. Such 
-events can be creation of new windows or navigation between tabs. </p>
-<h3 id="telling-the-browser-about-our-extension">Telling the browser about our extension</h3>
-<p>The details of the extension is defined in a <code>manifest.json</code> file at the root of our project folder. 
-<code>manifest.json</code> tells the browser what our extension should have permission to do and where it&#39;s source files are.
-You can <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#manifest.json">check out MDN</a> for further details. </p>
-<p>For now, let&#39;s add a <code>manifest.json</code> looking like this: </p>
-<pre><code class="language-json">{
-  &quot;name&quot;: &quot;My First Extension&quot;,
-  &quot;version&quot;: &quot;0.0.1&quot;,
-  &quot;description&quot;: &quot;My first browser extension!&quot;,
-  &quot;manifest_version&quot;: 2
-}</code></pre>
-<h2 id="install-your-extension-in-chrome-or-firefox">Install your extension in chrome or firefox</h2>
-<p>Before we start making stuff, we want to install our extension in the browser. 
-This allows us to see what we&#39;re making.</p>
+</description></item><item><title>gamle oslo til langmyrskulp</title><link>https://olaven.org/out/overkommelige_eventyr/gamle_oslo_til_langmyrskulp.html</link><guid>https://olaven.org/out/overkommelige_eventyr/gamle_oslo_til_langmyrskulp.html</guid><description><h2 id="gamle-oslo-til-langmyrskulp">Gamle Oslo til Langmyrskulp</h2>
+<p>I dag har jeg laget meg et lite eventyr. Samboeren min drar i dag, klokken 10.
+Faktisk er det ganske viktig at hun drar klokken ti. Hun skal ta tog.
+Tidspunkt er ganske viktig når man tar tog.</p>
+<p>Det er kanskje derfor mange foretrekker å reise med bil.
+Men min samboer foretrekker allikevel å ta tog. Jeg foretrekker for
+øvrig å ta tog jeg også. Og da er altså, som sagt, tidspunkt viktig.
+Tidspunktet har ikke så mye å si for meg, vel og merke. Jeg skal ikke ta tog.
+Jeg har pakket sekken.</p>
+<p>Sekken var og er en passe stor, lett tursekk. I den har jeg lagt en hengekøye, en tarp, et liggeunderlag,
+ullundertøy, noen teltplugger og en vannflaske. I tilleggg har jeg pakket en Ipad, en kindle og en telefon.
+Disse tre tingene visste jeg ikke helt om jeg ville ha med eller ikke. 
+Særlig Ipaden.</p>
+<p>En stor del av meg mener at eventyr helst bør gjøres uten slike digitale dingser. Det ideelle eventyret et 
+analogt pusterom. En pause fra den ellers så digitale og masete hverdagene vi
+mer eller mindre frivillig har laget oss og lever i. En slags distraksjon fra distraksjonene.
+Jeg etterlever det sjeldent. Men det er iallfall en tanke jeg har.</p>
+<p>Under tidligere eventyr har jeg etterstrebet dette analoge idealet.
+Men det går aldri helt. Telefonen innbiller jeg meg at jeg ikke klarer meg uten. Den ser jeg på som en forsikring. 
+Jeg kan bruke den til å kontakte nødetater og tilsvarende. Eldre mennesker enn meg som deler samme analoge eventyrideal 
+vil kanskje si at den ikke faktisk er nødvendig. De har nok rett. Men dette har jeg ikke klart å internalisere.
+Den har iallfall blitt med meg hver gang.</p>
+<p>Når telefonen først er med, har idealet en tendens til å vike for impulsene i øyeblikket. 
+Eventyrets stillhet, og roen jeg alltid romantiserer i frokant blir for mye og for fremmed.
+Hjernen min er vant til konstant stimuli. Litt av alt, hele tiden, takk! Litt av alt, og alt for mye å trives i skogen.
+Etter hvert gir jeg altså etter, og mater hjernen min med akkurat det den vil ha. Inndata. Podcasts, for eksempel.
+&quot;Apathy&#39;s a tragedy and boredom is a crime&quot;, slik komikeren Burnham synger.</p>
+<p>Hva om jeg for en gangs skyld sier at det ikke er så farlig? Hva om jeg tar med meg teknologien og atpåtil tillater meg å bruke den. Hva skjer da?
+Må det være så nøye? Ville jeg få det bedre om jeg ikke stadig anstrengte meg for å leve opp til det analoge idealet? Eller til syvende og sist 
+ha dårlig samvittighet for at jeg gir etter? 
+Disse tankene fløy gjennom hodet mitt i det samboeren min dro for å rekke toget klokken ti. &quot;Hade&quot;, sier hun mens hun gir meg en god klem. 
+Det er fint. Snart er det min tur til å gå ut døren.</p>
+<p>Jeg plukker opp sekken og ser meg rundt i rommet. Herregud, soveposen ligger enda på gulvet! Jeg får såvidt plass øverst i sekken. 
+Nå er den ubalansert. Sekken altså. Det liker jeg ikke. Alt for tung i toppen. Sekken må definitivt pakkes om. 
+Det må være balanse i tingene.
+Jeg pakker om og noen minutter senere er tingene balansert. Plassen er bedre utnyttet og sekken er ikke lenger like stappfull. 
+Supert.</p>
+<p>Omsider er jeg ute av leiligheten. Gamle Oslo er nydelig. Kanskje byens peneste bydel, spør du meg. Men jeg og sekken setter kursen for sentrum.
+Strengt tatt er det litt rart å sette kursen fra Gamle Oslo til sentrum. Jeg antar de fleste vil mene at Gamle Oslo er en del av sentrum. 
+Med &quot;sentrum&quot; mener jeg derimot Sentrum. Sentrum-sentrum, om du skjønner. Og det tror jeg du gjør.</p>
+<p>Byen har begynt å våkne. Kafeene har begynt å fylles opp av gjester. Noen av dem jobber. Andre snakker. De som er her nå har sikkert kommet tidlig for å sikre seg favorittplassene sine. Luringer. 
+Matbodene har akkurat begynt å lage dagens første runde med mat. Før folkemengdene kommer for alvor. Da satser jeg 
+på å være borte for lengst.</p>
+<p>Planen min med å gå i Sentrum-sentrum var å se etter sovepose i en sportsbutikk. Ikke fordi det er noe galt med den jeg har, men
+fordi den ikke er min. Jeg bare låner den. Dessuten er den akkurat litt for stor til å få plass i min alt for dyre sykkelbag.
+Alt som ikke egner seg på sykkel får straks et lite minus i min bok. Utvalget sporstforetningene Storgata og Bogstadveien byr på 
+skuffer meg, mens det er ikke så farlig. Jeg skal ikke sykle i dag. I dag skal jeg gå, gå på eventyr. 
+Og omveier i Sentrum-sentrum til tross, er jeg allerede godt på vei riktig retning.</p>
+<p>Jeg går i jevnt tempo fra Bogstadveien til Ullevål Hageby. Derfra krysser jeg Ring 3 over den relativt nye sykkel- og gangbroen 
+som er der. Den ble bygget da jeg bodde i området for noen år siden. Jeg har gått og syklet masse her, fra Ullevål og
+opp bakkene til Kringsjå. Det er en rar følelse å være på et sted hvor man har vært så mye, men allikevel ikke lenger har noe å gjøre. </p>
+<p>Flere ganger tar jeg meg i å savne sykkelen min. Det er fint å gå, men hastigheten på sykkel er den som passer meg best. Mer
+action på en måte, men fortsatt med måtehold og uten motor. Det e fint å merke at jeg savner
+transportmetoden jeg bruker mest tid på.</p>
+<p>Jeg går inn på matbutikken på Kringsjå. Det er siste stopp før skogen. Jeg skal ikke langt, så jeg behøver ikke 
+tenke noe særlig på hva jeg kjøper. Planen er å bare ta bæreposen i hånden. Vekt og plass i sekken er ikke så nøye. 
+Vanligvis pleier jeg å ha ganske konkrete planer før jeg går inn i en butikk, men ikke denne gangen. Eventyret kan ha noen 
+slike momenter, tenker jeg. Momenter som ikke er planlagt, men som bare skjer. Maten ville fått de fleste ernæringsfysiologer 
+til å rynke på nesen. To enkle salatblandinger med laks, to poser potetgull, en smoothie og en pose lakris ligger i handleposen 
+min når jeg er ferdig, utenfor butikken på Kringsjå Studentby. </p>
+<p>Fra Kringsjå er det bare 5 minutters gange til Sognsvann. Fra Sognsvann er det bare 10 minutters gange til Svartkulp.
+Hovedstiene er usaklig tilrettelagte. De ligner mer på grusveier enn stier til tider. Ikke misforstå meg. Jeg klager
+ikke på tilgjengelig natur. Men jeg synes at det er påfallende hver gang jeg er her.</p>
+<p>Jeg velger ikke veien jeg nettop beskrev, men følger en annen slik tilrettelagt sti et stykke før jeg tar av inn i det
+evige stinettet som er i skogen, i retning Svartkulp.</p>
+<p>Stinettet snor seg innover. Jeg tenker på alle som bruker dette området. Da jeg bodde her, frekventerte jeg området og 
+var en av de mange som brukte dette området til rekreasjon. Tenk på alle som gjør det, tenker jeg; bruker dette området 
+til rekreasjon, altså. Alle timene og alle skrittene som bokstavelig talt er lagt ned i jorden. Hvor har alle de timene blitt av? 
+Hvor ble mine timer av? Kan det ha kommet noe nyttig ut av dette? Det er vanskelig å komme på nyttige
+ting som blir gjort her. Det vil si, å gå i skogen kan definitivt ha en nytte for noe annet. Angivelig er det blant annet veldig
+godt for både psykisk og fysisk helse. Og god helse er nødvendig for å mestre andre arenaer i livet.</p>
+<p>Skogvokteren gjør sikkert noe nyttig når han går her. Det er ikke helt klart for meg verken hvorvidt skogvoktere fremdeles finnes
+eller hva de gjør. Skogvoktere har et forbedringspotensial på markedsføring, konkluderer jeg. Jeg tipper, kanskje fordomsfult, at den
+gjennosmtnittlige skogvokter ikke har særlig mye til overs for markedsføring. </p>
+<p>Spørsmålet om nytte kommer tilbake til meg. 
+For det første, kunne ikke god helse være bra nok i seg selv? Hvorfor er god helse bare godt fordi det muliggjør andre ting?
+Karriere, økonomi og gode venner. Er ikke disse tingene også bare nyttige fordi de igjen gjør andre ting enklere? En karriere,
+for eksempel, er da ikke et mål i seg selv? For noen er karriere nyttig for å tjene penger til å ta vare på de rundt seg. Men 
+hva er så galt med at det ikke går så bra med de rundt en, <em>egentlig</em>? Er det fordi vi opplever sorg? Hvorfor er sorg så ille?
+Det gjør vondt og kan i ytterste konsekvens ta livet av oss. Eller kanskje det er riktigere å snu på det: Det å miste de rundt 
+seg er ikke farlig fordi det å miste noen er en enorm ulempe. Det nyttige er kanskje at det å ha folk rundt seg er en fordel. 
+De som har folk rundt seg, har høyere sjans for å overleve fordi de ikke er alene om utfordringene, men kan samarbeide om dem. 
+Ja vel, men er det så nøye det da? Karriere er nyttig for ikke å ta vare på folk rundt seg, som igjener nyttig for å ikke miste dem, 
+som igjen er nyttig for egen overlevese. Overlevelse er nyttig for å bringe videre egne gener, som nå enten fremstår som totalt 
+meningsløst eller er nyttig for noe nytt igjen.</p>
+<p>Finnes det noe som er nyttig eller eller ønskelig som ikke er det fordi det hjelper en med den neste såkalt nyttige tingen?
+Det hele blir til en evig rekursiv tankerekke av nyttighet og mål. Som et dataprogram som kjører seg selv om og om igjen - 
+et evig tankeprogram som krasjer hodet mitt om det får fortsette.</p>
+<p>Det aner meg at dette fort kan utvikle seg til et &quot;Hva er poenget med noe som helst&quot;-type spørsmål. Den tankerekken må jeg
+skru av. Hodet mit håndterer slike ideer dårlig på en vanlig dag. I dag, på eventur alene, kan et slikt reskursivt program
+i hodet bli fullstendig ødelegegnde.</p>
+<p>Svartkulp er endelig på min venstre hånd. Her har jeg tenk til å slå leir. Kartet har imidlertid gjort meg oppmerksom på
+at det ligger et lite vann rett vest for Svartkulp. Der har jeg ikke vært før, men det er ikke langt. Bare 200m eller noe
+slikt.</p>
+<p>Vannet har ikke noe navn på kartet. Senere har jeg funnet ut at det går under to navn: Lille Svartkulp og Langmyrskulp.
+Med denne informasjonen er det ganske intuitivt at Langmyr er en myr øst for Svartkuulp, som blant annet inneholder et lite
+vann. Dessuten er den lang. Dette viser seg å stemme. </p>
+<p>Derimot er det ikke like intuitivt at den en gang ble brukt som skytebane. Jeg skjønner at den kan  ha egnet seg til det, for 
+den er lang og flat. Men akkurat hvilken funksjon vannet hadde på en skytebane ser jeg ikke. Det virker upraktisk 
+å måtte forholde seg til et vann når man egentlig er ute etter å treffe blinker. Eller kanskje, men forhåpentligvis ikke, noe annet.</p>
+<p>Med det sagt vil kulene naturligvis fly over vannet. så da er det kanskje ikke i veien allikevel. Jeg begynner å lefle med tanken på å
+slå leir der istedenfor her. Saken blir avgjort i det jeg blir oppmerksom på alle stemmene rundt vannet. Over alt langs
+Svartkups vannkant er det folk på tur. Tilsynelatende flest barnefamilier. Det vil jeg holde meg unna.</p>
+<p>Det er ikke noe galt i barnefamilier eller noen av de andre rundt vannet. Tvert imot synes jeg det er fint å se
+folk her. Men i dag gjerne være alene. Jeg vil ikke at noen skal komme i veien for meg og, ikke minst, jeg vil ikke
+komme i veien for noen andre. Ikke at det er spesielt for i dag. Jeg trives godt med å være alene og ønsker som regel
+å være det.</p>
+<p>Langmyrskulp står til forventingngene. Overgår dem faktisk. Sant og si var de ikke veldig høye. Det er lite og ovalt,
+kanskje 100m langt og 50m bredt. På den andre siden sitter det et menneske i blå allværsjakke og spiser niste. Et
+nistespisende menneske skal jeg greie. Vedkomne er nok rolig og snill. Det tror jeg de fleste som spiser niste langs
+Langmyrskulp er.</p>
+<p>Tidspunktet for å finne ut av hvor jeg skal slå leier har endelig kommet. Det blåser. Ikke veldig mye, men nok til at
+jeg vil unngå vinden om jeg kan. Særlig kastene. Jeg går rundt vannet. Det er mange gode kandidater. Men jeg vil finne
+det beste stedet.</p>
+<p>Langs vestsiden av vannet er det en liten åpning i skogen. Den er liten og ganske mørk. En god backup, tenker jeg for meg selv.
+Det er også en liten bekk der. Kartet forteller meg at dette er bekken som kobler dette vannet med Svartkulp. I Nordenden er 
+det en liten bålplass. Bortenfor den, på Østsiden, er det mange små trær og ganske åpent. Bak er det en
+svært bratt skråning. Denne gir ly for vinden, ser det ut til. Kult!</p>
+<p>Nistemennesket sitter der fremdeles, rett bortenfor det kule området. Jeg ønsker ikke å forstyrre, og snur meg og går
+rundt vannet, til jeg ankommer startsetedet, i sørenden.</p>
+<p>Lyen eksisterer ikke der og underlaget er våtere. Det er god avstand mellom trærne, men utenom det virker sørsiden
+som dårlig parti. Jeg går tilbake til nrodsiden. Den snille nistespiseren følger med meg. Eller, det vet jeg ikke sikkert.
+Det er en antakelse. Igjen blir jeg nervøs for å forstyre nistespiserens nistepause dersom jeg går for nærme. Så jeg bestemmer
+meg for å gi sørenden enda en sjanse, og går tilbake. </p>
+<p>Frem og tilbake trasker jeg, mens jeg forsøker å ikke tenke på at nistespiseren sikkert tenker at dette ser litt rart ut. 
+Jeg vil virkelig ikke komme i veien. Jeg vil ikke være i nærheten av fremmede nå. Det fyller meg med en vag engstelse og 
+sterk uro. Jeg vet ikke hvorfor det er sånn. Det skulle jeg ønske at jeg visste. Eller iallfall skulle jeg ønske at jeg kunne 
+skru det av litt lettere enn jeg kan. </p>
+<p>Ganske håpløst, jeg vet det. Runddansen rundt vannet rekker å gjenta seg tre ganger før nistespiseren pakker sakene sine i et beundringsværdig
+bedagelig tempo og går. Den blå allværsjakken forsvinner opp skråningen. Jeg håper eieren får en fortsatt fin dag.</p>
+<p>Omsider slår jeg leir, omtrent der nistespiseresn satt. Leiren kan presenteres slik, ordnet synkende etter avstand fra bakken:</p>
 <ul>
-<li>If you&#39;re using Firefox<ol>
-<li>navigate to <code>about:debugging</code> in your browser</li>
-<li>click <em>This Firefox</em></li>
-<li>click <em>Load temporary Add-on</em></li>
-<li>select the <code>manifest.json</code> file in this folder </li>
-</ol>
-</li>
-<li>If you&#39;re using Chrome<ol>
-<li>navigate to <code>chrome://extensions</code></li>
-<li>enable developer mode in the upper left corner </li>
-<li>click <em>Load Unpacked</em> </li>
-<li>select the your project directory</li>
-</ol>
-</li>
+<li>Tarp, klønete oppspent mellom trær, plugger i bakken i vestsiden og til side ni små busker langs vannet i øst.</li>
+<li>Sovepose, fremdeles innpakket. Fungerer foreløpig som nakkepute.</li>
+<li>Liggeunderlang. Jeg har ingenting å utsette på dette underlaget. det er fucking supert.</li>
+<li>Hengekøye, spent relativt pent mellom to trær. Den ligger litt skjevt i forhold til tarpen, som ødelegger det visuelle inntrykket litt. Eller kanskje er det tarpen som ligger skjevt. Samme det. Jeg bestemmer meg for at dette ikke har særlig å si. Hverken hva som er skjevt i forhold til hva eller at det er skjevt.</li>
+<li>Sekken, på bakken. Jeg liker sekken. Den er min følgesvenn. Det er på en måte fellesneveren. Jeg vet ikke hvorfor jeg tenker det.</li>
 </ul>
-<h3 id="add-your-first-popup">Add your first popup</h3>
-<p>Most of the following should be familiar if you&#39;ve used React before. If you&#39;re confused, refer to the code comments :-)  </p>
-<p>The entry point of our application will be <code>index.html</code> - <a href="https://www.youtube.com/watch?v=x3AYYRqRMC4">classic</a>. 
-We&#39;ll add it at <code>src/index.html</code> as this matches with the <a href="#simple-workflow">build script</a> we added in <code>package.json</code> earlier.</p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;!-- The root node of our component tree --&gt;
-    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-&lt;!-- The entry point for our React components --&gt;
-&lt;script src=&quot;./components/index.tsx&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;</code></pre>
-<p>Similarly, let&#39;s add a <code>./src/components/index.tsx</code>. This file will load our react component. </p>
-<pre><code class="language-tsx">
-import * as React from &quot;react&quot;; 
-import * as ReactDOM from &quot;react-dom&quot;; 
-
-//This is our counter component 
-const Counter = () =&gt; {
-    const [ count, setCount ] = React.useState(0);
-    return &lt;&gt;
-        &lt;h2&gt;{count}&lt;/h2&gt;
-        &lt;button onClick={() =&gt; {setCount(count + 1)}}&gt;increment&lt;/button&gt;
-        &lt;button onClick={() =&gt; {setCount(count - 1)}}&gt;decrement&lt;/button&gt;
-    &lt;/&gt;
-}
-
-/* We&#39;re now telling React to render this component on the webpage, inside 
-the first element it can find with and id of &quot;root&quot;. Notice how this matches 
-the `div`-tag in our `index.html` :-) */
-ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));</code></pre>
-<p>Lastly, the browser needs to know about our popup to show it. 
-As <a href="#telling-the-browser-about-our-extension">just discussed</a>, this is done through our <code>manifest.json</code> file. 
-Simply add the following to it: </p>
-<pre><code class="language-json">/*...*/
-&quot;browser_action&quot;: {
-  &quot;default_popup&quot;: &quot;dist/index.html&quot;
-}
-/*...*/</code></pre>
-<p>Notice how we&#39;re referencing <code>dist/index.html</code> and not <code>src/index.html</code>. This is because 
-parcel creates and leaves our files in the <code>dist</code>-directory when it is done transforming our Typescript and React code to 
-plain <code>.js</code>-files :-) </p>
-<h3 id="did-it-work">Did it work?</h3>
-<p>It&#39;s time to see our beautiful creation!
-Open a terminal and run <code>yarn dev</code>. You should see a message like <code>✨ Built in 58ms</code>. </p>
-<p>Now open your browser, and click on your extension. There it is! Or should be.
-If something went wrong, read the error message carefully and try to figure out what&#39;s 
-going on. You can always refer to <a href="https://github.com/olaven/browser-extension-with-tsx">the full solution</a> if you&#39;re stuck.</p>
-<p>While you&#39;re at it, try to make a change in your component. Notice how the change is picked up in the browser at once. Parcel has rebuilt our source files automatically :-)</p>
-<h3 id="adding-a-background-script">Adding a background script</h3>
-<p>Now that we have our popup working, lets try to add a background script as well. 
-<a href="#background-scripts-are-useful-for-interacting-with-the-browser">As mentioned</a>, these can (amongst other things) be used to listen for browser events. To demonstrate this, we&#39;ll create a script that logs the id of a tab whenever we create one!</p>
-<p>First, create the file at <code>src/background/script.ts</code> with the following code: </p>
-<pre><code class="language-ts">
-//Every time a tab is created...
-chrome.tabs.onCreated.addListener((tab) =&gt; {
-    //run this code 
-    console.log(`You just created a tab with id: ${tab.id}`)
-}); </code></pre>
-<p>Like with popups, we have to tell the browser about this through <code>manifest.json</code>: </p>
-<pre><code class="language-json">/*..*/
-&quot;background&quot;: {
-  &quot;scripts&quot;: [
-    &quot;dist/background/script.js&quot;
-  ]
-}
-/*..*/</code></pre>
-<p>Again, we&#39;re referencing the <code>dist</code> folder where Parcel leaves our files. 
-You might recall that background scripts <a href="#background-scripts-are-useful-for-interacting-with-the-browser">run separately</a>. 
-In other words, our popup knows nothing of this background script. Hence, we have to explicitly tell Parcel to include this file. 
-Do this by editing the <code>&quot;dev&quot;</code> and <code>&quot;build&quot;</code> commands in <code>package.json</code> like this: </p>
-<pre><code class="language-json">/*..*/
-&quot;scripts&quot;: {
-    &quot;dev&quot;: &quot;parcel watch src/index.html src/background/script.ts --public-url=./&quot;,
-    &quot;build&quot;: &quot;parcel build src/index.html src/background/script.ts --public-url=./&quot;
-}
-/*..*/</code></pre>
-<p>Since we&#39;ve modified our <code>dev</code>-script, we need to stop and restart it in the terminal window.</p>
-<p>We&#39;re almost ready to see our background script in action! 
-We just need to access the console where the <code>console.log</code>&#39;s are written. </p>
-<ul>
-<li>If you&#39;re using Firefox<ol>
-<li>navigate to &quot;about:config&quot; and add <code>extensions.sdk.console.logLevel</code> with a string value of <code>&quot;all&quot;</code></li>
-<li>restart Firefox</li>
-<li>Open to Tools -&gt; Web developer -&gt; Browser console (alternatively use cmd+shift+j)</li>
-<li>Click the settings icon and enable Show Content Messages</li>
-</ol>
-</li>
-<li>If you&#39;re using Chrome <ul>
-<li>navigate to &quot;chrome://extensions&quot;</li>
-<li>click on &quot;background page&quot; on your extension (you might need to hit the refresh button for this to show up)  </li>
-</ul>
-</li>
-</ul>
-<p>You should now see the console for your background script! Open your browser and console side by side and create a few tabs. 
-The handler is running and <code>You just created a tab with id: N</code> gets logged ✨</p>
-<h2 id="see-browser-vendors-for-publishing">See browser vendors for publishing</h2>
-<p>I&#39;m not going to cover how to publish your extensions here. 
-This blog post covers a lot already. Browsers themselves have guides for this.
-<a href="https://developer.chrome.com/docs/webstore/publish/">Here&#39;s one the one for Chrome</a> and <a href="https://extensionworkshop.com/documentation/publish/submitting-an-add-on/">here&#39;s the same for Firefox</a>. </p>
-<h2 id="closing">Closing</h2>
-<p>Thank you for reading. It really means a lot to me.
-Hopefully this gave you enough knowledge to start experimenting with extensions for yourself. 
-If this helped you out, please consider supporting my work through <a href="https://github.com/sponsors/olaven">Github Sponsors</a>. If you have any questions, feel free to <a href="mailto:olav@sundfoer.com">send me an email</a> :-) </p>
-</description></item><item><title>blog with git and markdown</title><link>https://olaven.org/out/guides/blog_with_git_and_markdown.html</link><guid>https://olaven.org/out/guides/blog_with_git_and_markdown.html</guid><description><h1 id="blogging-with-git-and-markdown">Blogging with Git and Markdown</h1>
-<p><em>Disclaimer</em>: parts of this guide covers a piece of software called Markblog, of which I am the author.</p>
-<h2 id="who-is-this-for">Who is this for?</h2>
-<p>This guide assumes that you are: </p>
-<ul>
-<li>familiar with using the command line</li>
-<li>familiar with using <code>git</code></li>
-<li>someone with a basic understanding of Markdown</li>
-<li>a Github user (👋 or <a href="https://github.com/join">become one</a>)</li>
-</ul>
-<h2 id="whats-this-guide-about">What&#39;s this guide about?</h2>
-<p>This guide will go through an easy way to get setup a blog. Afterwards, you 
-will be able to blog with the following workflow: </p>
+<p>Det er et bra oppsett. Pen utsikt over vannet. Ganske god ly for vinden. Etter en stund med skogslyder setter jeg på en lydbok. På mange måter 
+opplever jeg det som roligere. Hvorfor det? Det er rart. Hvorfor lurer jeg jeg på det også? Hodet mitt har som alltid vanskelig for å holde kjeft.
+Det er en egenskap jeg er usikker på om jeg liker eller ikke. Som regel er det bra, føler jeg. Hvorfor det?</p>
+<p>Lydboken demper støyet litt. Etterpå gjør en podcast det sammen. Jeg kjenner meg takknemlig for denne fluktruten teknologien
+gir meg. En annen del av meg lurer på ome jeg kanskje ikke hadde hatt behov for den om den ikke var der. Er den overbestkyttende? Skjermer teknologien 
+meg for ting jeg ellers hadde lært meg å håndetere? Bildet av digital teknologi som en slags allestedsværende, overbsekyttende mor 
+underholder meg i et sekund eller to.
+Det er et fiffig bilde. </p>
+<p>Snart kommer det en gruppe mennesker til vannet. Jeg tror de er på min alder. Jeg forsøker å få øyekontakt med dem for å hilse. Det virker på meg som om
+de ikke er så interessert i å hilse. Det får for så vidt være greit. De henger opp hengekøyer de også, ved bålplassen. Først blir jeg litt engstelig for
+at de også har tenkt til å sove her slik jeg har, og at jeg ikke vil få stedet for meg selv. 
+Jeg konkluderer med at det ikker er tilfelle. De har bare to hengekøyer, men er fem. Dessuten har de små sekker, ikke nok til å ha med sovepose. 
+Det passer meg godt.</p>
+<p>Jeg plages litt av at vi ikke har hilst. Noe er liksom uforøst. et nikk og øyekontakt hadde holdt lenge. Nikk og øyekontakt er akkurat nok
+til å få sagt &quot;Hei, her er jeg. Jeg ser det og jeg ser at du ser meg. Aller helst vil jeg vøre ifred, men trenger dere hjelp, er jeg selvsagt
+her&quot;. Møter de blikket får de kommunisert &quot;ditto&quot;.</p>
+<p>Gruppen oppdager frosker og stålormer i vannet. Ormen er særlig interessant. Den svømmer frem og tilbake i det som
+etter hvert har blitt ettermiddagssol. De følger eter den lags vannkanten og tar bilder med telefonene sine.</p>
+<p>Hver gang de går forbi meg gjør jeg nye forsøk på øyekontkakt. De unngår den. Det virker som at de har det fint. Hvis det stemmer
+er det veldig bra. Jeg har det bra jeg også. Det er mye viktigere enn hilsing.</p>
+<p>Egentlig er det veldig fint at fremmede mennesker kan være på samme sted uten å blande seg i hverandres saker. Det tyder på høy tillit.
+De lar meg holde på med mitt og jeg lar dem holde på med sitt. Det er en fin ordning. Kanskje er det derfor de ikke hilser? 
+Kanskje tenker de at de er nødt til å inkludere meg i deres planer hvis de hilser. Det kan jeg forstå at de ikke vil. 
+Det vil ikke jeg heller. Da kan ikke lenger jeg holde på med mitt og det med sitt. Og det er ingen særlig fin ordning.</p>
+<p>Når kvelden nærmer seg er det bare meg der. Lydbøkene har tatt slutt og podcastene føler jeg meg ferdig med. Kindle-brettet mitt
+har også fått en del oppmerksomhet. Jeg har konsumert masse. Mentalt har disse inndataene tatt meg innom nomadiske reiser til India, debatter om
+tilliten til demokratiet blandt befolkingen i Nederland (som er høy, men synkende), til et isolert skogsliv med Elgkalver.</p>
+<p>Oppramsning av underholdningsens innhold tydeliggjør hvor mye forskjellig teknologi (bøker språk, lydopptakere, høyttalere, internett) kan
+eksponere oss for. Og det på helt ufattelig kort tid! Det er noe magisk med det. Helt fantastisk! I det ene øyeblikket kan jeg høre på 
+ledende eksperter diskutere temaet sitt. I det neste kan jeg følge med spanjolenes inntog i Aztekerriket. Fysisk har jeg ikke beveget meg en meter. 
+Det er så mektig og omfattende at jeg også tar meg selv i å synes at det er litt skremmende. En slags æresfrykt for teknologien, slik jeg tror 
+enkelte troende føler ovenfor Gud.</p>
+<p>En annen fantastisk fordel med inndataen er at den lindrer støyen som ellers dominerer hodet. Så fort den tar slutt derimot, har hodet 
+fått enda mer materiale å jobbe med. Enda mer å kværne på og lage støy av. Den nye støen forsterker behovet for ny inndata, og plutselig 
+befeinner en seg i en evig sirkel. </p>
+<p>En midlertidig utvei fra denne sirkelen er å lage ting. Iallfall er dette den beste medisinen meg bekjent. 
+Den eneste virkelig store bivirkningen er tretthet. Trettheten leder inn i hvile, som så skaper ny støy og ønske om mer inndata. 
+Å lage ting er med andre ord ingen vei ut av den evige sirkelen. Imidlertid er det en måte å omsette støyen i noe som i hvert 
+fall har potensiale til å være nyttig. </p>
+<p>Det er som en evig informasjonssirkel. Støy -&gt; Inndata - Lage noe -&gt; hvilke -&gt; Repeat. Ny inndata er nødvendig for å få noe UT igjen. 
+Iallfall ikke for meg. Og jeg tror det er slik for andre også. Og derfor kommer man seg aldri helt ut av sirkelen.</p>
+<p><img src="./../assets/images/modell_overkommelige_eventyr_v1.png" alt="modell"></p>
+<p>Her føler jeg et ansvar for å påpeke at denne modellen ikke er vitenskapelig. Det vil si, det vet jeg ikke om den er. Dette kommer mer eller mindre ret fra mitt eget hode.
+Jeg har ikke lest meg opp på eksisterende litteratur på kreativitet eller mental støy. Dette er ikke fagfellevurdert. Idet heel tatt. Ikke ta det mer seriøst enn det fortjener.</p>
+<p>Vanligvis ville jeg løst behvoet for å lage noe, som jeg nå kjenner her i henegkøyen, med å programmere eller planlegge noe med kalendere og lister. 
+Jeg elsker kalendere og lister. De gir en fantastisk oversikt og ro. Avlaster hodet. I tilleg er de megagode verktøy for å faktiskf å ting gjort. 
+Det er velbalanserte greier.</p>
+<p>Nå har jeg ikke datamaskin til programmering eller lister og kalednder. Noe kunne jeg gjort på ipaden, men jeg mangler mus og tastatur.
+Da går det hele tregt og blir mer frustrerende enn nyttig. Jeg vil finne en annen måte å lage noe på.</p>
+<p>Med ipaden har jeg en tiløhørende penn. Jeg bestemmer meg for å skrive litt for hånd. Sammenhengende tekst har jeg ikke skrevet 
+for hånd på veldig, veldig lenge. Nettbrettet med penn fungerer omtrent som med en aanlog notatbok med blyant. 
+Jeg liker at jeg kan gjøre dette analoge digitalt. teknologien har blitt veldog god! Det føles
+litt som om jeg bryter reglene for det som skal gå. Som å bruke et magisk papir eller en datamaskin som glemmer at den skal være logisk og ryddig. Det
+er morsomt. </p>
+<p>Jeg skriver en del i løpet av en vanlig dag. Men det jeg skriver er
+stort sett kode, notater, list er eller kommunikasjon med kollegaer. 
+De tekstene har som regel et formål. De er guider, søknader eller redegjørelser for et spesielt tema. Slik skriver jeg ikke denne gangen.
+Jeg begynner å skrive om prosjektet dagen har bestått og består av. </p>
+<p>Riktignok har jeg et tema. Men jeg tillater meg å ta mange omveier på vei til poenget. Deter morsommere å skrive slik. Om ikke annet fordi det
+er annerledes sammenlignet med det jeg er vant til. Hvorvidt leseropplevelsen er god eller ikke gjenstår å se.</p>
+<p>Arbeidet flyter ganske godt. Iallfall i perider. Når det slutter å flyte, tar jeg pause. Det tar tid. Denne arbeidsteknikken er nok ikke særlig egnet for
+tidsfrister og sjefer som venter på en leveranse. I dette teilfellet har jeg dog ingen av deleene, så dette lar jeg meg heller ikke plage av.
+Til tross for lange tenkepauser blir det en del tekst. Teksten blir ikke så rent gal heller. Ikke kjempegod. Men bedre enn my annet, synes jeg selv.</p>
+<p>I de beste øyeblikkene føler jeg at jeg virkelig greier å være i modellen min; Inndata-steget blir utnyttet i lage noe-steget. 
+Det er tilfredsstillende. Mistanken min er at dette skyldes at formen på det jeg lager er likere formen på inndataen jeg mater hjernen 
+min med enn det pleier å være.</p>
+<p>Apropos modellen lurer jeg på om det mangler et steg for behandling av inforamsjon. Altså et steg som lar hjernen jobbe med inndata uforstyrret.
+Dette steget må i så fall vfå plass etter inndata og før man lager noe.</p>
+<p><img src="./../assets/images/modell_overkommelige_eventyr_v2.png" alt="modell v2"></p>
+<p>Men er ikke dette allerede hvile-steget? jeg lurer på om jeg har laget en liten felle for meg selv her. &quot;Hvile&quot; impliserer at det
+ikke skjer noe. Men det tror jeg ikke stemmer. Selv under søvn jobber hjernen med å danne minner og koble om seg selv. Det
+er iallfall slik jeg har forstått det når jeg leser og høre på dem som hevder å ha greie på det. Og søvn er jo selve kongen
+av hviling. Søvn er hvile-hviling! Muligens bare slått av koma. Og død. men det virker som noe litt annet igjen.</p>
+<p>Åja, og det hjernen gjør under søvn er da behandling! Er det ikke? I såfall ser jeg to problemer med den første modellen jeg
+tegnet opp.</p>
 <ol>
-<li>write markdown-files on your computer ✍️</li>
-<li>push your prose to github 🐙</li>
-<li>have your blog update automatically 😍</li>
+<li>&quot;Hvile&quot; burde kalles &quot;behandling&quot;</li>
+<li>&quot;Behandling&quot; må inn to ganger.</li>
 </ol>
-<h2 id="whats-the-techstack-briefly">What&#39;s the techstack, briefly?</h2>
-<p>To build our blog from Markdown, we will use <a href="https://github.com/olaven/markblog">Markblog</a>. 
-This is an open source tool written with <a href="deno.land">Deno</a>. </p>
-<p>In order to deploy our website, we will use <a href="https://pages.github.com/">Github Pages</a>. Github Pages 
-is free and works - unsurprisingly - seamlessly with projects on Github. 
-Additionally, <a href="https://github.com/features/actions">Github Actions</a> will be used to automate the 
-deployment process. If these tools are unfamiliar, this might seem like a lot. But stick with me, 
-it is all relatively simple when it comes together 😅</p>
-<h2 id="enough-talk-lets-get-started">Enough talk, let&#39;s get started!</h2>
-<h3 id="installation">Installation</h3>
-<ol>
-<li><a href="https://git-scm.com/">install Git</a></li>
-<li><a href="https://deno.land/#install">install Deno</a></li>
-<li><a href="https://github.com/olaven/markblog#installation">install Markblog</a></li>
-</ol>
-<h3 id="git-setup">Git Setup</h3>
-<ol>
-<li>create a repository on Github (check &quot;Initialize this repository with a README&quot;)</li>
-<li>Enable &quot;Github Pages&quot; in the repository settings by setting <code>master</code> as source. </li>
-<li>navigate to some fitting folder in your terminal, e.g. <code>cd $HOME/Documents</code></li>
-<li>clone your new repo with <code>git clone https://github.com/&lt;your-username&gt;/&lt;your-repository-name&gt;</code></li>
-</ol>
-<h3 id="blog-setup">Blog Setup</h3>
-<ol>
-<li>navigate to your cloned repository with <code>cd &lt;your-repository-name&gt;</code></li>
-<li>run <code>markblog init</code></li>
-<li>(optional) add <code>./style.css</code> to make your page look the way you want</li>
-</ol>
-<p>Markblog has created two files for you: <code>index.md</code> and <code>./posts</code>. 
-Anything you write in <code>index.md</code> will appear on the front-page of your blog. 
-<code>./posts</code> is where you will write new posts on your blog. </p>
-<h3 id="writing-your-first-post">Writing your first post</h3>
-<p>Let&#39;s take a break from the setup, and write something!</p>
-<ol>
-<li>open the repo-folder in your text editor of choice</li>
-<li>in <code>index.md</code>, write a sentence or two about the blog. Or don&#39;t - it&#39;s up to you 🤗</li>
-<li>create a new file in <code>./posts</code> called <code>my_first_post.md</code>. </li>
-<li>Write something in <code>./posts/my_first_post.md</code>. Or don&#39;t - still up to you 🍨</li>
-</ol>
-<h3 id="automated-deployment">Automated Deployment</h3>
-<p>After this step, we will have achieved the workflow outlined <a href="#whats-this-guide-about">at the beginning</a>!
-This section is long and somewhat cumbersome. However, this is automation! In other words,
-we only have to do this once!</p>
-<ul>
-<li>On <a href="https://github.com">Github</a><ol>
-<li>Go to your <a href="https://github.com/settings/profile">profile settings</a></li>
-<li>Navigate to &quot;Developer settings&quot; -&gt; &quot;Personal access tokens&quot; </li>
-<li>click &quot;Generate new access token&quot;. This will prompt for your password.</li>
-<li>Make sure to check &quot;repo&quot;-access, write a fitting note and click &quot;Generate token&quot;</li>
-<li>Keep the token until step 8. Never share it!</li>
-<li>head over to the repository you created</li>
-<li>Navigate to &quot;Settings&quot; -&gt; &quot;Secrets&quot; and click &quot;Add a new secret&quot;</li>
-<li>Add a secret called <code>ACCESS_TOKEN</code>, with the key from step 4.</li>
-</ol>
-</li>
-<li>Locally, in your cloned repository<ol>
-<li>create directory for Github Actions with <code>mkdir -p ./github/workflows</code>. </li>
-<li>create a workflow-file for deploy with <code>touch ./github/workflows/deploy.yml</code></li>
-<li>paste the following into <code>deploy.yml</code>: </li>
-</ol>
-</li>
-</ul>
-<pre><code class="language-yml">name: deploy
-
-on:
-    push:
-        branches: [writing]
-jobs:
-    deploy:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@master
-          - uses: denolib/setup-deno@master
-            with:
-              deno-version: 1.15.3
-          - name: Build
-            run: deno --allow-read --allow-write --unstable https://raw.githubusercontent.com/olaven/markblog/master/mod.ts build 
-          - name: Deploy
-            uses: JamesIves/github-pages-deploy-action@releases/v3
-            with:
-                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-                BRANCH: master 
-                FOLDER: . # The folder the action should deploy.</code></pre>
-<h3 id="going-live-🗺-🌩">Going live 🗺 🌩</h3>
-<ol>
-<li>checkout to the branch for writing, <code>git checkout -b writing</code></li>
-<li>commit your changes, <code>git add . &amp;&amp; git commit -m &quot;initial blog setup&quot;</code></li>
-<li><code>git push --set-upstream origin writing</code></li>
-</ol>
-<p>Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
-Your next post is just an <code>.md</code>-file away! To publish it, just push it 
-onto the <code>writing</code>-branch, and your automation will do the rest 🍇 🍏</p>
-<p>(If you are unsure about the URL, have a look at the &quot;Github Pages&quot;-seciton of your Github-repository 😃)</p>
-<p>Check out <a href="https://github.com/olaven/markblog#documentation">Markblog&#39;s documentation</a> for more information about how to customize your blog.
-See <a href="https://olaven.org">my blog</a>(<a href="https://github.com/olaven/olaven.github.io">github repo</a>) for a live example.</p>
-<p>Thanks for reading! </p>
-</description></item><item><title>how  this site works</title><link>https://olaven.org/out/about_this_site/how _this_site_works.html</link><guid>https://olaven.org/out/about_this_site/how _this_site_works.html</guid><description><h1 id="blogging-with-markblog">Blogging with <a href="www.github.com/olaven/markblog">Markblog</a></h1>
-<p>Or rather: how I got rid of bloated setup and just wrote markdown. </p>
-<p>When I first built this site almost a year ago, <a href="olaven.org/out/site.html">I was pretty 
-happy</a> with my setup. It was built with 
-<a href="https://nextjs.org/">NextJS</a>, hosted with <a href="https://zeit.co/home">Zeit now</a> and 
-the pages were written in <a href="https://mdxjs.com/">MDX</a> and styled with <a href="https://sass-lang.com/">Sass</a>.
-A pretty huge pipeline is needed in order to get this to stick together. </p>
-<p>However, the site itself was literally just as basic as the site you are looking 
-at right now (as of march, 2020). Why is such a complicated setup needed? Of 
-course, it is not. But I knew NextJS pretty well, had gotten familiar with Sass and 
-I really wanted to write using <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. 
-What I wanted was achieved: a homepage I could update by writing markdown. However, I 
-could not quite get past the fact that there was so much setup needed for such a basic thing.</p>
-<p>Markblog is my attempt at a solution. It is a small piece of software written in <a href="deno.land">Deno</a>. 
-It simply converts markdown to HTML, and packages it in a nice, tiny, non-bloated blog-like page. 
-As of writing, the default file structure is as follows:  </p>
-<ul>
-<li><code>index.md</code></li>
-<li><code>style.css</code></li>
-<li><code>posts/</code></li>
-</ul>
-<p>(create this automatically with Markblog&#39;s <code>init</code>-command)</p>
-<p>The index page shows the markdown-text in addition to links to posts, in addition to the content 
-written in <code>index.md</code>. Then, Markblog&#39;s <code>build</code>-command triggers conversion to html. In my setup, 
-this runs as part of a simple CI-pipeline, meaning that I never touch anything other than Markdown-files. </p>
-<p>If this interests you, please head over to <a href="www.github.com/olaven/markblog">the project page</a> 
-to see more details!</p>
-</description></item><item><title>on original setup</title><link>https://olaven.org/out/about_this_site/on_original_setup.html</link><guid>https://olaven.org/out/about_this_site/on_original_setup.html</guid><description><h1 id="the-site">The site</h1>
-<p><em>NOTE</em>: This post is out of date, as the site is <a href="./how_this_site_works.md">updated</a>.
-<em>NOTE</em>: This post was renamed from &quot;site&quot; to &quot;initial site&quot;</p>
-<p>This is my website. I have iterated on it many times. 
-Although I have made many attempts at making it look
-good and stylish, I have never gotten to something that 
-I like. However, my belief is that I am closer now than 
-ever before.</p>
-<h2 id="styling">Styling</h2>
-<p>My approach is simply to keep it as simple as possible. 
-I am certainly not alone in this; a lot of people have 
-very simple websites, focusing solely on content. We 
-are talking <em>properly simple</em>. No styling or anything.
-Just plain HTML-tags with content.</p>
-<p>This means that the page fails or succeeds based on the 
-cotnent alone. Because - quite frankly - content is all 
-that is available. Realising that styling is not what I 
-want to spend time doing, I have done something similar. </p>
-<p>Even if the content quality to warrant such an approach 
-is not there. </p>
-<h2 id="general-setup">General setup</h2>
-<p>I am currently writing in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. 
-More specifically, I am using <a href="https://github.com/mdx-js/mdx">MDX</a>, 
-which seems to combine the pleasentness of Markdowns minimal syntax 
-with the usefulness of <a href="reactjs.org">React</a> and its components.</p>
-<p>For building site itself, I am using <a href="https://nextjs.org">NextJS</a>. 
-The process has been surprisingly straightforward. Writing in
-markdown and automatically receving quite nice webpages on the other 
-end is a delight. The app is deployed with <a href="zeit.co">now</a>. I had 
-some domain-related issues, but that was mainly confusion on my part. </p>
+<p><img src="./../assets/images/modell_overkommelige_eventyr_v3.png" alt="modell v3"></p>
+<p>Denne modellen tror jeg er nærere virkeligheten. Dessverre ble den litt mindre elegant med et dobbelt steg.
+Men det får så være inntil videre.</p>
+<p>Å formulere denne tydelige modellen gjør det lettere å tenke rundt prosessen. Det merker jeg med en gang.
+Hvis jeg skulle tippe, ville jeg sagt at jeg har svært lett for å havne i støyfasen. Tilsvarende føler jeg meg rimelig trygg
+på at jeg bruker for lite tid på behandlingsfasen.</p>
+<p>Inndata-fasen er derimot veldig stor. Lage-fasen tenker jeg også paradoksalt nok a t er ganske så stor. Problemet er at
+den går på tomgang store deler av tiden. Ikke fordi det mangler på råmateriale, inndata, men fordi behandlingsfasene er for korte. Problemet er at
+behandlingsfasene blir til støy-fase så og si med en gang. Og da pøser jeg på med inndata for å lindre det.</p>
+<p>Resultatet er et system som delvis går på tomgang, lik en kropp som ikke tar til seg næring samme hvor mye mat den får i seg.</p>
+<p>Jeg er langt ute i spekulasjonsland. Modellen er ikke basert på annet enn løse innfall og tanker. Jeg liker den, men jeg er usikker på hvor nyttig
+den er. Så var det dette med hva noe skulle være nyttig for, da.. </p>
+<p>Istedet for å bli dratt inn i et nytt rekursivt og mentalt nytteprogram blir jeg distrahert.</p>
+<p>Det står en rev 50 meter fra meg ,på bålplassen. Den er fin synes jeg. Reven holder god fart gjennom myren. Den hopper liksom gjennom myren. Mykt
+hoppende. Uten en eneste lyd.</p>
+<p>Jeg ønsker ikke å skremme den. Selv om jeg vet hvor sky rever er, er jeg en smule redd den.</p>
+<p>Hvis reven oppdager meg på egenhånd uten å føle seg truet, vil den garantert gå sin vei, tenker jeg. I et forsøk på å skape
+nettopp den situasjonen beveger jeg meg litt i soveposen, slik at den lager grove gnisselyder mot underlanget.
+Det fungerer. Reven ser mot meg. Jeg unngår øyekontakt. I løpet av et sekund har den listet seg inn skogkanten, 
+like stille som den kom. Reven var veldig fin. Jeg lurer på hvor den sover om natten, og hva den tenker om meg.</p>
+<p>Jeg sender en melding til samboeren min og ønsker henne en god natt. Jeg håper at hun har det bra der hun er.
+Egentlig er jeg ganske sikker på det. Selv om det er veldig fint å være alene, ser jeg frem til å være med henne igjen.</p>
+<p>Klokken er knapt fire når jeg våkner. Det er helt lyst. Og jeg er lys våken. Reven viser seg i skogkanten, seks timer siden vi sist 
+så hverandre. Det føles passende. Som om vi ønsket hverandre god natt i går og nå ønsker hverandre god morgen. Kanskje er det reven 
+som nikker til meg, og sier &quot;Hei, her er jeg. Jeg ser det og jeg ser at du ser meg. Aller helst vil jeg vøre ifred, men trenger du hjelp, er jeg selvsagt
+her&quot;. Når jeg ser den får jeg sagt &quot;ditto&quot;.</p>
+<p>Frokosten min er en halv flaske smoothie. Jeg pakker sammen utstyret i min trofaste sekk. Og pusser tennene - Det glemte jeg i går.
+Til slutt tar jeg farvel med stedet og sier at jeg regner med å komme tilbake.</p>
+<p>Jeg følger den blåmerkede stien tilbake til Sognsvann. Fra Kringsjå følger jeg Carl Kjellsens vei og fortsetter opp Frysjaveien, helt til det røde trehuset
+med den lille gangbroen over Akerselven. Det er ganske god omvei. Ikke spesielt nyttig.</p>
+<p>Når jeg kommer ned til sentrum vil jeg innom det vakre Deichmanske bibliotek. Der skal jeg skrive ut notatene fra i går kveld, tenker jeg.
+Se hvordan tankene ender. Eller endte. Hva som er en sannferdig gjenfortelling av eventyrets tanker og hva som er et resultat av ettertidens behandling av dem vet jeg
+ikke. Det er flytende grenser jeg ikke tar så alvorlig.</p>
+<p>Uansett er det påfallende hvor stor del av dette lille eventyret som kommer fra hodet.
+Jeg følger Akerselven helt til Oslofjorden.</p>
 </description></item><item><title>advent of the threadmill</title><link>https://olaven.org/out/reflections/advent_of_the_threadmill.html</link><guid>https://olaven.org/out/reflections/advent_of_the_threadmill.html</guid><description><h1 id="advent-of-the-treadmill">Advent of the Treadmill</h1>
 <p>or Trying to Run and Making Mistakes </p>
 <ul>
@@ -1278,60 +1213,6 @@ and take i seriously. Although often advantageous, this
 mindset definitely has some drawbacks as well :) </p>
 <p>I am happy that I exposed myself to something new, made 
 some mistakes and learned from it :) </p>
-</description></item><item><title>Lessons from building Krets</title><link>https://olaven.org/out/reflections/Lessons_from_building_Krets.html</link><guid>https://olaven.org/out/reflections/Lessons_from_building_Krets.html</guid><description><h1 id="lessons-from-building-krets">Lessons from building Krets</h1>
-<h2 id="trying-to-create-a-profitable-project-alone">Trying to create a profitable project alone</h2>
-<p>I&#39;ve spent most of my time between summer and christmas 2020 working on <a href="https://krets.app">Krets</a>. The project was 
-my first real attempt at creating a commercially viable service on my own. While the project isn&#39;t dead, I&#39;ve now started focusing on other projects for a while. </p>
-<p>This post covers some of the things I I&#39;ve learned while working on Krets. </p>
-<h2 id="dont-make-me-think-or-frankly-do-anything">Don&#39;t make me think! (or, frankly, do anything)</h2>
-<p>Most people, i.e. potential customers, really don&#39;t like having to figure out how to use your software.
-I thought knew this after reading <a href="https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think">Steve Krugh&#39;s <em>Don&#39;t make me think</em></a> years ago. 
-I didn&#39;t. </p>
-<p>Krets was primarily targeted at businesses, meaning that I&#39;ve been talking a lot to owners of small businesses. 
-They have a lot on their mind already. Everything not core to their business is a distraction unless 
-the rewards for them materialize themselves quickly. This means: minimal setup and minimal distruption 
-to their existing flow is essential. </p>
-<p>I&#39;ve experienced potential customers don&#39;t even want to spend the time to create an account, but would 
-rather have me do it. These were otherwise excited customers who showed initiative. 
-This happened on several occations. </p>
-<p>So the lesson is: People are not going to spend time on you or your project. 
-Even if they see value in what you&#39;re offering, they don&#39;t care until the value is actually there. 
-They don&#39;t find the project in itself interesting, like you do. </p>
-<p>This was (still is, if I&#39;m being honest) hard to internalize because I am 
-the oposite. I am curious to learn about software and play around with every user-setting I can find. 
-I guess that&#39;s why I ended up writing software.</p>
-<p>Also, if something else has to be handled (like idk, <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">a pandemic</a>) 
-you&#39;re the first thing going off their todo-list. Understandably so :)</p>
-<h2 id="time-is-worth-a-lot-of-money">Time is worth a lot of money</h2>
-<p>When I started this project, I found myself with relatively little money, 
-but a lot of time. Krets required a lot of skills I did not have, nor had 
-the money to buy from someone else. Like marketing-, sales- and design skills. </p>
-<p>I thought this was OK. Money and time are just two sides of the same coin. 
-Since I had a lot of it, I could just throw time at the problem, instead of money. 
-While I still believe this to be mostly true, I drastically underestimated how much 
-time is required for... everything. Ironic really, since that&#39;s the one thing 
-everyone tells everyone about every project ever. </p>
-<p>I did everything: marketing, cold-calling potential customers, organize meetings and try to get funding, 
-as well as actually implementing the product. </p>
-<p>I&#39;m very happy to have this experience of being responsible for- and doing everything.
-It just did not pay off for the project this time :-) </p>
-<h2 id="having-friends-is-a-must">Having friends is a must</h2>
-<p>I have been working on Krets alone. However, I&#39;ve been lucky to have a couple friends 
-around. Dedicating time to talking about your thoughts with someone is key. 
-Having someone to talk to about what&#39;s on your mind is very helpful for separating
-out the constructive and good thoughs from the messy inners of your brain. </p>
-<p>These sessions can be scheduled, informal lunches or a meeting with a specific topic. 
-Try to make it a regular thing. The times I did this were way easier to deal with 
-than the times where I didn&#39;t. </p>
-<h2 id="thank-you-for-reading-this">Thank you for reading this</h2>
-<p>I hope these thoughts can be of help for someone else. <br/>
-Regardless, thank you for taking the time to read. <br/>
-Blogging is a strange beast that I&#39;m still trying to figure out. <br/></p>
-<ul>
-<li>feel free to <a href="mailto:olav@sundfoer.com">send me an email</a></li>
-<li>or checkout my other <a href="https://github.com/olaven">work on Github</a> </li>
-<li>if it&#39;s your thing, subscribe to <a href="https://olaven.org/feed.xml">RSS Feed</a></li>
-</ul>
 </description></item><item><title>theme of 2020</title><link>https://olaven.org/out/reflections/theme_of_2020.html</link><guid>https://olaven.org/out/reflections/theme_of_2020.html</guid><description><h1 id="theme-of-2020---theme-of-creation">Theme of 2020 - Theme of creation.</h1>
 <p>I want to create a theme for myself. Some do this for a year. I am not sure if a year is the correct amount of time. 
 Years are so engrained in everything, and they are everywhere. I think coupling a theme with a year would create 
@@ -1405,256 +1286,375 @@ And seek opportunities for creation. </p>
 <li>Creations should be valued, regardless of career and academic value </li>
 </ul>
 <p>Reaching new goals is the purpose, and this is an attempt at an approach.   </p>
-</description></item><item><title>gamle oslo til langmyrskulp</title><link>https://olaven.org/out/overkommelige_eventyr/gamle_oslo_til_langmyrskulp.html</link><guid>https://olaven.org/out/overkommelige_eventyr/gamle_oslo_til_langmyrskulp.html</guid><description><h2 id="gamle-oslo-til-langmyrskulp">Gamle Oslo til Langmyrskulp</h2>
-<p>I dag har jeg laget meg et lite eventyr. Samboeren min drar i dag, klokken 10.
-Faktisk er det ganske viktig at hun drar klokken ti. Hun skal ta tog.
-Tidspunkt er ganske viktig når man tar tog.</p>
-<p>Det er kanskje derfor mange foretrekker å reise med bil.
-Men min samboer foretrekker allikevel å ta tog. Jeg foretrekker for
-øvrig å ta tog jeg også. Og da er altså, som sagt, tidspunkt viktig.
-Tidspunktet har ikke så mye å si for meg, vel og merke. Jeg skal ikke ta tog.
-Jeg har pakket sekken.</p>
-<p>Sekken var og er en passe stor, lett tursekk. I den har jeg lagt en hengekøye, en tarp, et liggeunderlag,
-ullundertøy, noen teltplugger og en vannflaske. I tilleggg har jeg pakket en Ipad, en kindle og en telefon.
-Disse tre tingene visste jeg ikke helt om jeg ville ha med eller ikke. 
-Særlig Ipaden.</p>
-<p>En stor del av meg mener at eventyr helst bør gjøres uten slike digitale dingser. Det ideelle eventyret et 
-analogt pusterom. En pause fra den ellers så digitale og masete hverdagene vi
-mer eller mindre frivillig har laget oss og lever i. En slags distraksjon fra distraksjonene.
-Jeg etterlever det sjeldent. Men det er iallfall en tanke jeg har.</p>
-<p>Under tidligere eventyr har jeg etterstrebet dette analoge idealet.
-Men det går aldri helt. Telefonen innbiller jeg meg at jeg ikke klarer meg uten. Den ser jeg på som en forsikring. 
-Jeg kan bruke den til å kontakte nødetater og tilsvarende. Eldre mennesker enn meg som deler samme analoge eventyrideal 
-vil kanskje si at den ikke faktisk er nødvendig. De har nok rett. Men dette har jeg ikke klart å internalisere.
-Den har iallfall blitt med meg hver gang.</p>
-<p>Når telefonen først er med, har idealet en tendens til å vike for impulsene i øyeblikket. 
-Eventyrets stillhet, og roen jeg alltid romantiserer i frokant blir for mye og for fremmed.
-Hjernen min er vant til konstant stimuli. Litt av alt, hele tiden, takk! Litt av alt, og alt for mye å trives i skogen.
-Etter hvert gir jeg altså etter, og mater hjernen min med akkurat det den vil ha. Inndata. Podcasts, for eksempel.
-&quot;Apathy&#39;s a tragedy and boredom is a crime&quot;, slik komikeren Burnham synger.</p>
-<p>Hva om jeg for en gangs skyld sier at det ikke er så farlig? Hva om jeg tar med meg teknologien og atpåtil tillater meg å bruke den. Hva skjer da?
-Må det være så nøye? Ville jeg få det bedre om jeg ikke stadig anstrengte meg for å leve opp til det analoge idealet? Eller til syvende og sist 
-ha dårlig samvittighet for at jeg gir etter? 
-Disse tankene fløy gjennom hodet mitt i det samboeren min dro for å rekke toget klokken ti. &quot;Hade&quot;, sier hun mens hun gir meg en god klem. 
-Det er fint. Snart er det min tur til å gå ut døren.</p>
-<p>Jeg plukker opp sekken og ser meg rundt i rommet. Herregud, soveposen ligger enda på gulvet! Jeg får såvidt plass øverst i sekken. 
-Nå er den ubalansert. Sekken altså. Det liker jeg ikke. Alt for tung i toppen. Sekken må definitivt pakkes om. 
-Det må være balanse i tingene.
-Jeg pakker om og noen minutter senere er tingene balansert. Plassen er bedre utnyttet og sekken er ikke lenger like stappfull. 
-Supert.</p>
-<p>Omsider er jeg ute av leiligheten. Gamle Oslo er nydelig. Kanskje byens peneste bydel, spør du meg. Men jeg og sekken setter kursen for sentrum.
-Strengt tatt er det litt rart å sette kursen fra Gamle Oslo til sentrum. Jeg antar de fleste vil mene at Gamle Oslo er en del av sentrum. 
-Med &quot;sentrum&quot; mener jeg derimot Sentrum. Sentrum-sentrum, om du skjønner. Og det tror jeg du gjør.</p>
-<p>Byen har begynt å våkne. Kafeene har begynt å fylles opp av gjester. Noen av dem jobber. Andre snakker. De som er her nå har sikkert kommet tidlig for å sikre seg favorittplassene sine. Luringer. 
-Matbodene har akkurat begynt å lage dagens første runde med mat. Før folkemengdene kommer for alvor. Da satser jeg 
-på å være borte for lengst.</p>
-<p>Planen min med å gå i Sentrum-sentrum var å se etter sovepose i en sportsbutikk. Ikke fordi det er noe galt med den jeg har, men
-fordi den ikke er min. Jeg bare låner den. Dessuten er den akkurat litt for stor til å få plass i min alt for dyre sykkelbag.
-Alt som ikke egner seg på sykkel får straks et lite minus i min bok. Utvalget sporstforetningene Storgata og Bogstadveien byr på 
-skuffer meg, mens det er ikke så farlig. Jeg skal ikke sykle i dag. I dag skal jeg gå, gå på eventyr. 
-Og omveier i Sentrum-sentrum til tross, er jeg allerede godt på vei riktig retning.</p>
-<p>Jeg går i jevnt tempo fra Bogstadveien til Ullevål Hageby. Derfra krysser jeg Ring 3 over den relativt nye sykkel- og gangbroen 
-som er der. Den ble bygget da jeg bodde i området for noen år siden. Jeg har gått og syklet masse her, fra Ullevål og
-opp bakkene til Kringsjå. Det er en rar følelse å være på et sted hvor man har vært så mye, men allikevel ikke lenger har noe å gjøre. </p>
-<p>Flere ganger tar jeg meg i å savne sykkelen min. Det er fint å gå, men hastigheten på sykkel er den som passer meg best. Mer
-action på en måte, men fortsatt med måtehold og uten motor. Det e fint å merke at jeg savner
-transportmetoden jeg bruker mest tid på.</p>
-<p>Jeg går inn på matbutikken på Kringsjå. Det er siste stopp før skogen. Jeg skal ikke langt, så jeg behøver ikke 
-tenke noe særlig på hva jeg kjøper. Planen er å bare ta bæreposen i hånden. Vekt og plass i sekken er ikke så nøye. 
-Vanligvis pleier jeg å ha ganske konkrete planer før jeg går inn i en butikk, men ikke denne gangen. Eventyret kan ha noen 
-slike momenter, tenker jeg. Momenter som ikke er planlagt, men som bare skjer. Maten ville fått de fleste ernæringsfysiologer 
-til å rynke på nesen. To enkle salatblandinger med laks, to poser potetgull, en smoothie og en pose lakris ligger i handleposen 
-min når jeg er ferdig, utenfor butikken på Kringsjå Studentby. </p>
-<p>Fra Kringsjå er det bare 5 minutters gange til Sognsvann. Fra Sognsvann er det bare 10 minutters gange til Svartkulp.
-Hovedstiene er usaklig tilrettelagte. De ligner mer på grusveier enn stier til tider. Ikke misforstå meg. Jeg klager
-ikke på tilgjengelig natur. Men jeg synes at det er påfallende hver gang jeg er her.</p>
-<p>Jeg velger ikke veien jeg nettop beskrev, men følger en annen slik tilrettelagt sti et stykke før jeg tar av inn i det
-evige stinettet som er i skogen, i retning Svartkulp.</p>
-<p>Stinettet snor seg innover. Jeg tenker på alle som bruker dette området. Da jeg bodde her, frekventerte jeg området og 
-var en av de mange som brukte dette området til rekreasjon. Tenk på alle som gjør det, tenker jeg; bruker dette området 
-til rekreasjon, altså. Alle timene og alle skrittene som bokstavelig talt er lagt ned i jorden. Hvor har alle de timene blitt av? 
-Hvor ble mine timer av? Kan det ha kommet noe nyttig ut av dette? Det er vanskelig å komme på nyttige
-ting som blir gjort her. Det vil si, å gå i skogen kan definitivt ha en nytte for noe annet. Angivelig er det blant annet veldig
-godt for både psykisk og fysisk helse. Og god helse er nødvendig for å mestre andre arenaer i livet.</p>
-<p>Skogvokteren gjør sikkert noe nyttig når han går her. Det er ikke helt klart for meg verken hvorvidt skogvoktere fremdeles finnes
-eller hva de gjør. Skogvoktere har et forbedringspotensial på markedsføring, konkluderer jeg. Jeg tipper, kanskje fordomsfult, at den
-gjennosmtnittlige skogvokter ikke har særlig mye til overs for markedsføring. </p>
-<p>Spørsmålet om nytte kommer tilbake til meg. 
-For det første, kunne ikke god helse være bra nok i seg selv? Hvorfor er god helse bare godt fordi det muliggjør andre ting?
-Karriere, økonomi og gode venner. Er ikke disse tingene også bare nyttige fordi de igjen gjør andre ting enklere? En karriere,
-for eksempel, er da ikke et mål i seg selv? For noen er karriere nyttig for å tjene penger til å ta vare på de rundt seg. Men 
-hva er så galt med at det ikke går så bra med de rundt en, <em>egentlig</em>? Er det fordi vi opplever sorg? Hvorfor er sorg så ille?
-Det gjør vondt og kan i ytterste konsekvens ta livet av oss. Eller kanskje det er riktigere å snu på det: Det å miste de rundt 
-seg er ikke farlig fordi det å miste noen er en enorm ulempe. Det nyttige er kanskje at det å ha folk rundt seg er en fordel. 
-De som har folk rundt seg, har høyere sjans for å overleve fordi de ikke er alene om utfordringene, men kan samarbeide om dem. 
-Ja vel, men er det så nøye det da? Karriere er nyttig for ikke å ta vare på folk rundt seg, som igjener nyttig for å ikke miste dem, 
-som igjen er nyttig for egen overlevese. Overlevelse er nyttig for å bringe videre egne gener, som nå enten fremstår som totalt 
-meningsløst eller er nyttig for noe nytt igjen.</p>
-<p>Finnes det noe som er nyttig eller eller ønskelig som ikke er det fordi det hjelper en med den neste såkalt nyttige tingen?
-Det hele blir til en evig rekursiv tankerekke av nyttighet og mål. Som et dataprogram som kjører seg selv om og om igjen - 
-et evig tankeprogram som krasjer hodet mitt om det får fortsette.</p>
-<p>Det aner meg at dette fort kan utvikle seg til et &quot;Hva er poenget med noe som helst&quot;-type spørsmål. Den tankerekken må jeg
-skru av. Hodet mit håndterer slike ideer dårlig på en vanlig dag. I dag, på eventur alene, kan et slikt reskursivt program
-i hodet bli fullstendig ødelegegnde.</p>
-<p>Svartkulp er endelig på min venstre hånd. Her har jeg tenk til å slå leir. Kartet har imidlertid gjort meg oppmerksom på
-at det ligger et lite vann rett vest for Svartkulp. Der har jeg ikke vært før, men det er ikke langt. Bare 200m eller noe
-slikt.</p>
-<p>Vannet har ikke noe navn på kartet. Senere har jeg funnet ut at det går under to navn: Lille Svartkulp og Langmyrskulp.
-Med denne informasjonen er det ganske intuitivt at Langmyr er en myr øst for Svartkuulp, som blant annet inneholder et lite
-vann. Dessuten er den lang. Dette viser seg å stemme. </p>
-<p>Derimot er det ikke like intuitivt at den en gang ble brukt som skytebane. Jeg skjønner at den kan  ha egnet seg til det, for 
-den er lang og flat. Men akkurat hvilken funksjon vannet hadde på en skytebane ser jeg ikke. Det virker upraktisk 
-å måtte forholde seg til et vann når man egentlig er ute etter å treffe blinker. Eller kanskje, men forhåpentligvis ikke, noe annet.</p>
-<p>Med det sagt vil kulene naturligvis fly over vannet. så da er det kanskje ikke i veien allikevel. Jeg begynner å lefle med tanken på å
-slå leir der istedenfor her. Saken blir avgjort i det jeg blir oppmerksom på alle stemmene rundt vannet. Over alt langs
-Svartkups vannkant er det folk på tur. Tilsynelatende flest barnefamilier. Det vil jeg holde meg unna.</p>
-<p>Det er ikke noe galt i barnefamilier eller noen av de andre rundt vannet. Tvert imot synes jeg det er fint å se
-folk her. Men i dag gjerne være alene. Jeg vil ikke at noen skal komme i veien for meg og, ikke minst, jeg vil ikke
-komme i veien for noen andre. Ikke at det er spesielt for i dag. Jeg trives godt med å være alene og ønsker som regel
-å være det.</p>
-<p>Langmyrskulp står til forventingngene. Overgår dem faktisk. Sant og si var de ikke veldig høye. Det er lite og ovalt,
-kanskje 100m langt og 50m bredt. På den andre siden sitter det et menneske i blå allværsjakke og spiser niste. Et
-nistespisende menneske skal jeg greie. Vedkomne er nok rolig og snill. Det tror jeg de fleste som spiser niste langs
-Langmyrskulp er.</p>
-<p>Tidspunktet for å finne ut av hvor jeg skal slå leier har endelig kommet. Det blåser. Ikke veldig mye, men nok til at
-jeg vil unngå vinden om jeg kan. Særlig kastene. Jeg går rundt vannet. Det er mange gode kandidater. Men jeg vil finne
-det beste stedet.</p>
-<p>Langs vestsiden av vannet er det en liten åpning i skogen. Den er liten og ganske mørk. En god backup, tenker jeg for meg selv.
-Det er også en liten bekk der. Kartet forteller meg at dette er bekken som kobler dette vannet med Svartkulp. I Nordenden er 
-det en liten bålplass. Bortenfor den, på Østsiden, er det mange små trær og ganske åpent. Bak er det en
-svært bratt skråning. Denne gir ly for vinden, ser det ut til. Kult!</p>
-<p>Nistemennesket sitter der fremdeles, rett bortenfor det kule området. Jeg ønsker ikke å forstyrre, og snur meg og går
-rundt vannet, til jeg ankommer startsetedet, i sørenden.</p>
-<p>Lyen eksisterer ikke der og underlaget er våtere. Det er god avstand mellom trærne, men utenom det virker sørsiden
-som dårlig parti. Jeg går tilbake til nrodsiden. Den snille nistespiseren følger med meg. Eller, det vet jeg ikke sikkert.
-Det er en antakelse. Igjen blir jeg nervøs for å forstyre nistespiserens nistepause dersom jeg går for nærme. Så jeg bestemmer
-meg for å gi sørenden enda en sjanse, og går tilbake. </p>
-<p>Frem og tilbake trasker jeg, mens jeg forsøker å ikke tenke på at nistespiseren sikkert tenker at dette ser litt rart ut. 
-Jeg vil virkelig ikke komme i veien. Jeg vil ikke være i nærheten av fremmede nå. Det fyller meg med en vag engstelse og 
-sterk uro. Jeg vet ikke hvorfor det er sånn. Det skulle jeg ønske at jeg visste. Eller iallfall skulle jeg ønske at jeg kunne 
-skru det av litt lettere enn jeg kan. </p>
-<p>Ganske håpløst, jeg vet det. Runddansen rundt vannet rekker å gjenta seg tre ganger før nistespiseren pakker sakene sine i et beundringsværdig
-bedagelig tempo og går. Den blå allværsjakken forsvinner opp skråningen. Jeg håper eieren får en fortsatt fin dag.</p>
-<p>Omsider slår jeg leir, omtrent der nistespiseresn satt. Leiren kan presenteres slik, ordnet synkende etter avstand fra bakken:</p>
+</description></item><item><title>Lessons from building Krets</title><link>https://olaven.org/out/reflections/Lessons_from_building_Krets.html</link><guid>https://olaven.org/out/reflections/Lessons_from_building_Krets.html</guid><description><h1 id="lessons-from-building-krets">Lessons from building Krets</h1>
+<h2 id="trying-to-create-a-profitable-project-alone">Trying to create a profitable project alone</h2>
+<p>I&#39;ve spent most of my time between summer and christmas 2020 working on <a href="https://krets.app">Krets</a>. The project was 
+my first real attempt at creating a commercially viable service on my own. While the project isn&#39;t dead, I&#39;ve now started focusing on other projects for a while. </p>
+<p>This post covers some of the things I I&#39;ve learned while working on Krets. </p>
+<h2 id="dont-make-me-think-or-frankly-do-anything">Don&#39;t make me think! (or, frankly, do anything)</h2>
+<p>Most people, i.e. potential customers, really don&#39;t like having to figure out how to use your software.
+I thought knew this after reading <a href="https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think">Steve Krugh&#39;s <em>Don&#39;t make me think</em></a> years ago. 
+I didn&#39;t. </p>
+<p>Krets was primarily targeted at businesses, meaning that I&#39;ve been talking a lot to owners of small businesses. 
+They have a lot on their mind already. Everything not core to their business is a distraction unless 
+the rewards for them materialize themselves quickly. This means: minimal setup and minimal distruption 
+to their existing flow is essential. </p>
+<p>I&#39;ve experienced potential customers don&#39;t even want to spend the time to create an account, but would 
+rather have me do it. These were otherwise excited customers who showed initiative. 
+This happened on several occations. </p>
+<p>So the lesson is: People are not going to spend time on you or your project. 
+Even if they see value in what you&#39;re offering, they don&#39;t care until the value is actually there. 
+They don&#39;t find the project in itself interesting, like you do. </p>
+<p>This was (still is, if I&#39;m being honest) hard to internalize because I am 
+the oposite. I am curious to learn about software and play around with every user-setting I can find. 
+I guess that&#39;s why I ended up writing software.</p>
+<p>Also, if something else has to be handled (like idk, <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">a pandemic</a>) 
+you&#39;re the first thing going off their todo-list. Understandably so :)</p>
+<h2 id="time-is-worth-a-lot-of-money">Time is worth a lot of money</h2>
+<p>When I started this project, I found myself with relatively little money, 
+but a lot of time. Krets required a lot of skills I did not have, nor had 
+the money to buy from someone else. Like marketing-, sales- and design skills. </p>
+<p>I thought this was OK. Money and time are just two sides of the same coin. 
+Since I had a lot of it, I could just throw time at the problem, instead of money. 
+While I still believe this to be mostly true, I drastically underestimated how much 
+time is required for... everything. Ironic really, since that&#39;s the one thing 
+everyone tells everyone about every project ever. </p>
+<p>I did everything: marketing, cold-calling potential customers, organize meetings and try to get funding, 
+as well as actually implementing the product. </p>
+<p>I&#39;m very happy to have this experience of being responsible for- and doing everything.
+It just did not pay off for the project this time :-) </p>
+<h2 id="having-friends-is-a-must">Having friends is a must</h2>
+<p>I have been working on Krets alone. However, I&#39;ve been lucky to have a couple friends 
+around. Dedicating time to talking about your thoughts with someone is key. 
+Having someone to talk to about what&#39;s on your mind is very helpful for separating
+out the constructive and good thoughs from the messy inners of your brain. </p>
+<p>These sessions can be scheduled, informal lunches or a meeting with a specific topic. 
+Try to make it a regular thing. The times I did this were way easier to deal with 
+than the times where I didn&#39;t. </p>
+<h2 id="thank-you-for-reading-this">Thank you for reading this</h2>
+<p>I hope these thoughts can be of help for someone else. <br/>
+Regardless, thank you for taking the time to read. <br/>
+Blogging is a strange beast that I&#39;m still trying to figure out. <br/></p>
 <ul>
-<li>Tarp, klønete oppspent mellom trær, plugger i bakken i vestsiden og til side ni små busker langs vannet i øst.</li>
-<li>Sovepose, fremdeles innpakket. Fungerer foreløpig som nakkepute.</li>
-<li>Liggeunderlang. Jeg har ingenting å utsette på dette underlaget. det er fucking supert.</li>
-<li>Hengekøye, spent relativt pent mellom to trær. Den ligger litt skjevt i forhold til tarpen, som ødelegger det visuelle inntrykket litt. Eller kanskje er det tarpen som ligger skjevt. Samme det. Jeg bestemmer meg for at dette ikke har særlig å si. Hverken hva som er skjevt i forhold til hva eller at det er skjevt.</li>
-<li>Sekken, på bakken. Jeg liker sekken. Den er min følgesvenn. Det er på en måte fellesneveren. Jeg vet ikke hvorfor jeg tenker det.</li>
+<li>feel free to <a href="mailto:olav@sundfoer.com">send me an email</a></li>
+<li>or checkout my other <a href="https://github.com/olaven">work on Github</a> </li>
+<li>if it&#39;s your thing, subscribe to <a href="https://olaven.org/feed.xml">RSS Feed</a></li>
 </ul>
-<p>Det er et bra oppsett. Pen utsikt over vannet. Ganske god ly for vinden. Etter en stund med skogslyder setter jeg på en lydbok. På mange måter 
-opplever jeg det som roligere. Hvorfor det? Det er rart. Hvorfor lurer jeg jeg på det også? Hodet mitt har som alltid vanskelig for å holde kjeft.
-Det er en egenskap jeg er usikker på om jeg liker eller ikke. Som regel er det bra, føler jeg. Hvorfor det?</p>
-<p>Lydboken demper støyet litt. Etterpå gjør en podcast det sammen. Jeg kjenner meg takknemlig for denne fluktruten teknologien
-gir meg. En annen del av meg lurer på ome jeg kanskje ikke hadde hatt behov for den om den ikke var der. Er den overbestkyttende? Skjermer teknologien 
-meg for ting jeg ellers hadde lært meg å håndetere? Bildet av digital teknologi som en slags allestedsværende, overbsekyttende mor 
-underholder meg i et sekund eller to.
-Det er et fiffig bilde. </p>
-<p>Snart kommer det en gruppe mennesker til vannet. Jeg tror de er på min alder. Jeg forsøker å få øyekontakt med dem for å hilse. Det virker på meg som om
-de ikke er så interessert i å hilse. Det får for så vidt være greit. De henger opp hengekøyer de også, ved bålplassen. Først blir jeg litt engstelig for
-at de også har tenkt til å sove her slik jeg har, og at jeg ikke vil få stedet for meg selv. 
-Jeg konkluderer med at det ikker er tilfelle. De har bare to hengekøyer, men er fem. Dessuten har de små sekker, ikke nok til å ha med sovepose. 
-Det passer meg godt.</p>
-<p>Jeg plages litt av at vi ikke har hilst. Noe er liksom uforøst. et nikk og øyekontakt hadde holdt lenge. Nikk og øyekontakt er akkurat nok
-til å få sagt &quot;Hei, her er jeg. Jeg ser det og jeg ser at du ser meg. Aller helst vil jeg vøre ifred, men trenger dere hjelp, er jeg selvsagt
-her&quot;. Møter de blikket får de kommunisert &quot;ditto&quot;.</p>
-<p>Gruppen oppdager frosker og stålormer i vannet. Ormen er særlig interessant. Den svømmer frem og tilbake i det som
-etter hvert har blitt ettermiddagssol. De følger eter den lags vannkanten og tar bilder med telefonene sine.</p>
-<p>Hver gang de går forbi meg gjør jeg nye forsøk på øyekontkakt. De unngår den. Det virker som at de har det fint. Hvis det stemmer
-er det veldig bra. Jeg har det bra jeg også. Det er mye viktigere enn hilsing.</p>
-<p>Egentlig er det veldig fint at fremmede mennesker kan være på samme sted uten å blande seg i hverandres saker. Det tyder på høy tillit.
-De lar meg holde på med mitt og jeg lar dem holde på med sitt. Det er en fin ordning. Kanskje er det derfor de ikke hilser? 
-Kanskje tenker de at de er nødt til å inkludere meg i deres planer hvis de hilser. Det kan jeg forstå at de ikke vil. 
-Det vil ikke jeg heller. Da kan ikke lenger jeg holde på med mitt og det med sitt. Og det er ingen særlig fin ordning.</p>
-<p>Når kvelden nærmer seg er det bare meg der. Lydbøkene har tatt slutt og podcastene føler jeg meg ferdig med. Kindle-brettet mitt
-har også fått en del oppmerksomhet. Jeg har konsumert masse. Mentalt har disse inndataene tatt meg innom nomadiske reiser til India, debatter om
-tilliten til demokratiet blandt befolkingen i Nederland (som er høy, men synkende), til et isolert skogsliv med Elgkalver.</p>
-<p>Oppramsning av underholdningsens innhold tydeliggjør hvor mye forskjellig teknologi (bøker språk, lydopptakere, høyttalere, internett) kan
-eksponere oss for. Og det på helt ufattelig kort tid! Det er noe magisk med det. Helt fantastisk! I det ene øyeblikket kan jeg høre på 
-ledende eksperter diskutere temaet sitt. I det neste kan jeg følge med spanjolenes inntog i Aztekerriket. Fysisk har jeg ikke beveget meg en meter. 
-Det er så mektig og omfattende at jeg også tar meg selv i å synes at det er litt skremmende. En slags æresfrykt for teknologien, slik jeg tror 
-enkelte troende føler ovenfor Gud.</p>
-<p>En annen fantastisk fordel med inndataen er at den lindrer støyen som ellers dominerer hodet. Så fort den tar slutt derimot, har hodet 
-fått enda mer materiale å jobbe med. Enda mer å kværne på og lage støy av. Den nye støen forsterker behovet for ny inndata, og plutselig 
-befeinner en seg i en evig sirkel. </p>
-<p>En midlertidig utvei fra denne sirkelen er å lage ting. Iallfall er dette den beste medisinen meg bekjent. 
-Den eneste virkelig store bivirkningen er tretthet. Trettheten leder inn i hvile, som så skaper ny støy og ønske om mer inndata. 
-Å lage ting er med andre ord ingen vei ut av den evige sirkelen. Imidlertid er det en måte å omsette støyen i noe som i hvert 
-fall har potensiale til å være nyttig. </p>
-<p>Det er som en evig informasjonssirkel. Støy -&gt; Inndata - Lage noe -&gt; hvilke -&gt; Repeat. Ny inndata er nødvendig for å få noe UT igjen. 
-Iallfall ikke for meg. Og jeg tror det er slik for andre også. Og derfor kommer man seg aldri helt ut av sirkelen.</p>
-<p><img src="./../assets/images/modell_overkommelige_eventyr_v1.png" alt="modell"></p>
-<p>Her føler jeg et ansvar for å påpeke at denne modellen ikke er vitenskapelig. Det vil si, det vet jeg ikke om den er. Dette kommer mer eller mindre ret fra mitt eget hode.
-Jeg har ikke lest meg opp på eksisterende litteratur på kreativitet eller mental støy. Dette er ikke fagfellevurdert. Idet heel tatt. Ikke ta det mer seriøst enn det fortjener.</p>
-<p>Vanligvis ville jeg løst behvoet for å lage noe, som jeg nå kjenner her i henegkøyen, med å programmere eller planlegge noe med kalendere og lister. 
-Jeg elsker kalendere og lister. De gir en fantastisk oversikt og ro. Avlaster hodet. I tilleg er de megagode verktøy for å faktiskf å ting gjort. 
-Det er velbalanserte greier.</p>
-<p>Nå har jeg ikke datamaskin til programmering eller lister og kalednder. Noe kunne jeg gjort på ipaden, men jeg mangler mus og tastatur.
-Da går det hele tregt og blir mer frustrerende enn nyttig. Jeg vil finne en annen måte å lage noe på.</p>
-<p>Med ipaden har jeg en tiløhørende penn. Jeg bestemmer meg for å skrive litt for hånd. Sammenhengende tekst har jeg ikke skrevet 
-for hånd på veldig, veldig lenge. Nettbrettet med penn fungerer omtrent som med en aanlog notatbok med blyant. 
-Jeg liker at jeg kan gjøre dette analoge digitalt. teknologien har blitt veldog god! Det føles
-litt som om jeg bryter reglene for det som skal gå. Som å bruke et magisk papir eller en datamaskin som glemmer at den skal være logisk og ryddig. Det
-er morsomt. </p>
-<p>Jeg skriver en del i løpet av en vanlig dag. Men det jeg skriver er
-stort sett kode, notater, list er eller kommunikasjon med kollegaer. 
-De tekstene har som regel et formål. De er guider, søknader eller redegjørelser for et spesielt tema. Slik skriver jeg ikke denne gangen.
-Jeg begynner å skrive om prosjektet dagen har bestått og består av. </p>
-<p>Riktignok har jeg et tema. Men jeg tillater meg å ta mange omveier på vei til poenget. Deter morsommere å skrive slik. Om ikke annet fordi det
-er annerledes sammenlignet med det jeg er vant til. Hvorvidt leseropplevelsen er god eller ikke gjenstår å se.</p>
-<p>Arbeidet flyter ganske godt. Iallfall i perider. Når det slutter å flyte, tar jeg pause. Det tar tid. Denne arbeidsteknikken er nok ikke særlig egnet for
-tidsfrister og sjefer som venter på en leveranse. I dette teilfellet har jeg dog ingen av deleene, så dette lar jeg meg heller ikke plage av.
-Til tross for lange tenkepauser blir det en del tekst. Teksten blir ikke så rent gal heller. Ikke kjempegod. Men bedre enn my annet, synes jeg selv.</p>
-<p>I de beste øyeblikkene føler jeg at jeg virkelig greier å være i modellen min; Inndata-steget blir utnyttet i lage noe-steget. 
-Det er tilfredsstillende. Mistanken min er at dette skyldes at formen på det jeg lager er likere formen på inndataen jeg mater hjernen 
-min med enn det pleier å være.</p>
-<p>Apropos modellen lurer jeg på om det mangler et steg for behandling av inforamsjon. Altså et steg som lar hjernen jobbe med inndata uforstyrret.
-Dette steget må i så fall vfå plass etter inndata og før man lager noe.</p>
-<p><img src="./../assets/images/modell_overkommelige_eventyr_v2.png" alt="modell v2"></p>
-<p>Men er ikke dette allerede hvile-steget? jeg lurer på om jeg har laget en liten felle for meg selv her. &quot;Hvile&quot; impliserer at det
-ikke skjer noe. Men det tror jeg ikke stemmer. Selv under søvn jobber hjernen med å danne minner og koble om seg selv. Det
-er iallfall slik jeg har forstått det når jeg leser og høre på dem som hevder å ha greie på det. Og søvn er jo selve kongen
-av hviling. Søvn er hvile-hviling! Muligens bare slått av koma. Og død. men det virker som noe litt annet igjen.</p>
-<p>Åja, og det hjernen gjør under søvn er da behandling! Er det ikke? I såfall ser jeg to problemer med den første modellen jeg
-tegnet opp.</p>
+</description></item><item><title>blog with git and markdown</title><link>https://olaven.org/out/guides/blog_with_git_and_markdown.html</link><guid>https://olaven.org/out/guides/blog_with_git_and_markdown.html</guid><description><h1 id="blogging-with-git-and-markdown">Blogging with Git and Markdown</h1>
+<p><em>Disclaimer</em>: parts of this guide covers a piece of software called Markblog, of which I am the author.</p>
+<h2 id="who-is-this-for">Who is this for?</h2>
+<p>This guide assumes that you are: </p>
+<ul>
+<li>familiar with using the command line</li>
+<li>familiar with using <code>git</code></li>
+<li>someone with a basic understanding of Markdown</li>
+<li>a Github user (👋 or <a href="https://github.com/join">become one</a>)</li>
+</ul>
+<h2 id="whats-this-guide-about">What&#39;s this guide about?</h2>
+<p>This guide will go through an easy way to get setup a blog. Afterwards, you 
+will be able to blog with the following workflow: </p>
 <ol>
-<li>&quot;Hvile&quot; burde kalles &quot;behandling&quot;</li>
-<li>&quot;Behandling&quot; må inn to ganger.</li>
+<li>write markdown-files on your computer ✍️</li>
+<li>push your prose to github 🐙</li>
+<li>have your blog update automatically 😍</li>
 </ol>
-<p><img src="./../assets/images/modell_overkommelige_eventyr_v3.png" alt="modell v3"></p>
-<p>Denne modellen tror jeg er nærere virkeligheten. Dessverre ble den litt mindre elegant med et dobbelt steg.
-Men det får så være inntil videre.</p>
-<p>Å formulere denne tydelige modellen gjør det lettere å tenke rundt prosessen. Det merker jeg med en gang.
-Hvis jeg skulle tippe, ville jeg sagt at jeg har svært lett for å havne i støyfasen. Tilsvarende føler jeg meg rimelig trygg
-på at jeg bruker for lite tid på behandlingsfasen.</p>
-<p>Inndata-fasen er derimot veldig stor. Lage-fasen tenker jeg også paradoksalt nok a t er ganske så stor. Problemet er at
-den går på tomgang store deler av tiden. Ikke fordi det mangler på råmateriale, inndata, men fordi behandlingsfasene er for korte. Problemet er at
-behandlingsfasene blir til støy-fase så og si med en gang. Og da pøser jeg på med inndata for å lindre det.</p>
-<p>Resultatet er et system som delvis går på tomgang, lik en kropp som ikke tar til seg næring samme hvor mye mat den får i seg.</p>
-<p>Jeg er langt ute i spekulasjonsland. Modellen er ikke basert på annet enn løse innfall og tanker. Jeg liker den, men jeg er usikker på hvor nyttig
-den er. Så var det dette med hva noe skulle være nyttig for, da.. </p>
-<p>Istedet for å bli dratt inn i et nytt rekursivt og mentalt nytteprogram blir jeg distrahert.</p>
-<p>Det står en rev 50 meter fra meg ,på bålplassen. Den er fin synes jeg. Reven holder god fart gjennom myren. Den hopper liksom gjennom myren. Mykt
-hoppende. Uten en eneste lyd.</p>
-<p>Jeg ønsker ikke å skremme den. Selv om jeg vet hvor sky rever er, er jeg en smule redd den.</p>
-<p>Hvis reven oppdager meg på egenhånd uten å føle seg truet, vil den garantert gå sin vei, tenker jeg. I et forsøk på å skape
-nettopp den situasjonen beveger jeg meg litt i soveposen, slik at den lager grove gnisselyder mot underlanget.
-Det fungerer. Reven ser mot meg. Jeg unngår øyekontakt. I løpet av et sekund har den listet seg inn skogkanten, 
-like stille som den kom. Reven var veldig fin. Jeg lurer på hvor den sover om natten, og hva den tenker om meg.</p>
-<p>Jeg sender en melding til samboeren min og ønsker henne en god natt. Jeg håper at hun har det bra der hun er.
-Egentlig er jeg ganske sikker på det. Selv om det er veldig fint å være alene, ser jeg frem til å være med henne igjen.</p>
-<p>Klokken er knapt fire når jeg våkner. Det er helt lyst. Og jeg er lys våken. Reven viser seg i skogkanten, seks timer siden vi sist 
-så hverandre. Det føles passende. Som om vi ønsket hverandre god natt i går og nå ønsker hverandre god morgen. Kanskje er det reven 
-som nikker til meg, og sier &quot;Hei, her er jeg. Jeg ser det og jeg ser at du ser meg. Aller helst vil jeg vøre ifred, men trenger du hjelp, er jeg selvsagt
-her&quot;. Når jeg ser den får jeg sagt &quot;ditto&quot;.</p>
-<p>Frokosten min er en halv flaske smoothie. Jeg pakker sammen utstyret i min trofaste sekk. Og pusser tennene - Det glemte jeg i går.
-Til slutt tar jeg farvel med stedet og sier at jeg regner med å komme tilbake.</p>
-<p>Jeg følger den blåmerkede stien tilbake til Sognsvann. Fra Kringsjå følger jeg Carl Kjellsens vei og fortsetter opp Frysjaveien, helt til det røde trehuset
-med den lille gangbroen over Akerselven. Det er ganske god omvei. Ikke spesielt nyttig.</p>
-<p>Når jeg kommer ned til sentrum vil jeg innom det vakre Deichmanske bibliotek. Der skal jeg skrive ut notatene fra i går kveld, tenker jeg.
-Se hvordan tankene ender. Eller endte. Hva som er en sannferdig gjenfortelling av eventyrets tanker og hva som er et resultat av ettertidens behandling av dem vet jeg
-ikke. Det er flytende grenser jeg ikke tar så alvorlig.</p>
-<p>Uansett er det påfallende hvor stor del av dette lille eventyret som kommer fra hodet.
-Jeg følger Akerselven helt til Oslofjorden.</p>
+<h2 id="whats-the-techstack-briefly">What&#39;s the techstack, briefly?</h2>
+<p>To build our blog from Markdown, we will use <a href="https://github.com/olaven/markblog">Markblog</a>. 
+This is an open source tool written with <a href="deno.land">Deno</a>. </p>
+<p>In order to deploy our website, we will use <a href="https://pages.github.com/">Github Pages</a>. Github Pages 
+is free and works - unsurprisingly - seamlessly with projects on Github. 
+Additionally, <a href="https://github.com/features/actions">Github Actions</a> will be used to automate the 
+deployment process. If these tools are unfamiliar, this might seem like a lot. But stick with me, 
+it is all relatively simple when it comes together 😅</p>
+<h2 id="enough-talk-lets-get-started">Enough talk, let&#39;s get started!</h2>
+<h3 id="installation">Installation</h3>
+<ol>
+<li><a href="https://git-scm.com/">install Git</a></li>
+<li><a href="https://deno.land/#install">install Deno</a></li>
+<li><a href="https://github.com/olaven/markblog#installation">install Markblog</a></li>
+</ol>
+<h3 id="git-setup">Git Setup</h3>
+<ol>
+<li>create a repository on Github (check &quot;Initialize this repository with a README&quot;)</li>
+<li>Enable &quot;Github Pages&quot; in the repository settings by setting <code>master</code> as source. </li>
+<li>navigate to some fitting folder in your terminal, e.g. <code>cd $HOME/Documents</code></li>
+<li>clone your new repo with <code>git clone https://github.com/&lt;your-username&gt;/&lt;your-repository-name&gt;</code></li>
+</ol>
+<h3 id="blog-setup">Blog Setup</h3>
+<ol>
+<li>navigate to your cloned repository with <code>cd &lt;your-repository-name&gt;</code></li>
+<li>run <code>markblog init</code></li>
+<li>(optional) add <code>./style.css</code> to make your page look the way you want</li>
+</ol>
+<p>Markblog has created two files for you: <code>index.md</code> and <code>./posts</code>. 
+Anything you write in <code>index.md</code> will appear on the front-page of your blog. 
+<code>./posts</code> is where you will write new posts on your blog. </p>
+<h3 id="writing-your-first-post">Writing your first post</h3>
+<p>Let&#39;s take a break from the setup, and write something!</p>
+<ol>
+<li>open the repo-folder in your text editor of choice</li>
+<li>in <code>index.md</code>, write a sentence or two about the blog. Or don&#39;t - it&#39;s up to you 🤗</li>
+<li>create a new file in <code>./posts</code> called <code>my_first_post.md</code>. </li>
+<li>Write something in <code>./posts/my_first_post.md</code>. Or don&#39;t - still up to you 🍨</li>
+</ol>
+<h3 id="automated-deployment">Automated Deployment</h3>
+<p>After this step, we will have achieved the workflow outlined <a href="#whats-this-guide-about">at the beginning</a>!
+This section is long and somewhat cumbersome. However, this is automation! In other words,
+we only have to do this once!</p>
+<ul>
+<li>On <a href="https://github.com">Github</a><ol>
+<li>Go to your <a href="https://github.com/settings/profile">profile settings</a></li>
+<li>Navigate to &quot;Developer settings&quot; -&gt; &quot;Personal access tokens&quot; </li>
+<li>click &quot;Generate new access token&quot;. This will prompt for your password.</li>
+<li>Make sure to check &quot;repo&quot;-access, write a fitting note and click &quot;Generate token&quot;</li>
+<li>Keep the token until step 8. Never share it!</li>
+<li>head over to the repository you created</li>
+<li>Navigate to &quot;Settings&quot; -&gt; &quot;Secrets&quot; and click &quot;Add a new secret&quot;</li>
+<li>Add a secret called <code>ACCESS_TOKEN</code>, with the key from step 4.</li>
+</ol>
+</li>
+<li>Locally, in your cloned repository<ol>
+<li>create directory for Github Actions with <code>mkdir -p ./github/workflows</code>. </li>
+<li>create a workflow-file for deploy with <code>touch ./github/workflows/deploy.yml</code></li>
+<li>paste the following into <code>deploy.yml</code>: </li>
+</ol>
+</li>
+</ul>
+<pre><code class="language-yml">name: deploy
+
+on:
+    push:
+        branches: [writing]
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@master
+          - uses: denolib/setup-deno@master
+            with:
+              deno-version: 1.15.3
+          - name: Build
+            run: deno --allow-read --allow-write --unstable https://raw.githubusercontent.com/olaven/markblog/master/mod.ts build 
+          - name: Deploy
+            uses: JamesIves/github-pages-deploy-action@releases/v3
+            with:
+                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                BRANCH: master 
+                FOLDER: . # The folder the action should deploy.</code></pre>
+<h3 id="going-live-🗺-🌩">Going live 🗺 🌩</h3>
+<ol>
+<li>checkout to the branch for writing, <code>git checkout -b writing</code></li>
+<li>commit your changes, <code>git add . &amp;&amp; git commit -m &quot;initial blog setup&quot;</code></li>
+<li><code>git push --set-upstream origin writing</code></li>
+</ol>
+<p>Congratulations 👏 🎊 Within a few minutes, your blog should go live. 
+Your next post is just an <code>.md</code>-file away! To publish it, just push it 
+onto the <code>writing</code>-branch, and your automation will do the rest 🍇 🍏</p>
+<p>(If you are unsure about the URL, have a look at the &quot;Github Pages&quot;-seciton of your Github-repository 😃)</p>
+<p>Check out <a href="https://github.com/olaven/markblog#documentation">Markblog&#39;s documentation</a> for more information about how to customize your blog.
+See <a href="https://olaven.org">my blog</a>(<a href="https://github.com/olaven/olaven.github.io">github repo</a>) for a live example.</p>
+<p>Thanks for reading! </p>
+</description></item><item><title>making a browser extension with typescript and react</title><link>https://olaven.org/out/guides/making_a_browser_extension_with_typescript_and_react.html</link><guid>https://olaven.org/out/guides/making_a_browser_extension_with_typescript_and_react.html</guid><description><h1 id="how-im-building-an-extension-with-typescript-and-react">How I&#39;m building an Extension with Typescript and React</h1>
+<p>My goal with this guide is to show how I ended up building a chrome extension with <a href="https://www.typescriptlang.org/">Typescript</a> and <a href="https://reactjs.org/">react</a>. It won&#39;t necessarily fit your use case. But I certainly hope you can draw inspiration from it :-) </p>
+<p>To follow this post, you should have <a href="https://reactjs.org/docs/getting-started.html">a basic understanding of React</a> as well a little experience with <a href="nodejs.org">NodeJS</a>. </p>
+<p>I&#39;ve divided this post into two parts: </p>
+<ol>
+<li><a href="#going-with-a-comfortable-tech-stack">Why I chose the tech stack that I did</a></li>
+<li><a href="#lets-actually-make-something">Showing you how to setup the project</a></li>
+</ol>
+<h2 id="going-with-a-comfortable-tech-stack">Going with a comfortable tech stack</h2>
+<h3 id="i-want-the-type-safety-typescript-can-give-me">I want the type-safety typescript can give me</h3>
+<p>My experience is that the benefits of Typescript (or other statically typed languages) outweigh the downsides. 
+I especially like how it makes refactoring much easier. 
+Typescript screams at you when things are changing. Javascript silently fails. 
+The former allows me to constantly search for better ways of expressing the program I&#39;m writing without 
+being afraid (too afraid) of breaking something down the line. </p>
+<h3 id="react-is-familiar">React is familiar</h3>
+<p>Although I prefer to work on backend code, I happen to know React quite well. 
+I decided to learn it sometime back in 2017, and stuck with it. When <a href="https://reactjs.org/docs/hooks-intro.html">hooks</a> were released, I transitioned into writing functional react components and I have yet to look back. I have no good explanation for why I like this. This way of writing UI and handling state just happens to work well with the way I think. 
+Naturally, React was my first choice for writing a browser extension.</p>
+<h3 id="lets-try-to-avoid-bloated-configuration-files">Let&#39;s try to avoid bloated configuration files</h3>
+<p>Configuration files very quickly become a mess. I find this to be escpecially true in the JS ecosystem. Before knowing it, you end up with a <code>.babelrc</code>, <code>webpack.config.js</code>, <code>package.json</code>, <code>&lt;INSERT_TEST_FRAMEWORK&gt;.config.ts</code>, <code>.eslintrc</code> and so on. </p>
+<p>This quickly becomes hard to maintain. Perhaps it shouldn&#39;t be this way, but I mostly find configuration files to be instances of &quot;I have no idea why this works, let&#39;s not touch it&quot;. 
+It&#39;s hard to debug and easy to make mistakes. Bad combination. 
+(<a href="https://preview.redd.it/a0hf4zzwv4a11.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=0dad1c1d40783ba976a6d39f994fe423eb305dc5">relevant comic</a>) </p>
+<p>I landed on <a href="parceljs.org">Parcel</a> which promises to need zero configuration. And I&#39;ve found this to be largely true. This <a href="https://imgs.xkcd.com/comics/will_it_work.png">might bite me some day</a>, but for now I&#39;m happy :-) </p>
+<h2 id="lets-actually-make-something">Let&#39;s actually make something!</h2>
+<p>Did you just skip to this section? That&#39;s fine. I&#39;d likely have done the same. 
+The contents of this section should be enough to create your extension. However, the full source 
+code is available <a href="https://github.com/olaven/browser-extension-with-tsx">on Github</a>.  </p>
+<h2 id="initialize-and-add-dependencies">Initialize and add dependencies</h2>
+<p>We first need to initialize a new project and add the dependencies we need. 
+I&#39;ve written a short script with the commands below. 
+It boils down to: initialize a project, and add parcel and typescript. </p>
+<pre><code class="language-sh">mkdir my_extension_project;
+cd my_extension_project; 
+yarn init -y; 
+yarn add react react-dom 
+yarn add --dev typescript parcel @types/react @types/react-dom  @types/chrome;
+echo &quot;Extension setup done 🧑‍🚀&quot;;</code></pre>
+<p>This script adds <code>&quot;main&quot;: &quot;index.js&quot;</code> to <code>package.json</code>. Remove this manually.</p>
+<h2 id="simple-workflow">Simple Workflow</h2>
+<p>This is the workflow we&#39;ll end up with: 
+We want a <code>yarn dev</code> command, automatically rebuilding our source code when developing. 
+We&#39;ll add a <code>yarn build</code>  command as well, for building our extension for distribution :) </p>
+<p>With parcel, these are very simple. Just add the following JSON configuration to the <code>package.json</code> we just created.</p>
+<pre><code class="language-json">/*..*/
+&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;parcel watch src/index.html --public-url=./&quot;,
+    &quot;build&quot;: &quot;parcel build src/index.html --public-url=./&quot;
+}
+/*..*/</code></pre>
+<p>You&#39;ll notice that we&#39;re referencing an <code>index.html</code> file in these scripts. 
+This will be the entry point of our extension (more on this <a href="#add-your-first-popup">in in a second</a>).</p>
+<p>These commands are basically variants on &quot;let parcel look at this file and do all the stuff Babel and Webpack would usually do&quot;.</p>
+<h2 id="popups-and-background-scripts">Popups and background scripts</h2>
+<p>This is the time to make ourselves familiar with some extension concepts. I&#39;ll keep it short. </p>
+<h3 id="popups-are-ui">Popups are UI</h3>
+<p>Extension popups define the GUI of our application. That is, 
+the visual elements that pop up when you click on the extension. 
+If you use a password manager, the popup would be the window where you 
+enter your master password and search for the password you want to use. </p>
+<h3 id="background-scripts-are-useful-for-interacting-with-the-browser">Background scripts are useful for interacting with the browser</h3>
+<p>Background scripts are programs that run independently of the UI or other state in the browser. 
+They are useful for handling long term state, e.g. by interacting with the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage">storage API</a>. They can also be used to run code on events in the browser. Such 
+events can be creation of new windows or navigation between tabs. </p>
+<h3 id="telling-the-browser-about-our-extension">Telling the browser about our extension</h3>
+<p>The details of the extension is defined in a <code>manifest.json</code> file at the root of our project folder. 
+<code>manifest.json</code> tells the browser what our extension should have permission to do and where it&#39;s source files are.
+You can <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#manifest.json">check out MDN</a> for further details. </p>
+<p>For now, let&#39;s add a <code>manifest.json</code> looking like this: </p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;My First Extension&quot;,
+  &quot;version&quot;: &quot;0.0.1&quot;,
+  &quot;description&quot;: &quot;My first browser extension!&quot;,
+  &quot;manifest_version&quot;: 2
+}</code></pre>
+<h2 id="install-your-extension-in-chrome-or-firefox">Install your extension in chrome or firefox</h2>
+<p>Before we start making stuff, we want to install our extension in the browser. 
+This allows us to see what we&#39;re making.</p>
+<ul>
+<li>If you&#39;re using Firefox<ol>
+<li>navigate to <code>about:debugging</code> in your browser</li>
+<li>click <em>This Firefox</em></li>
+<li>click <em>Load temporary Add-on</em></li>
+<li>select the <code>manifest.json</code> file in this folder </li>
+</ol>
+</li>
+<li>If you&#39;re using Chrome<ol>
+<li>navigate to <code>chrome://extensions</code></li>
+<li>enable developer mode in the upper left corner </li>
+<li>click <em>Load Unpacked</em> </li>
+<li>select the your project directory</li>
+</ol>
+</li>
+</ul>
+<h3 id="add-your-first-popup">Add your first popup</h3>
+<p>Most of the following should be familiar if you&#39;ve used React before. If you&#39;re confused, refer to the code comments :-)  </p>
+<p>The entry point of our application will be <code>index.html</code> - <a href="https://www.youtube.com/watch?v=x3AYYRqRMC4">classic</a>. 
+We&#39;ll add it at <code>src/index.html</code> as this matches with the <a href="#simple-workflow">build script</a> we added in <code>package.json</code> earlier.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- The root node of our component tree --&gt;
+    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;!-- The entry point for our React components --&gt;
+&lt;script src=&quot;./components/index.tsx&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;</code></pre>
+<p>Similarly, let&#39;s add a <code>./src/components/index.tsx</code>. This file will load our react component. </p>
+<pre><code class="language-tsx">
+import * as React from &quot;react&quot;; 
+import * as ReactDOM from &quot;react-dom&quot;; 
+
+//This is our counter component 
+const Counter = () =&gt; {
+    const [ count, setCount ] = React.useState(0);
+    return &lt;&gt;
+        &lt;h2&gt;{count}&lt;/h2&gt;
+        &lt;button onClick={() =&gt; {setCount(count + 1)}}&gt;increment&lt;/button&gt;
+        &lt;button onClick={() =&gt; {setCount(count - 1)}}&gt;decrement&lt;/button&gt;
+    &lt;/&gt;
+}
+
+/* We&#39;re now telling React to render this component on the webpage, inside 
+the first element it can find with and id of &quot;root&quot;. Notice how this matches 
+the `div`-tag in our `index.html` :-) */
+ReactDOM.render(&lt;Counter /&gt;, document.getElementById(&quot;root&quot;));</code></pre>
+<p>Lastly, the browser needs to know about our popup to show it. 
+As <a href="#telling-the-browser-about-our-extension">just discussed</a>, this is done through our <code>manifest.json</code> file. 
+Simply add the following to it: </p>
+<pre><code class="language-json">/*...*/
+&quot;browser_action&quot;: {
+  &quot;default_popup&quot;: &quot;dist/index.html&quot;
+}
+/*...*/</code></pre>
+<p>Notice how we&#39;re referencing <code>dist/index.html</code> and not <code>src/index.html</code>. This is because 
+parcel creates and leaves our files in the <code>dist</code>-directory when it is done transforming our Typescript and React code to 
+plain <code>.js</code>-files :-) </p>
+<h3 id="did-it-work">Did it work?</h3>
+<p>It&#39;s time to see our beautiful creation!
+Open a terminal and run <code>yarn dev</code>. You should see a message like <code>✨ Built in 58ms</code>. </p>
+<p>Now open your browser, and click on your extension. There it is! Or should be.
+If something went wrong, read the error message carefully and try to figure out what&#39;s 
+going on. You can always refer to <a href="https://github.com/olaven/browser-extension-with-tsx">the full solution</a> if you&#39;re stuck.</p>
+<p>While you&#39;re at it, try to make a change in your component. Notice how the change is picked up in the browser at once. Parcel has rebuilt our source files automatically :-)</p>
+<h3 id="adding-a-background-script">Adding a background script</h3>
+<p>Now that we have our popup working, lets try to add a background script as well. 
+<a href="#background-scripts-are-useful-for-interacting-with-the-browser">As mentioned</a>, these can (amongst other things) be used to listen for browser events. To demonstrate this, we&#39;ll create a script that logs the id of a tab whenever we create one!</p>
+<p>First, create the file at <code>src/background/script.ts</code> with the following code: </p>
+<pre><code class="language-ts">
+//Every time a tab is created...
+chrome.tabs.onCreated.addListener((tab) =&gt; {
+    //run this code 
+    console.log(`You just created a tab with id: ${tab.id}`)
+}); </code></pre>
+<p>Like with popups, we have to tell the browser about this through <code>manifest.json</code>: </p>
+<pre><code class="language-json">/*..*/
+&quot;background&quot;: {
+  &quot;scripts&quot;: [
+    &quot;dist/background/script.js&quot;
+  ]
+}
+/*..*/</code></pre>
+<p>Again, we&#39;re referencing the <code>dist</code> folder where Parcel leaves our files. 
+You might recall that background scripts <a href="#background-scripts-are-useful-for-interacting-with-the-browser">run separately</a>. 
+In other words, our popup knows nothing of this background script. Hence, we have to explicitly tell Parcel to include this file. 
+Do this by editing the <code>&quot;dev&quot;</code> and <code>&quot;build&quot;</code> commands in <code>package.json</code> like this: </p>
+<pre><code class="language-json">/*..*/
+&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;parcel watch src/index.html src/background/script.ts --public-url=./&quot;,
+    &quot;build&quot;: &quot;parcel build src/index.html src/background/script.ts --public-url=./&quot;
+}
+/*..*/</code></pre>
+<p>Since we&#39;ve modified our <code>dev</code>-script, we need to stop and restart it in the terminal window.</p>
+<p>We&#39;re almost ready to see our background script in action! 
+We just need to access the console where the <code>console.log</code>&#39;s are written. </p>
+<ul>
+<li>If you&#39;re using Firefox<ol>
+<li>navigate to &quot;about:config&quot; and add <code>extensions.sdk.console.logLevel</code> with a string value of <code>&quot;all&quot;</code></li>
+<li>restart Firefox</li>
+<li>Open to Tools -&gt; Web developer -&gt; Browser console (alternatively use cmd+shift+j)</li>
+<li>Click the settings icon and enable Show Content Messages</li>
+</ol>
+</li>
+<li>If you&#39;re using Chrome <ul>
+<li>navigate to &quot;chrome://extensions&quot;</li>
+<li>click on &quot;background page&quot; on your extension (you might need to hit the refresh button for this to show up)  </li>
+</ul>
+</li>
+</ul>
+<p>You should now see the console for your background script! Open your browser and console side by side and create a few tabs. 
+The handler is running and <code>You just created a tab with id: N</code> gets logged ✨</p>
+<h2 id="see-browser-vendors-for-publishing">See browser vendors for publishing</h2>
+<p>I&#39;m not going to cover how to publish your extensions here. 
+This blog post covers a lot already. Browsers themselves have guides for this.
+<a href="https://developer.chrome.com/docs/webstore/publish/">Here&#39;s one the one for Chrome</a> and <a href="https://extensionworkshop.com/documentation/publish/submitting-an-add-on/">here&#39;s the same for Firefox</a>. </p>
+<h2 id="closing">Closing</h2>
+<p>Thank you for reading. It really means a lot to me.
+Hopefully this gave you enough knowledge to start experimenting with extensions for yourself. 
+If this helped you out, please consider supporting my work through <a href="https://github.com/sponsors/olaven">Github Sponsors</a>. If you have any questions, feel free to <a href="mailto:olav@sundfoer.com">send me an email</a> :-) </p>
 </description></item></channel></rss>
