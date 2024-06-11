@@ -18,7 +18,7 @@ will be able to blog with the following workflow:
 
 ## What's the techstack, briefly? 
 To build our blog from Markdown, we will use [Markblog](https://github.com/olaven/markblog). 
-This is an open source tool written with [Deno](deno.land). 
+This is an open source tool written with [Deno](https://deno.com/). 
 
 In order to deploy our website, we will use [Github Pages](https://pages.github.com/). Github Pages 
 is free and works - unsurprisingly - seamlessly with projects on Github. 
@@ -30,7 +30,7 @@ it is all relatively simple when it comes together 😅
 
 ### Installation
 1. [install Git](https://git-scm.com/)
-2. [install Deno](https://deno.land/#install)
+2. [install Deno](https://deno.com/#install)
 3. [install Markblog](https://github.com/olaven/markblog#installation)
 
 ### Git Setup 
