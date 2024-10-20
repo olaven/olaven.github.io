@@ -1,3 +1,5 @@
+⚠️this is deprecated in favour of a self-hosted solution.
+
 # homepage
 My personal homepage 
 
